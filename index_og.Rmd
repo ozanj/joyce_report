@@ -18,82 +18,23 @@ Date
 --- 
 
 # Motivation
-## The enrollment management industry
+## Enrollment Funnel
 
-The "enrollment funnel"
 <img src="assets/img/funnel.png" alt="Enrollment Funnel" style="width:35%;">
 
 ---
 
 # Motivation
-## Scholarship on college access
+## Research and policy on access inequality
 
-Demand-side causes and interventions
-
-- Research and policy discourse focuses on students and K-12 schools
-    - e.g., 2014 White House Access Summit
-- The "under-matching" explanation
-    - High-achieving, low-income students lack information/guidance
-    - Interventions to overcome information asymmetries, nudge students
-
-Sociology on recruiting
-
-- From the college perspective [CITE STEVENS]
-    - High school visits important for relationships with prospects and counselors at "feeder" schools
-- From the student/high school perspective [CITE HOLLAND]
-    - Which universities visit affects student decisions, especially first-generation and students of color
-
+THIS IS A TEST
 
 ---
 
 # Motivation
-## Theoretical motivation: enrollment priorities and recruiting behavior
+## Scholarship on recruiting
 
-Organizational theory
-
-- Contingency theory (Thompson, 1967)
-    - Technical level vs. managerial level
-- "New" institutional theory (Meyer & Rowan, 1977)
-    - Publicly adopt goals demanded by environment
-    - Technical level cannot pursue all goals
-    - Substantively adopt some goals (technical level)
-    - Symbolically adopt others (policies, rhetoric)
-        - e.g., _Commitments to Action on College Opportunity_ (The White House, 2014)
-
-Application to enrollment management
-
-- "iron triangle" of enrollment management
-    - Universities pursue three enrollment goals: access, academic profile, tuition revenue
-- Recruiting is allocation of resources from technical level
-    - Knowing which populations targeted by recruiting is indicator of enrollment priorities
-
---- &twocol
-
-## Coding Note: dplyr
-
-`dplyr` is a set of "verbs" that perform common functions:
-
-*** =left
-
-**Subsetting**:
-* `filter`
-* `select`
-* `sample_n`, `sample_frac`, `slice`
-
-**Ordering**:
-* `arrange`
-
-*** =right
-
----
-
-# Research design
-## Overview of off-campus recruiting project
-
-Collect data on off-campus recruiting events by web-scraping "travel schedule" from admissions office website
-
-
-
+Add text.
 
 --- &vertical
 
