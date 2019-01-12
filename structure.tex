@@ -5,6 +5,7 @@
 \usepackage{dashrule}
 \usepackage[export]{adjustbox}
 \usepackage[usenames, dvipsnames]{color}
+\usepackage{comment}
 
 \definecolor{colorTitle}{RGB}{200, 77, 179}  % Pink
 \definecolor{colorSection}{RGB}{102, 153, 255}  % Blue
@@ -13,6 +14,7 @@
 \definecolor{LightBlue}{RGB}{165, 195, 255}
 \definecolor{LightGray}{RGB}{220, 220, 220}
 
+\begin{comment}
 \newfontfamily\Avenir[
     Path= fonts/,
     Extension= .otf,
@@ -31,6 +33,7 @@
 \setmainfont[Ligatures=TeX]{Avenir}
 \Avenir\fontsize{9pt}{12pt}\selectfont
 
+\end{comment}
 
 % Formatting ~~~~
 
@@ -67,8 +70,8 @@
 
 \fancyhead{} % clear all header fields
 \fancyfoot{} % clear all footer fields
-\fancyfoot[LE]{\thepage \hspace{0.4cm} \TradeGothic\selectfont\textcolor{colorTitle}{\uppercase{Oh, The Places They'll Go}}}
-\fancyfoot[RO]{\TradeGothic\selectfont\textcolor{colorFooter}{\leftmark} \hspace{0.4cm} \thepage}
+\fancyfoot[LE]{\thepage \hspace{0.4cm} \textcolor{colorTitle}{\uppercase{Oh, The Places They'll Go}}}
+\fancyfoot[RO]{\textcolor{colorFooter}{\leftmark} \hspace{0.4cm} \thepage}
 \renewcommand{\headrulewidth}{0pt}
 
 \fancypagestyle{tablepage}{  % No Header, Regular Footer
@@ -93,7 +96,7 @@
 \renewcommand{\refname}{\vspace{-0.65cm}}
 
 \usepackage{enumitem}
-\setlist{nosep, itemsep=0pt, parsep=0pt, before={\TradeGothic\large\color{Gray}}}
+\setlist{nosep, itemsep=0pt, parsep=0pt, before={\large\color{Gray}}}
 
 \renewcommand{\labelitemi}{\color{colorTitle}$\triangleright$}
 \renewcommand{\labelitemii}{\color{Periwinkle}$\cdot$}
@@ -106,7 +109,6 @@
 
 \newenvironment{quote-block}{  % quote block
     \begin{quote}
-    \TradeGothic\selectfont
     \color{colorSection}
     \begin{large}
 }
@@ -131,10 +133,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 
-\DeclareCaptionFont{tg}{\TradeGothic\selectfont}
 \DeclareCaptionFont{colorTitle}{\color{colorTitle}}
-
-\captionsetup{labelfont={tg, colorTitle}, figurename=FIGURE}
 
 \newcommand{\addFigure}[4][0.75] {  % Add single figure
 \begin{figure}[!ht]
@@ -142,7 +141,7 @@
     \centering
 
     \includegraphics[width=#1\textwidth]{images/#2}
-    \caption{\TradeGothic\selectfont\textcolor{colorFooter}{\uppercase{#3}}}
+    \caption{\textcolor{colorFooter}{\uppercase{#3}}}
     \label{fig:#4}
 
 \end{figure}
@@ -161,7 +160,7 @@
     \includegraphics[width=0.45\textwidth, cfbox=LightGray 1pt]{images/#1/median_income}\hfill
     \includegraphics[width=0.45\textwidth, cfbox=LightGray 1pt]{images/#1/income_band}
 
-    \caption{\TradeGothic\selectfont\textcolor{colorFooter}{\uppercase{#2}}}
+    \caption{\textcolor{colorFooter}{\uppercase{#2}}}
     \label{fig:#3}
 
     \vspace{0.45cm}
@@ -181,7 +180,7 @@
     \includegraphics[width=0.2\paperwidth, cfbox=LightGray 1pt]{images/215293/titled_map}\hfill
     \includegraphics[width=0.2\paperwidth, cfbox=LightGray 1pt]{images/196097/titled_map}}
 
-    \caption{\TradeGothic\selectfont\textcolor{colorFooter}{\uppercase{#1}}}
+    \caption{\textcolor{colorFooter}{\uppercase{#1}}}
     \label{fig:#2}
     \makebox[0.79\paperwidth][c]{\hdashrule{1.5\paperwidth}{1pt}{1pt}}
 
