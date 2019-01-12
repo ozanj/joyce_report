@@ -3,61 +3,67 @@
 \input{structure.tex}
 
 \begin{document}
+
+% Title Page ~~~~
+
 \newgeometry{top=0cm, bottom=0cm, left=0cm, right=0cm}
+\begin{titlepage}
 
-\begin{titlepage} \thispagestyle{empty}
+    \begin{figure}
+        \includegraphics[width=.25\textwidth, right]{images/emra.jpg}
+        \vspace{-1.1cm}
+    \end{figure}
 
-\begin{figure}
-    \includegraphics[width=.25\textwidth,right]{images/emra.jpg}
-    \vspace{-0.5cm}
-\end{figure}
+    \begin{mdframed}[backgroundcolor=LightBlue, linecolor=LightBlue, innerbottommargin=1.2cm]
 
-\begin{mdframed}[backgroundcolor=LightBlue, linecolor=LightBlue, leftmargin=0cm, innerleftmargin=0cm, innerrightmargin=0cm, innertopmargin=0.5cm, innerbottommargin=1cm]
- \color{white} 
+        \centering\color{white}\fontsize{30}{60}
 
-\vspace{1.3in}
- \centering\color{white}\fontsize{30}{60}
-	\hdashrule{0.75\textwidth}{1pt}{1pt} \\
-	\vspace{0.8cm}
-    	\color{LightPink}\textbf{OH, THE PLACES THEY'LL GO} \\ 
-	\vspace{0.6cm}
-	\color{white}\large\textit{Similarities and Differences in Off-Campus Recruiting Strategies \\ of Public Research Universities} \\
-	\vspace{0.4cm}
-	\hdashrule{0.75\textwidth}{1pt}{1pt} \\
-	
-\begin{minipage}[b][0.4\textheight][b]{\textwidth}
-	\centering\color{white}\large
-	\textbf{Ozan Jaquette} \\
-	University of California, Los Angeles \\~\\
-	\color{Gray}\textit{Oct 2018}
-\end{minipage}
+        \vspace{3cm}
+        \hdashrule{0.75\textwidth}{1pt}{1pt} \\
 
+        \vspace{0.8cm}
+        \textbf{\color{LightPink}{OH, THE PLACES THEY'LL GO}} \\
 
+        \vspace{0.6cm}
+        \large\textit{Similarities and Differences in Off-Campus Recruiting Strategies \\ of Public Research Universities} \\
 
+        \vspace{0.4cm}
+        \hdashrule{0.75\textwidth}{1pt}{1pt} \\
 
-\end{mdframed}
+        \vspace{10cm}
+        \textbf{Ozan Jaquette} \\
+        University of California, Los Angeles \\~\\
+        \textit{\color{Gray}{Oct 2018}}
 
+    \end{mdframed}
+\end{titlepage}
 
- \end{titlepage}
+% Blank Page ~~~~
  
 \pagecolor{LightBlue}
-\begin{titlepage} \color{LightBlue}{.} \end{titlepage}
-\pagecolor{White}
+\begin{titlepage}
+    \color{LightBlue}{x}
+\end{titlepage}
+
+% Begin Template ~~~~
+
+\pagecolor{white}
 \restoregeometry
 \setcounter{page}{1}
 
-\section*{Motivation\markboth{Motivation}{}}
+\section*{Motivation\markboth{Motivation}{}}  % text inside \markboth{} is displayed in footer
 
 \lipsum[1]
 
+% Params: width (default: 0.75\textwidth), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel})
 \addFigure[0.55]{funnel_alt.png}{The Enrollment Funnel.}{funnel}
 
 \subsection*{Research and policy on access inequality}
 
 \lipsum[1]
 
-\begin{quote-block}
-\lipsum[2]
+\begin{quote-block}  % quote block
+    \lipsum[2]
 \end{quote-block}
 
 \lipsum[3]
@@ -66,12 +72,12 @@
 
 \lipsum[1-2]
 
-\begin{odd-env}  % half page table
+\begin{odd-block}  % text block for odd-numbered pages
   \vspace{-0.3cm}
   \subsection*{\color{colorTitle}{Key Points}}
   \vspace{-0.2cm}
   \lipsum[1-2]
-\end{odd-env}
+\end{odd-block}
 
 \lipsum[3]
 
@@ -79,6 +85,7 @@
 
 \subsection*{University of Georgia}
 \lipsum[4]
+% Params: univ_id (which is also the name of the folder inside images/ folder, where the images are located), caption, fig reference
 \addFigureSet{139959}{University of Georgia result set.}{uga}
 \lipsum[5]
 
@@ -109,7 +116,7 @@
 
 \lipsum[1]
 
-\begin{itemize}
+\begin{itemize}  % List
 	\item Un
 	\begin{itemize}
 		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -130,12 +137,18 @@
 
 \newpage
 
+% Endnotes ~~~~
+
 \section*{Endnotes\markboth{Endnotes}{}}
 
 TBD
 
+% Final Page ~~~~
+
 \newpage
 \pagecolor{LightBlue}
-\begin{titlepage} \color{LightBlue}{.} \end{titlepage}
+\begin{titlepage}
+    \color{LightBlue}{x}
+\end{titlepage}
 
 \end{document}
