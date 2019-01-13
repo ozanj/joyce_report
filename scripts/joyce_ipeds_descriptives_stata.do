@@ -85,8 +85,11 @@ format pgrnt_p %9.1fc
 
 list instname unitid endyear migrateyr ugftptfreshtot ugftfreshtot cohortsfaef  fgrnt_n fgrnt_p   ///
 	if inlist(unitid,100751)==1 & endyear>=2000, noobs header(25) abb(14) str(40) sepby(unitid)
+
+list instname unitid endyear migrateyr ugftptfreshtot ugftfreshtot cohortsfaef  pgrnt_n pgrnt_p   ///
+	if inlist(unitid,100751)==1 & endyear>=2000, noobs header(25) abb(14) str(40) sepby(unitid)
 	
-	*pgrnt_n pgrnt_p
+	*
 
 *ENROLLMENT OF URM
 	
@@ -118,9 +121,11 @@ foreach sr in white_nh black_nh aina_nh api_nh hispanic {
 list instname unitid endyear re_ef ugftfreshtot ugftfreshblmf pugftfreshblmf ugftfreshhimf pugftfreshhimf pop4_black_nh_1824 p_black_nh_1824 pop4_hispanic_1824 p_hispanic_1824 ///
 	if inlist(unitid,100751)==1 & endyear>=2000, noobs header(25) abb(14) str(40) sepby(unitid)
 
-*WEST ALABAMA
-list instname unitid endyear migrateyr ugftptfreshtot ugftfreshtot cohortsfaef  fgrnt_n fgrnt_p   ///
-	if inlist(unitid,101587)==1 & endyear>=2000, noobs header(25) abb(14) str(40) sepby(unitid)
+*WEST ALABAMA; 101587
+*u alabama birmingham: 100663
+*south alabama: 102094
+list instname unitid endyear cohortsfaef  fgrnt_p ugftfreshtot ugftfreshblmf pugftfreshblmf  ///
+	if inlist(unitid,102094)==1 & endyear>=2000, noobs header(25) abb(14) str(40) sepby(unitid)
 
 	
 
