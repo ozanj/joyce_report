@@ -23,6 +23,7 @@ use pub-inst-unitid-state, clear
 
 *********DESCRIPTIVE STATS FOR UNIVERSITY OF ALABAMA
 
+table endyear if sector==1 & cc2000==15, contents(freq mean statea mean tuition)
 
 sort unitid endyear
 format statea statecg tuition statenonopg stateopcg staterev %15.0fc
@@ -70,7 +71,8 @@ list instname unitid endyear migrateyr ugftptfreshtot freshinst freshoutst fresh
 	*Assert measures from SFA = total enrollment from SFA
 	assert cohortsfaef== ninstef+noutstef+nunkef+ndistef if unitid==100751 & endyear>=2000 // TRUE
 
-	
+list instname unitid endyear migrateyr ugftptfreshtot freshinst freshoutst freshoutstpct  ///
+	if inlist(unitid,100751)==1 & endyear>=2000, noobs header(25) abb(14) str(40) sepby(unitid)	
 *ENROLLMENT OF PELL
 
 capture drop fgrnt_p
