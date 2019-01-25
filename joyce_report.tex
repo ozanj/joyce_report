@@ -16,13 +16,18 @@
 
     \begin{mdframed}[backgroundcolor=LightBlue, linecolor=LightBlue, innerbottommargin=1.2cm]
 
-        \centering\color{white}\fontsize{30}{60}
+        \hspace{-0.45cm}
+        \makebox[0pt][l]{%
+          \raisebox{-1.035\totalheight}[0pt][0pt]{%
+            \includegraphics[width=8.7in]{./images/cover.png}}}%
 
-        \vspace{3cm}
+        \centering\color{DarkGray}\fontsize{30}{60}
+
+        \vspace{1.6cm}
         \hdashrule{0.75\textwidth}{1pt}{1pt} \\
 
         \vspace{0.8cm}
-        \textbf{\color{LightPink}{OH, THE PLACES THEY'LL GO}} \\
+        \textbf{\color{LogoRed}{OH, THE PLACES THEY'LL GO}} \\
 
         \vspace{0.6cm}
         \large\textit{Similarities and Differences in Off-Campus Recruiting Strategies \\ of Public Research Universities} \\
@@ -30,7 +35,7 @@
         \vspace{0.4cm}
         \hdashrule{0.75\textwidth}{1pt}{1pt} \\
 
-        \vspace{10cm}
+	\vspace{10.5cm}
         \textbf{Ozan Jaquette} \\
         University of California, Los Angeles \\~\\
         \textit{\color{Gray}{Oct 2018}}
@@ -72,12 +77,9 @@
 
 \lipsum[1-2]
 
-\begin{odd-block}  % text block for odd-numbered pages
-  \vspace{-0.3cm}
-  \subsection*{\color{colorTitle}{Key Points}}
-  \vspace{-0.2cm}
-  \lipsum[1-2]
-\end{odd-block}
+\begin{color-block}  % [Custom Title] text block
+  \lipsum[1]
+\end{color-block}
 
 \lipsum[3]
 
@@ -108,7 +110,7 @@
 
 \lipsum[1]
 
-\addFigureCompare{Comparison Across Universities\hspace{1cm}}{compare}
+%\addFigureCompare{Comparison Across Universities\hspace{1cm}}{compare}
 
 \lipsum[6]
 
@@ -126,7 +128,7 @@
 	\begin{itemize}
 		\item Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
 	\end{itemize}
-	\item Ttrois
+	\item Trois
 	\begin{itemize}
 		\item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 	\end{itemize}
