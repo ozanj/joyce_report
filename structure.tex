@@ -46,22 +46,23 @@
     letterpaper,
     top=1.75in,
     bottom=1.75in,
-    inner=1in,
-    outer=1in,
+    inner=0.75in,
+    outer=0.75in,
     headsep=1in,
     headheight=0.5in,
-    footskip=1.2in,
+    footskip=1in,
     % showframe
 }
 
 \usepackage[document]{ragged2e}
-\parskip=10pt
+\parskip=8pt
 \parindent=0pt
 \linespread{1.2}
+\setlength{\columnsep}{0.75cm}
 
 \usepackage{sectsty}
-\sectionfont{\Avenir\selectfont\color{LogoTurquoise1}\Large\uppercase}
-\subsectionfont{\Avenir\selectfont\color{LogoTurquoise1}\mdseries\Large}
+\sectionfont{\Avenir\selectfont\color{LogoTurquoise1}\vspace*{-10pt}\Large\uppercase}
+\subsectionfont{\Avenir\selectfont\color{LogoTurquoise1}\vspace*{-10pt}\mdseries\Large}
 
 
 % Headers + Footers ~~~~
@@ -158,24 +159,25 @@
 \end{figure}
 }
 
-\newcommand{\addFigureSet}[3] {  % Add 2x2 figure set
-\begin{figure}[!ht]
+\usepackage{stfloats}
+\newcommand{\addFigureSet}[5][0.45] {  % Add 2x2 figure set
+\begin{figure*}[#5]
     \vspace{0.45cm}
     \centering
 
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#1/visit_count}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#1/timeline}
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/visit_count}\hfill
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/timeline}
 
     \smallskip
 
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#1/median_income}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#1/income_band}
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/median_income}\hfill
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/income_band}
 
-    \caption{\TradeGothic\selectfont\textcolor{Gray}{\uppercase{#2}}}
-    \label{fig:#3}
+    \caption{\TradeGothic\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \label{fig:#4}
 
-    \vspace{0.45cm}
-\end{figure}
+    \vspace{#1cm}
+\end{figure*}
 }
 
 \newcommand{\addFigureCompare}[2] {  % Add row of 4 figures

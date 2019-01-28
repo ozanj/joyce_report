@@ -3,6 +3,7 @@
 \input{structure.tex}
 
 \begin{document}
+\sloppy
 
 % Title Page ~~~~
 
@@ -55,13 +56,14 @@
 \pagecolor{white}
 \restoregeometry
 \setcounter{page}{1}
+\twocolumn
 
 \section*{Motivation\markboth{Motivation}{}}  % text inside \markboth{} is displayed in footer
 
 \lipsum[1]
 
 % Params: width (default: 0.75\textwidth), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel})
-\addFigure[0.55]{funnel_alt.png}{The Enrollment Funnel.}{funnel}
+\addFigure[0.45]{funnel_alt.png}{The Enrollment Funnel.}{funnel}
 
 \subsection*{Research and policy on access inequality}
 
@@ -77,34 +79,34 @@
 
 \lipsum[1-2]
 
-\begin{color-block}  % [Custom Title] text block
-  \lipsum[1]
-\end{color-block}
+%\begin{color-block}  % [Custom Title] text block
+%  \lipsum[1]
+%\end{color-block}
 
-\lipsum[3]
+\lipsum[4-5]
 
 \section*{Deep-Dive Results\markboth{Deep-Dive Results}{}}
 
 \subsection*{University of Georgia}
-\lipsum[4]
 % Params: univ_id (which is also the name of the folder inside images/ folder, where the images are located), caption, fig reference
-\addFigureSet{139959}{University of Georgia result set.}{uga}
-\lipsum[5]
+\addFigureSet[-1]{139959}{University of Georgia result set.}{uga}{b}
+\lipsum[4]
+\lipsum[5-7]
 
 \subsection*{University of California, Berkeley}
-\lipsum[4]
-\addFigureSet{110635}{UC Berkeley result set.}{ucberkeley}
-\lipsum[4]
+\lipsum[4-7]
+\addFigureSet{110635}{UC Berkeley result set.}{ucberkeley}{t}
+\lipsum[7]
 
 \subsection*{University of Pittsburgh}
-\lipsum[4]
-\addFigureSet{215293}{University of Pittsburgh result set.}{upitt}
-\lipsum[5]
+\addFigureSet[-1]{215293}{University of Pittsburgh result set.}{upitt}{b}
+\lipsum[4-6]
+\lipsum[5-7]
 
 \subsection*{Stony Brook}
 \lipsum[4]
-\addFigureSet{196097}{Stony Brook result set.}{stonybrook}
-\lipsum[5]
+\addFigureSet{196097}{Stony Brook result set.}{stonybrook}{t}
+\lipsum[5-7]
 
 \section*{Cross-University Results\markboth{Cross-University Results}{}}
 
@@ -116,28 +118,25 @@
 
 \section*{Conclusions\markboth{Conclusions}{}}
 
-\lipsum[1]
+\lipsum[1-2]
 
-\begin{itemize}  % List
-	\item Un
-	\begin{itemize}
-		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-		\item Cras nec ante. Pellentesque a nulla.
-	\end{itemize}
-	\item Deux
-	\begin{itemize}
-		\item Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
-	\end{itemize}
-	\item Trois
-	\begin{itemize}
-		\item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-	\end{itemize}
-	
-\end{itemize} 
+%\begin{itemize}  % List
+%	\item Un
+%	\begin{itemize}
+%		\item Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+%		\item Cras nec ante. Pellentesque a nulla.
+%	\end{itemize}
+%	\item Deux
+%	\begin{itemize}
+%		\item Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi.
+%	\end{itemize}
+%	\item Trois
+%	\begin{itemize}
+%		\item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+%	\end{itemize}
+%\end{itemize}
 
-\lipsum[4]
-
-\newpage
+\clearpage
 
 % Endnotes ~~~~
 
@@ -147,7 +146,7 @@ TBD
 
 % Final Page ~~~~
 
-\newpage
+\clearpage
 \pagecolor{LightBlue}
 \begin{titlepage}
     \color{LightBlue}{x}
