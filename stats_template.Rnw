@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+<<setup, echo=FALSE>>=
+univs <- read.csv('./data/graph_stats.csv')
+for (i in 1:nrow(univs)) {
+  for (j in tail(names(univs), -2)) {
+    var <- paste0(j, '_', univs[i, 'univ_id'])
+    val <- univs[i, j]
+    if (grepl('med_income', var)) {
+      # val <- format(val, nsmall=2, big.mark=',')
+      val <- paste0(round(val / 1000), 'k')
+    } else if (grepl('income', var) | grepl('race', var)) {
+      val <- paste0(round(val, 1))
+    }
+    assign(var, val)
+  }
+}
+@
+
+There are \Sexpr{num_pubHS_in_196097} in-state public HS visits and \Sexpr{num_pubHS_out_196097} out-of-state public HS visits for Stony Brook. \\
+
+The average median household income of zip-codes of visited in-state public HS is \$\Sexpr{med_income_visit_in_196097}, and \$\Sexpr{med_income_nonvisit_in_196097} for non-visited. \\
+
+About \Sexpr{income_gt200k_visit_in_196097}\% of the population has an income of greater than \$200k for zip-codes of visited in-state public HS, as compared to \Sexpr{income_gt200k_nonvisit_in_196097}\% for non-visited. \\
+
+\end{document}
