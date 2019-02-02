@@ -25,6 +25,32 @@ Alon, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Armstrong%
+\ \BBA {} Hamilton%
+}{%
+Armstrong%
+\ \BBA {} Hamilton%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+RN4231}
+\APACinsertmetastar {%
+RN4231}%
+\begin{APACrefauthors}%
+Armstrong, E\BPBI A.%
+\BCBT {}\ \BBA {} Hamilton, L\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {Paying for the party: how college maintains inequality} {Paying
+  for the party: how college maintains inequality}.
+\newblock
+\APACaddressPublisher{Cambridge, Massachusetts}{Harvard University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Campbell%
 }{%
 Campbell%
@@ -134,11 +160,72 @@ DiMaggio, P\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dowd%
+, Cheslock%
+\BCBL {}\ \BBA {} Melguizo%
+}{%
+Dowd%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2008}}%
+}]{%
+RN1492}
+\APACinsertmetastar {%
+RN1492}%
+\begin{APACrefauthors}%
+Dowd, A\BPBI C.%
+, Cheslock, J\BPBI J.%
+\BCBL {}\ \BBA {} Melguizo, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Transfer access from community colleges and the
+  distribution of elite higher education} {Transfer access from community
+  colleges and the distribution of elite higher education}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Higher Education}{79}{4}{442-+}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://000257175900004} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Doyle%
+}{%
+Doyle%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+RN4284}
+\APACinsertmetastar {%
+RN4284}%
+\begin{APACrefauthors}%
+Doyle, W\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The effect of community college enrollment on bachelor's
+  degree completion} {The effect of community college enrollment on bachelor's
+  degree completion}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economics of Education Review}{28}{2}{199-206}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0272775708000770}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.econedurev.2008.01.006}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Holland%
 }{%
 Holland%
 }{%
-{\protect \APACyear {{\protect \BIP {}}}}%
+{\protect \APACyear {2019}}%
 }]{%
 RN4324}
 \APACinsertmetastar {%
@@ -148,11 +235,11 @@ Holland, M\BPBI M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{{\protect \BIP {}}}.
+\APACrefYear{2019}.
 \newblock
-\APACrefbtitle {Divergent pathways to college: Race, class, and inequality in
-  high schools} {Divergent pathways to college: Race, class, and inequality in
-  high schools}.
+\APACrefbtitle {Divergent paths to college: Race, class, and inequality in high
+  schools} {Divergent paths to college: Race, class, and inequality in high
+  schools}.
 \newblock
 \APACaddressPublisher{New Brunswick, NJ}{Rutgers University Press}.
 \PrintBackRefs{\CurrentBib}
@@ -181,6 +268,143 @@ Hossler, D.%
   management of college enrollments}.
 \newblock
 \APACaddressPublisher{San Francisco, CA}{Jossey-Bass}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hoxby%
+}{%
+Hoxby%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+RN2247}
+\APACinsertmetastar {%
+RN2247}%
+\begin{APACrefauthors}%
+Hoxby, C\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The changing selectivity of American colleges} {The
+  changing selectivity of american colleges}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economic Perspectives}{23}{4}{95-118}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://000272677100005} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jenkins%
+\ \BBA {} Fink%
+}{%
+Jenkins%
+\ \BBA {} Fink%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+RN4406}
+\APACinsertmetastar {%
+RN4406}%
+\begin{APACrefauthors}%
+Jenkins, D.%
+\BCBT {}\ \BBA {} Fink, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {Tracking transfer: new measures of institutional and state
+  effectiveness in helping community college students attain bachelor's
+  degrees} {Tracking transfer: new measures of institutional and state
+  effectiveness in helping community college students attain bachelor's
+  degrees}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Community College Research Center}.
+\newblock
+\begin{APACrefURL}
+  \url{https://ccrc.tc.columbia.edu/publications/tracking-transfer-institutional-state-effectiveness.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Khan%
+}{%
+Khan%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+RN4407}
+\APACinsertmetastar {%
+RN4407}%
+\begin{APACrefauthors}%
+Khan, S\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2011}.
+\newblock
+\APACrefbtitle {Privilege: The making of an adolescent elite at St. Paul's
+  School} {Privilege: The making of an adolescent elite at st. paul's school}.
+\newblock
+\APACaddressPublisher{Princeton, N.J.}{Princeton University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kirp%
+}{%
+Kirp%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+RN1100}
+\APACinsertmetastar {%
+RN1100}%
+\begin{APACrefauthors}%
+Kirp, D\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2003}.
+\newblock
+\APACrefbtitle {Shakespeare, Einstein, and the bottom line: the marketing of
+  higher education} {Shakespeare, einstein, and the bottom line: the marketing
+  of higher education}.
+\newblock
+\APACaddressPublisher{Cambridge, Mass.}{Harvard University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Long%
+\ \BBA {} Kurlaender%
+}{%
+Long%
+\ \BBA {} Kurlaender%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+RN2261}
+\APACinsertmetastar {%
+RN2261}%
+\begin{APACrefauthors}%
+Long, B\BPBI T.%
+\BCBT {}\ \BBA {} Kurlaender, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Do Community Colleges Provide a Viable Pathway to a
+  Baccalaureate Degree?} {Do community colleges provide a viable pathway to a
+  baccalaureate degree?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Educational Evaluation and Policy
+  Analysis}{31}{1}{30-53}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://000263763100002} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3102/0162373708327756} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -233,6 +457,31 @@ Meyer, J\BPBI W.%
   and ceremony}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{The American Journal of Sociology}{83}{2}{340-363}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mountjoy%
+}{%
+Mountjoy%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4404}
+\APACinsertmetastar {%
+RN4404}%
+\begin{APACrefauthors}%
+Mountjoy, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Community colleges and upward mobility.} {Community colleges
+  and upward mobility.}
+\newblock
+\begin{APACrefURL}
+  \url{https://f17b4d08-a-62cb3a1a-s-sites.googlegroups.com/site/jackmountjoyeconomics/Mountjoy_2018_Community_Colleges_and_Upward_Mobility.pdf?attachauth=ANoY7coUCUd25KX9jm6QeZEhbJH4a8MoE4UN2lBKA9Hvlisje80KTIkIDU27Wp1HzgOLq06CoEV9NQVBxUo6ffVThYkXAjOqi-moTbPAP3VTWTQvU5ctda-g3Igvf5Xu3gjrjZFPeZsd86k25roXMwPFWShpeV5Ealit_Rs6W_drWM8PNxnT-3gJjjYG5bH_sBiIbIWUc76h62Vuu_qYcqp7x7SWL8i1B3BFzSswbFd0Jmte3WEjakEt8lqSJPWwZlglmxjO6czfNqTUt3upXPifv1_ssSdPIA%3D%3D&attredirects=0}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -318,6 +567,66 @@ Noel-Levitz, R.%
 \begin{APACrefURL}
   \url{http://learn.ruffalonl.com/rs/395-EOG-977/images/RNL_2018_Student_Recruitment_Marketing_Report_EM-19.pdf}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Reynolds%
+}{%
+Reynolds%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+RN4292}
+\APACinsertmetastar {%
+RN4292}%
+\begin{APACrefauthors}%
+Reynolds, C\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Where to attend? Estimating the effects of beginning
+  college at a two-year institution} {Where to attend? estimating the effects
+  of beginning college at a two-year institution}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economics of Education Review}{31}{4}{345-362}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0272775711001774}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.econedurev.2011.12.001}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rouse%
+}{%
+Rouse%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+RN4405}
+\APACinsertmetastar {%
+RN4405}%
+\begin{APACrefauthors}%
+Rouse, C\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Democratization or diversion? The effect of community
+  colleges on educational attainment} {Democratization or diversion? the effect
+  of community colleges on educational attainment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Business \& Economic
+  Statistics}{13}{2}{217-224}.
+\newblock
+\begin{APACrefURL} \url{http://www.jstor.org/stable/1392376} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.2307/1392376} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -408,6 +717,30 @@ RN4035}%
 \APACrefbtitle {Open Records.} {Open records.}
 \newblock
 \begin{APACrefURL} [{2019-01-13}]\url{http://open.ua.edu/} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Winston%
+}{%
+Winston%
+}{%
+{\protect \APACyear {1999}}%
+}]{%
+RN1549}
+\APACinsertmetastar {%
+RN1549}%
+\begin{APACrefauthors}%
+Winston, G\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Subsidies, hierarchy and peers: The awkward economics of
+  higher education} {Subsidies, hierarchy and peers: The awkward economics of
+  higher education}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economic Perspectives}{13}{1}{13-36}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
