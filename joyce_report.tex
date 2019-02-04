@@ -6,25 +6,27 @@
 \sloppy
 
 % Title Page ~~~~
-\pagecolor{LightBlue}
+\pagecolor{BackgroundBlue}
 \newgeometry{top=0cm, bottom=0cm, left=0cm, right=0cm}
 \begin{titlepage}
 
-%    \begin{figure}
-%        \includegraphics[width=.25\textwidth, right]{images/emra.jpg}
-%        \vspace{-1.1cm}
-%    \end{figure}
-
-%    \begin{mdframed}[backgroundcolor=LightBlue, linecolor=LightBlue, innerbottommargin=0cm]
-%        \vspace{2cm}
-        \hspace{-0.45cm}
         \makebox[0pt][l]{%
-          \raisebox{-1.23\totalheight}[0pt][0pt]{%
-            \includegraphics[width=8.7in]{./images/cover.png}}}%
+          \raisebox{-0.49\totalheight}[0pt][0pt]{%
+          \scalebox{-1}[1]{
+            \includegraphics[width=9in]{./images/layer.png}}}}%
+
+        \hspace{-0.7cm}
+        \makebox[0pt][l]{%
+          \raisebox{-1.47\totalheight}[0pt][0pt]{%
+            \includegraphics[width=9in, trim={2cm 0 2cm 3.2cm}, clip]{./images/map_ua.pdf}}}%
+
+        \makebox[0pt][l]{%
+          \raisebox{-1.4\totalheight}[0pt][0pt]{%
+            \includegraphics[width=9in]{./images/layer.png}}}%
 
         \centering\color{DarkGray}\fontsize{30}{60}
 
-        \vspace{3cm}
+        \vspace{0.5cm}
         \hdashrule{0.8\textwidth}{1pt}{1pt} \\
 
         \vspace{0.8cm}
@@ -38,12 +40,11 @@
         \vspace{0.4cm}
         \hdashrule{0.8\textwidth}{1pt}{1pt} \\
 
-	\vspace{16.3cm}
+	\vspace{16.2cm}
         \textbf{Ozan Jaquette} \\
         University of California, Los Angeles \\~\\
-%        \textit{\color{Gray}{Oct 2018}}
+        \textit{\color{Gray}{Oct 2018}}
 
-%    \end{mdframed}
 \end{titlepage}
 
 % Blank Page ~~~~
