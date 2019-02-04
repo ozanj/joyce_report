@@ -2,9 +2,8 @@
 
 \input{structure.tex}
 
-\usepackage{Sweave}
 \begin{document}
-\input{joyce_report-concordance}
+\SweaveOpts{concordance=TRUE}
 
 % Title Page ~~~~
 

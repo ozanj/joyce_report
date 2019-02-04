@@ -4,6 +4,7 @@
 .Ruserdata
 
 *.aux
+*.blg
 *.lof
 *.log
 *.lot
