@@ -25,6 +25,34 @@ Alon, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Archibald%
+\ \BBA {} Feldman%
+}{%
+Archibald%
+\ \BBA {} Feldman%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+RN1646}
+\APACinsertmetastar {%
+RN1646}%
+\begin{APACrefauthors}%
+Archibald, R\BPBI B.%
+\BCBT {}\ \BBA {} Feldman, D\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {State higher education spending and the tax revolt}
+  {State higher education spending and the tax revolt}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Higher Education}{77}{4}{618-644}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://000237907400003} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Armstrong%
 \ \BBA {} Hamilton%
 }{%
@@ -221,6 +249,97 @@ Doyle, W\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Dynarski%
+, Libassi%
+, Michelmore%
+\BCBL {}\ \BBA {} Owen%
+}{%
+Dynarski%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4408}
+\APACinsertmetastar {%
+RN4408}%
+\begin{APACrefauthors}%
+Dynarski, S.%
+, Libassi, C\BPBI J.%
+, Michelmore, K.%
+\BCBL {}\ \BBA {} Owen, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Closing the Gap: The Effect of a Targeted, Tuition-Free
+  Promise on College Choices of High-Achieving, Low-Income Students} {Closing
+  the gap: The effect of a targeted, tuition-free promise on college choices of
+  high-achieving, low-income students}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{National Bureau of Economic Research Working Paper
+  Series}{No. 25349}{}{}.
+\newblock
+\begin{APACrefURL} \url{http://www.nber.org/papers/w25349} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3386/w25349} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gerald%
+\ \BBA {} Haycock%
+}{%
+Gerald%
+\ \BBA {} Haycock%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+RN1149}
+\APACinsertmetastar {%
+RN1149}%
+\begin{APACrefauthors}%
+Gerald, D.%
+\BCBT {}\ \BBA {} Haycock, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+\APACrefbtitle {Engines of inequality: Diminishing equity in the nation's
+  premier public universities} {Engines of inequality: Diminishing equity in
+  the nation's premier public universities}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Education Trust}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Haycock%
+, Mary%
+\BCBL {}\ \BBA {} Engle%
+}{%
+Haycock%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+RN2269}
+\APACinsertmetastar {%
+RN2269}%
+\begin{APACrefauthors}%
+Haycock, K.%
+, Mary, L.%
+\BCBL {}\ \BBA {} Engle, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+\APACrefbtitle {Opportunity adrift: Our flagship universities are straying from
+  their public mission} {Opportunity adrift: Our flagship universities are
+  straying from their public mission}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Education Trust}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Holland%
 }{%
 Holland%
@@ -296,6 +415,61 @@ Hoxby, C\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Jaquette%
+}{%
+Jaquette%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+RN4247}
+\APACinsertmetastar {%
+RN4247}%
+\begin{APACrefauthors}%
+Jaquette, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {State university no more: Out-of-state enrollment and the
+  growing exclusion of high-achieving, low-income students at flagship public
+  universities} {State university no more: Out-of-state enrollment and the
+  growing exclusion of high-achieving, low-income students at flagship public
+  universities}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Jack Kent Cooke Foundation}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jaquette%
+\ \BBA {} Curs%
+}{%
+Jaquette%
+\ \BBA {} Curs%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+RN3753}
+\APACinsertmetastar {%
+RN3753}%
+\begin{APACrefauthors}%
+Jaquette, O.%
+\BCBT {}\ \BBA {} Curs, B\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Creating the out-of-state university: Do public
+  universities increase nonresident freshman enrollment in response to
+  declining state appropriations?} {Creating the out-of-state university: Do
+  public universities increase nonresident freshman enrollment in response to
+  declining state appropriations?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Research in Higher Education}{56}{6}{535-565}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Jenkins%
 \ \BBA {} Fink%
 }{%
@@ -326,6 +500,62 @@ Jenkins, D.%
 \begin{APACrefURL}
   \url{https://ccrc.tc.columbia.edu/publications/tracking-transfer-institutional-state-effectiveness.html}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kane%
+\ \BBA {} Orszag%
+}{%
+Kane%
+\ \BBA {} Orszag%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+RN532}
+\APACinsertmetastar {%
+RN532}%
+\begin{APACrefauthors}%
+Kane, T\BPBI J.%
+\BCBT {}\ \BBA {} Orszag, P\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+\APACrefbtitle {Funding restrictions at public universities: Effects and policy
+  implications} {Funding restrictions at public universities: Effects and
+  policy implications}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Brookings Institution}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kane%
+, Orszag%
+\BCBL {}\ \BBA {} Gunter%
+}{%
+Kane%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2003}}%
+}]{%
+RN1652}
+\APACinsertmetastar {%
+RN1652}%
+\begin{APACrefauthors}%
+Kane, T\BPBI J.%
+, Orszag, P\BPBI R.%
+\BCBL {}\ \BBA {} Gunter, D\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+\APACrefbtitle {State fiscal constraints and higher education spending: the
+  role of medicaid and the business cycle} {State fiscal constraints and higher
+  education spending: the role of medicaid and the business cycle}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Brookings Institute}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -601,6 +831,36 @@ Reynolds, C\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Rothschild%
+\ \BBA {} White%
+}{%
+Rothschild%
+\ \BBA {} White%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+RN2402}
+\APACinsertmetastar {%
+RN2402}%
+\begin{APACrefauthors}%
+Rothschild, M.%
+\BCBT {}\ \BBA {} White, L\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The analytics of the pricing of higher education and
+  other services in which the customers are inputs} {The analytics of the
+  pricing of higher education and other services in which the customers are
+  inputs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Political Economy}{103}{3}{573-586}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://A1995RE66100005} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Rouse%
 }{%
 Rouse%
@@ -741,6 +1001,60 @@ Winston, G\BPBI C.%
   higher education}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Economic Perspectives}{13}{1}{13-36}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Winston%
+}{%
+Winston%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+RN1545}
+\APACinsertmetastar {%
+RN1545}%
+\begin{APACrefauthors}%
+Winston, G\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2003}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Differentiation among US colleges and universities}
+  {Differentiation among us colleges and universities}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Review of Industrial Organization}{24}{}{331-354}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://000223206000002} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhang%
+}{%
+Zhang%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+RN2535}
+\APACinsertmetastar {%
+RN2535}%
+\begin{APACrefauthors}%
+Zhang, L\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Nonresident enrollment demand in public higher
+  education: An analysis at national, state, and institutional levels}
+  {Nonresident enrollment demand in public higher education: An analysis at
+  national, state, and institutional levels}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Review of Higher Education}{31}{1}{1-25}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000249750200001} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1353/rhe.2007.0057} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
