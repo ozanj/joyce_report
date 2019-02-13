@@ -58,3 +58,26 @@ data$check_amount_adjusted = data$check_amount * (cpi_current / data$cpi)
 write.csv(data, file = './data/ua_expenditures.csv', na = 'NULL', row.names = FALSE)
 save(data, file = './data/ua_expenditures.RData')
 # load('./data/ua_expenditures.RData')
+
+# Hobsons
+unique(grep('hobsons', data$payee, value = TRUE, ignore.case = TRUE))
+# View(data %>% filter(payee %in% c('HOBSONS', 'HOBSONS HE')))
+
+# 'HOBSONS INC' (2010 - 2018)
+data_hobsons = data %>% filter(payee == 'HOBSONS INC')
+sum(data_hobsons[data_hobsons$year %in% (2010:2018), ]$check_amount_adjusted)
+
+# ACT
+unique(grep('\\bact\\b', data$payee, value = TRUE, ignore.case = TRUE))
+
+# 'ACT INC' (2010 - 2018)
+data_act = data %>% filter(payee == 'ACT INC')
+sum(data_act[data_act$year %in% (2010:2018), ]$check_amount_adjusted)
+
+# College Board
+unique(grep('college\\s?board', data$payee, value = TRUE, ignore.case = TRUE))
+# Unsure if 'COLLEGEBOARD SEARCH' and 'COLLEGEBOARD*SEARCH' might be referring to: https://collegeboardsearch.collegeboard.org/pastudentsrch/support/licensing/college-board-search-services/student-search-service
+
+# 'COLLEGE BOARD' (2010 - 2018)
+data_collegeboard = data %>% filter(payee == 'COLLEGE BOARD')
+sum(data_collegeboard[data_collegeboard$year %in% (2010:2018), ]$check_amount_adjusted)
