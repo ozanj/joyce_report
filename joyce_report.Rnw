@@ -81,11 +81,11 @@ While most research on college access focuses on student behavior, the transform
 Figure X provides simple descriptive statistics about off-campus recruiting visits (e.g., visits to local high schools, community colleges, hotel receptions) by the University of Alabama in the 2017 calendar year [REVISE PARAGRAPH IN RELATION TO FIGURE].  Admissions representatives made 4,261 off-campus recruiting visits.  However, only 382 of these visits occurred in Alabama.  Further, the University visited only 32\% of Alabama public high schools. These in-state public high school visits were concentrated relatively, affluent, predominantly White communities, largely avoiding high schools in Alabama's ``Black Belt,'' which enroll the largest concentration of African American Students.  However, these in-state recruiting efforts were dwarfed by the 3,879 out-of-state recruiting visits, which spanned metropolitan areas across the U.S. The University made 2,252 visits to out-of-state public high schools. These visits focused on schools in affluent communities, with visited schools having a much higher percent of White students than non-visited schools.  Incredibly, the University made 914 visits to out-of-state private high schools, more than double the total number of in-state recruiting visits.
 %WHAT SHOULD SMALL MULTIPLE FIGURE INCLUDE
 	% TENTATIVE CHOICE OF SMALL MULTIPLES TO SHOW
-	  % timeline of events [would work for flow of paragraph showing the mad rus of "travel season"]
-	  % number of events by in-state, out-of-state
+	  % timeline of events with different colored lines for event type [would work for flow of paragraph showing the mad rus of "travel season"]
+	  % number of events by event-type and in-state vs. out-of-state
+	  % median household income of zip codes in visited vs. non-visited public HS by in-state vs. out-of-state	  
 	  % map of alabama, with pins for visted vs. non-visited schools [add backdrop of racial composition?]
 	    % this would convey race story nicely; complete ignoring of "black belt"
-	  % median household income of zip codes in visited vs. non-visited public HS and in-state vs. out-of-state
 	% PROBABLY
 	  % timeline of events 
 	% MAYBE
