@@ -16,20 +16,22 @@
 \definecolor{LightRed}{RGB}{231, 103, 97}
 \definecolor{DarkGray}{RGB}{71, 71, 71}
 
-\newfontfamily\Avenir[
-    Path= fonts/,
-    Extension= .otf,
-    UprightFont = *-45Book,
-    ItalicFont = *-45BookOblique,
-    BoldFont = *-95Black,
-]{AvenirLTStd}
+%\newfontfamily\Avenir[
+%    Path= fonts/,
+%    Extension= .otf,
+%    UprightFont = *-45Book,
+%    ItalicFont = *-45BookOblique,
+%    BoldFont = *-95Black,
+%]{AvenirLTStd}
+%
+%\newfontfamily\TradeGothic[
+%    Path = fonts/,
+%    Extension = .otf,
+%    UprightFont = *-No18,
+%    BoldFont = *-No20Bold,
+%]{TradeGothicCondensed}
 
-\newfontfamily\TradeGothic[
-    Path = fonts/,
-    Extension = .otf,
-    UprightFont = *-No18,
-    BoldFont = *-No20Bold,
-]{TradeGothicCondensed}
+\usepackage[condensed]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
 
 \usepackage[default,osfigures,scale=0.95]{opensans} %% Alternatively
 %% use the option 'defaultsans' instead of 'default' to replace the
@@ -62,8 +64,8 @@
 \setlength{\columnsep}{0.75cm}
 
 \usepackage{sectsty}
-\sectionfont{\Avenir\selectfont\color{LogoTurquoise1}\vspace{-18pt}\Large\uppercase}
-\subsectionfont{\Avenir\selectfont\color{LogoTurquoise1}\vspace{-18pt}\mdseries\Large}
+\sectionfont{\fontfamily{pag}\selectfont\color{LogoTurquoise1}\vspace{-18pt}\Large\uppercase}
+\subsectionfont{\color{LogoTurquoise1}\vspace{-18pt}\mdseries\Large}
 
 
 % Headers + Footers ~~~~
@@ -76,8 +78,8 @@
 
 \fancyhead{} % clear all header fields
 \fancyfoot{} % clear all footer fields
-\fancyfoot[LE]{\thepage \hspace{0.4cm} \TradeGothic\selectfont\textcolor{LightRed}{\uppercase{Oh, The Places They'll Go}}}
-\fancyfoot[RO]{\TradeGothic\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage}
+\fancyfoot[LE]{\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Oh, The Places They'll Go}}}
+\fancyfoot[RO]{\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage}
 \renewcommand{\headrulewidth}{0pt}
 
 \fancypagestyle{tablepage}{  % No Header, Regular Footer
@@ -115,12 +117,10 @@
 
 \newenvironment{quote-block}{  % quote block
     \begin{quote}
-    \TradeGothic\selectfont
+    \roboto\selectfont
     \color{LogoTurquoise2}
-    \begin{large}
 }
 {
-    \end{large}
     \end{quote}
 }
 
@@ -143,10 +143,10 @@
 \usepackage{graphicx}
 \usepackage{caption}
 
-\DeclareCaptionFont{tg}{\TradeGothic\selectfont}
+\DeclareCaptionFont{CaptionFont}{\roboto\selectfont}
 \DeclareCaptionFont{LightRed}{\color{LightRed}}
 
-\captionsetup{labelfont={tg, LightRed}, figurename=FIGURE}
+\captionsetup{labelfont={CaptionFont, LightRed}, figurename=FIGURE}
 
 \newcommand{\addFigure}[4][0.75] {  % Add single figure
 \begin{figure}[!ht]
@@ -154,7 +154,7 @@
     \centering
 
     \includegraphics[width=#1\textwidth]{images/#2}
-    \caption{\TradeGothic\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
 
 \end{figure}
@@ -174,7 +174,7 @@
     \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/median_income}\hfill
     \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/income_band}
 
-    \caption{\TradeGothic\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
 
     \vspace{#1cm}
@@ -194,7 +194,7 @@
     \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/215293/titled_map}\hfill
     \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/196097/titled_map}}
 
-    \caption{\TradeGothic\selectfont\textcolor{Gray}{\uppercase{#1}}}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#1}}}
     \label{fig:#2}
     \makebox[0.79\paperwidth][c]{\hdashrule{1.5\paperwidth}{1pt}{1pt}}
 
