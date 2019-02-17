@@ -4,41 +4,53 @@
 
 \usepackage{Sweave}
 \begin{document}
+\sloppy
+
 \input{joyce_report-concordance}
 
 
 % Title Page ~~~~
 
+\pagecolor{BackgroundBlue}
 \newgeometry{top=0cm, bottom=0cm, left=0cm, right=0cm}
 \begin{titlepage}
 
-    \begin{figure}
-        \includegraphics[width=.25\textwidth, right]{images/emra.jpg}
-        \vspace{-1.1cm}
-    \end{figure}
+        \makebox[0pt][l]{%
+          \raisebox{-0.49\totalheight}[0pt][0pt]{%
+          \scalebox{-1}[1]{
+            \includegraphics[width=9in]{./images/layer.png}}}}%
 
-    \begin{mdframed}[backgroundcolor=LightBlue, linecolor=LightBlue, innerbottommargin=1.2cm]
+        \hspace{-0.7cm}
+        \makebox[0pt][l]{%
+          \raisebox{-1.43\totalheight}[0pt][0pt]{%
+            \includegraphics[width=9in, trim={2cm 0 2cm 2cm}, clip]{./images/map_ua_color.pdf}}}%
 
-        \centering\color{white}\fontsize{30}{60}
+        \makebox[0pt][l]{%
+          \raisebox{-1.44\totalheight}[0pt][0pt]{%
+            \includegraphics[width=9in]{./images/layer.png}}}%
 
-        \vspace{3cm}
-        \hdashrule{0.75\textwidth}{1pt}{1pt} \\
+        \centering\color{DarkGray}\fontsize{30}{60}
+
+        \vspace{0.3cm}
+        \hdashrule{0.8\textwidth}{1pt}{1pt} \\
 
         \vspace{0.8cm}
-        \textbf{\color{LightPink}{OH, THE PLACES THEY'LL GO}} \\
+        \textbf{\color{LogoRed}{RECRUITING}} \\
+        \vspace{0.2cm}
+        \textbf{\color{LogoRed}{THE OUT-OF-STATE UNIVERSITY}}
 
-        \vspace{0.6cm}
-        \large\textit{Similarities and Differences in Off-Campus Recruiting Strategies \\ of Public Research Universities} \\
+        \vspace{0.2cm}
+        \Large\textit{\fontfamily{pag}\selectfont Off-campus recruiting by public research universities} \\
 
-        \vspace{0.4cm}
-        \hdashrule{0.75\textwidth}{1pt}{1pt} \\
+        \vspace{0.3cm}
+        \hdashrule{0.8\textwidth}{1pt}{1pt} \\
 
-        \vspace{10cm}
-        \textbf{Ozan Jaquette} \\
-        University of California, Los Angeles \\~\\
-        \textit{\color{Gray}{Oct 2018}}
+	\vspace{17.1cm}
+        \large Crystal Han \\
+        Ozan Jaquette \\
+        Karina Salazar \\~\\
+        %\textit{\color{Gray}{March 2019}}
 
-    \end{mdframed}
 \end{titlepage}
 
 % Blank Page ~~~~
@@ -53,6 +65,10 @@
 \pagecolor{white}
 \restoregeometry
 \setcounter{page}{1}
+\twocolumn
+
+\parskip=14pt
+\linespread{1.3}
 
 \section*{Introduction\markboth{Introduction}{}}  % text inside \markboth{} is displayed in footer
 
@@ -66,11 +82,11 @@ While most research on college access focuses on student behavior, the transform
 Figure X provides simple descriptive statistics about off-campus recruiting visits (e.g., visits to local high schools, community colleges, hotel receptions) by the University of Alabama in the 2017 calendar year [REVISE PARAGRAPH IN RELATION TO FIGURE].  Admissions representatives made 4,261 off-campus recruiting visits.  However, only 382 of these visits occurred in Alabama.  Further, the University visited only 32\% of Alabama public high schools. These in-state public high school visits were concentrated relatively, affluent, predominantly White communities, largely avoiding high schools in Alabama's ``Black Belt,'' which enroll the largest concentration of African American Students.  However, these in-state recruiting efforts were dwarfed by the 3,879 out-of-state recruiting visits, which spanned metropolitan areas across the U.S. The University made 2,252 visits to out-of-state public high schools. These visits focused on schools in affluent communities, with visited schools having a much higher percent of White students than non-visited schools.  Incredibly, the University made 914 visits to out-of-state private high schools, more than double the total number of in-state recruiting visits.
 %WHAT SHOULD SMALL MULTIPLE FIGURE INCLUDE
 	% TENTATIVE CHOICE OF SMALL MULTIPLES TO SHOW
-	  % timeline of events [would work for flow of paragraph showing the mad rus of "travel season"]
-	  % number of events by in-state, out-of-state
+	  % timeline of events with different colored lines for event type [would work for flow of paragraph showing the mad rus of "travel season"]
+	  % number of events by event-type and in-state vs. out-of-state
+	  % median household income of zip codes in visited vs. non-visited public HS by in-state vs. out-of-state
 	  % map of alabama, with pins for visted vs. non-visited schools [add backdrop of racial composition?]
 	    % this would convey race story nicely; complete ignoring of "black belt"
-	  % median household income of zip codes in visited vs. non-visited public HS and in-state vs. out-of-state
 	% PROBABLY
 	  % timeline of events 
 	% MAYBE
@@ -178,23 +194,23 @@ We conducted two additional data quality checks. First, we manually checked each
 
 \subsection*{University of Georgia}
 \lipsum[4]
-% Params: univ_id (which is also the name of the folder inside images/ folder, where the images are located), caption, fig reference
-\addFigureSet{139959}{University of Georgia result set.}{uga}
+% Params: [negative spacing if figure placed at bottom of page], univ_id (which is also the name of the folder inside images/ folder, where the images are located), caption, fig reference, top or bottom of page
+\addFigureSet[-1]{139959}{University of Georgia result set.}{uga}{b}
 \lipsum[5]
 
 \subsection*{University of California, Berkeley}
 \lipsum[4]
-\addFigureSet{110635}{UC Berkeley result set.}{ucberkeley}
+\addFigureSet{110635}{UC Berkeley result set.}{ucberkeley}{t}
 \lipsum[4]
 
 \subsection*{University of Pittsburgh}
 \lipsum[4]
-\addFigureSet{215293}{University of Pittsburgh result set.}{upitt}
+\addFigureSet[-1]{215293}{University of Pittsburgh result set.}{upitt}{b}
 \lipsum[5]
 
 \subsection*{Stony Brook}
 \lipsum[4]
-\addFigureSet{196097}{Stony Brook result set.}{stonybrook}
+\addFigureSet{196097}{Stony Brook result set.}{stonybrook}{t}
 \lipsum[5]
 
 There are 254 in-state public HS visits and 335 out-of-state public HS visits for Stony Brook.
@@ -243,6 +259,15 @@ While university recruiting behavior affects student college choice decisions, i
 
 %PX: UNDER-RECRUITING AS AN EXPLANATION FOR UNDER-MATCHING
 We offer an alternative explanation for under-matching. \cite{RN4324} shows that under-represented student populations are particularly sensitive to which universities take time to visit their high school. Similarly, an analysis of access to higher education for African American students in rural Georgia by Means [CITE] found that many students with baccalaureate aspirations eventually chose the military or community colleges in part because these were the institutions that visited their high school. Our findings paint a picture of poor or majority-minority high schools in particular states being unlikely to receive a recruiting visit from the state flagship university.  By contrast, affluent high schools are more likely to receive visits from their state flagship university and they receive visits from selective public and private universities from across the country.  When students attend a high school that does not receive a visit from a university, they are less likely to know the university is an option.  Therefore, the recruiting patterns we observed create information asymmetries that are strongly related to race and class.  Building on \cite{RN4324} and Means [CITE], these recruiting patterns also create differences in the extent to which students ``feel wanted'' -- by specific universities and by higher education in gneral -- that are correlated with race and class.  Given these findings, we suggest that ``under-matching'' may often be caused by ``under-recruiting'' rather than lack of guidance.
+
+%WHAT DARRIS WROTE IN EMAIL:
+%Hope you are doing well! Thanks for thinking of me and my research. I cannot necessarily make that claim through my research. I could say the following based on an op-ed (but I recognize that you may need empirical evidence): https://www.ajc.com/blog/get-schooled/black-rural-and-impoverished-are-colleges-ignoring-these-students/4IilU0wPslMP2nuKO10D0N/.
+
+%Similarly, Means (2016) discussed how rural students at a predominantly African American high school in Georgia described how the military and local technical college were the only institutions that visited their high school.
+
+%Source:
+%Means, D. R. (2016, August 31). Rural location, race influence students’ access to college [Web log post].  The Atlanta Journal Constitution. Retrieved from http://getschooled.blog.myajc.com/2016/08/30/black-rural-and-impoverished-are-colleges-ignoring-these-students/
+
 
 \subsection*{Policy Implications}
 
@@ -306,21 +331,30 @@ Which stakeholders do we imagine using data on university recruiting behavior to
 
 Finally, the role of researchers is to provide an empirical foundation for local and national policy debates by collecting, analyzing, and disseminating data.  Our research on off-campus recruiting stands on the shoulders of groundbreaking scholarship by \cite{RN1100}, \cite{RN3519}, \cite{RN4407}, \cite{RN4324}, and others.  These studies tend to be broad in scope and are based on qualitative, ethnographic, and archival data collected from one or two organizations. By contrast, our research collects quantitative data from many organizations about one facet of university recruiting. A weakness of our research is that collecting systematic data about recruiting behavior is so time-intensive that we only collected data on one of many recruiting interventions utilized by universities. Nevertheless, collecting systematic data about particular phenomena tends to sway policy debates more than collecting data about multiple phenomena from a single organization. Therefore, we see great potential to inform policy debates about access inequality by developing studies that collect systematic, quantifiable data about a particular recruiting intervention. Over time, these successive studies will encompass the breadth of university recruiting behavior.  
 
-In addition to the off-campus recruiting project, we have initiated several new data collections to capture the different means universities utilize to identify and target prospects.  For example, we are using public records request to examine which student characteristics universities prioritize when purchasing the contact information of ``prospects'' from College Board and ACT.  Second, following [CITE] and \cite{RN4360}, we are developing experimental audit studies to examine how universities respond to ``inquiries'' from prospects with different characteristics? Third, to what extent are university ``outreach'' and ``pipeline'' efforts marginal or substantial in scale? For each of these data collections, we intend to make the results publicly available so that stakeholders can use these results to push for change at their local university. We also plan to publicly release all data we collect so that researchers and non-profit organizations can conduct their own analyses.  Our hope is that a critical mass of scholars and policymakers become interested in university enrollment management and recruiting behaviors.  Once this happens, the policy debates about access inequality will shift from a focus on student ``deficiencies'' towards a focus on university enrollment priorities.  In turn, policy discourse will consider policy solutions to reduce biases in university enrollment priorities.
+In addition to the off-campus recruiting project, we have initiated several new data collections to capture the different means universities utilize to identify and target prospects.  For example, we are using public records request to examine which student characteristics universities prioritize when purchasing the contact information of ``prospects'' from College Board and ACT.  Second, following \cite{RN4331} and \cite{RN4360}, we are developing experimental audit studies to examine how universities respond to ``inquiries'' from prospects with different characteristics? Third, to what extent are university ``outreach'' and ``pipeline'' efforts marginal or substantial in scale? For each of these data collections, we intend to make the results publicly available so that stakeholders can use these results to push for change at their local university. We also plan to publicly release all data we collect so that researchers and non-profit organizations can conduct their own analyses.  Our hope is that a critical mass of scholars and policymakers become interested in university enrollment management and recruiting behaviors.  Once this happens, the policy debates about access inequality will shift from a focus on student ``deficiencies'' towards a focus on university enrollment priorities.  In turn, policy discourse will consider policy solutions to reduce biases in university enrollment priorities.
 %THORNHILL \cite{RN4360}
 
 % References ~~~~
 
-\newpage
+\clearpage
+\section*{References\markboth{References}{}}
+\titleformat*{\section}{\color{white}\vspace{-50pt}\centering}
 
 \bibliographystyle{apacite}
 \def\bibfont{\small}
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+  \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+  \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+  \do\Y\do\Z}
 
 \bibliography{spencer-bib}
 
 % Final Page ~~~~
 
-\newpage
+\clearpage
 \pagecolor{LightBlue}
 \begin{titlepage}
     \color{LightBlue}{x}

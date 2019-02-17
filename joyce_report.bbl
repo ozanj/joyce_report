@@ -623,6 +623,38 @@ Gurin, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hanson%
+}{%
+Hanson%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+RN4331}
+\APACinsertmetastar {%
+RN4331}%
+\begin{APACrefauthors}%
+Hanson, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Do college admissions counselors discriminate? Evidence
+  from a correspondence-based field experiment} {Do college admissions
+  counselors discriminate? evidence from a correspondence-based field
+  experiment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economics of Education Review}{60}{}{86-96}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0272775716304526}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.econedurev.2017.08.004}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Haycock%
 , Mary%
 \BCBL {}\ \BBA {} Engle%

@@ -7,12 +7,15 @@
 \usepackage[usenames, dvipsnames]{color}
 \usepackage{comment}
 
-\definecolor{colorTitle}{RGB}{200, 77, 179}  % Pink
-\definecolor{colorSection}{RGB}{102, 153, 255}  % Blue
-\definecolor{colorFooter}{RGB}{120, 120, 120}  % Gray
-\definecolor{LightPink}{RGB}{200, 30, 38}
-\definecolor{LightBlue}{RGB}{165, 195, 255}
-\definecolor{LightGray}{RGB}{220, 220, 220}
+\definecolor{Gray}{RGB}{120, 120, 120}
+\definecolor{LogoRed}{RGB}{153, 0, 0}
+\definecolor{LogoTurquoise1}{RGB}{1, 123, 147}
+\definecolor{LogoTurquoise2}{RGB}{0, 158, 171}
+\definecolor{LogoTurquoise3}{RGB}{0, 186, 187}
+\definecolor{BackgroundBlue}{RGB}{247, 254, 255}
+\definecolor{LightBlue}{RGB}{230, 247, 255}
+\definecolor{LightRed}{RGB}{231, 103, 97}
+\definecolor{DarkGray}{RGB}{71, 71, 71}
 
 \begin{comment}
 \newfontfamily\Avenir[
@@ -35,6 +38,7 @@
 
 \end{comment}
 
+\usepackage[condensed]{roboto}
 \usepackage[default,osfigures,scale=0.95]{opensans}
 \usepackage[T1]{fontenc}
 
@@ -48,21 +52,27 @@
     letterpaper,
     top=1.75in,
     bottom=1.75in,
-    inner=1in,
-    outer=1.5in,
+    inner=0.75in,
+    outer=0.75in,
     headsep=1in,
     headheight=0.5in,
-    footskip=1.2in,
+    footskip=1in,
     % showframe
 }
 
 \usepackage[document]{ragged2e}
-\parskip=12pt
+\parskip=8pt
 \parindent=0pt
+\linespread{1.2}
+\setlength{\columnsep}{0.75cm}
 
-\usepackage{sectsty}
-\sectionfont{\color{colorSection}\mdseries\uppercase}
-\subsectionfont{\color{Periwinkle}}
+% \usepackage{sectsty}
+% \sectionfont{\fontfamily{pag}\selectfont\color{LogoTurquoise1}\vspace{-\parskip}\Large\uppercase}
+% \subsectionfont{\color{LogoTurquoise1}\vspace{-\parskip}\mdseries\Large}
+
+\usepackage{titlesec}
+\titleformat*{\section}{\fontfamily{pag}\selectfont\color{LogoTurquoise1}\vspace{-\parskip}\bfseries\Large\uppercase}
+\titleformat*{\subsection}{\color{LogoTurquoise1}\vspace{-\parskip}\Large}
 
 
 % Headers + Footers ~~~~
@@ -75,8 +85,8 @@
 
 \fancyhead{} % clear all header fields
 \fancyfoot{} % clear all footer fields
-\fancyfoot[LE]{\thepage \hspace{0.4cm} \textcolor{colorTitle}{\uppercase{Oh, The Places They'll Go}}}
-\fancyfoot[RO]{\textcolor{colorFooter}{\leftmark} \hspace{0.4cm} \thepage}
+\fancyfoot[LE]{\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Oh, The Places They'll Go}}}
+\fancyfoot[RO]{\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage}
 \renewcommand{\headrulewidth}{0pt}
 
 \fancypagestyle{tablepage}{  % No Header, Regular Footer
@@ -86,10 +96,12 @@
 \raisebox{-2.1pt}[10pt][10pt]{\quad\decofourleft\decotwo\decofourright\quad}\hrulefill}
 }
 
+\addtolength{\skip\footins}{10pt}
+
 
 % Links + Lists ~~~~
 
-\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks=true, linkcolor=cyan, urlcolor=blue, citecolor=blue]{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks=true, linkcolor=cyan, urlcolor=blue, citecolor=blue, breaklinks=true]{hyperref}
 \newcommand{\superscript}[1]{$^{#1}$}
 
 %reference list stuff
@@ -104,10 +116,10 @@
 \renewcommand{\refname}{\vspace{-0.65cm}}
 
 \usepackage{enumitem}
-\setlist{nosep, itemsep=0pt, parsep=0pt, before={\large\color{Gray}}}
+\setlist{nosep, itemsep=0pt, parsep=0pt, before={\large\color{DarkGray}}}
 
-\renewcommand{\labelitemi}{\color{colorTitle}$\triangleright$}
-\renewcommand{\labelitemii}{\color{Periwinkle}$\cdot$}
+\renewcommand{\labelitemi}{\color{LightRed}$\triangleright$}
+\renewcommand{\labelitemii}{\color{LogoTurquoise2}$\cdot$}
 \renewcommand\labelitemiii{$\circ$}
 
 
@@ -117,18 +129,20 @@
 
 \newenvironment{quote-block}{  % quote block
     \begin{quote}
-    \color{colorSection}
-    \begin{large}
+    \roboto\selectfont
+    \color{LogoTurquoise2}
 }
 {
-    \end{large}
     \end{quote}
 }
 
-\newenvironment{odd-block}{  % text block for odd-numbered pages
+\newenvironment{color-block}[1][Key Points]{  % text block
     \vspace{0.5cm}
-    \begin{mdframed}[backgroundcolor=LightBlue, linecolor=LightBlue, userdefinedwidth=8in, leftmargin=0cm, innerleftmargin=1cm, innerrightmargin=6cm, innertopmargin=0.5cm, innerbottommargin=1cm]
-    \color{white}
+    \begin{mdframed}[backgroundcolor=LightBlue, linecolor=LightBlue, userdefinedwidth=\textwidth, leftmargin=0cm, innerleftmargin=1cm, innerrightmargin=2cm, innertopmargin=0.5cm, innerbottommargin=1cm]
+    \color{DarkGray}
+    \vspace{-0.3cm}
+    \subsection*{\color{LogoTurquoise3}{\large\bfseries{#1}}}
+    \vspace{-0.2cm}
 }
 {
     \end{mdframed}
@@ -141,7 +155,10 @@
 \usepackage{graphicx}
 \usepackage{caption}
 
-\DeclareCaptionFont{colorTitle}{\color{colorTitle}}
+\DeclareCaptionFont{CaptionFont}{\roboto\selectfont}
+\DeclareCaptionFont{LightRed}{\color{LightRed}}
+
+\captionsetup{labelfont={CaptionFont, LightRed}, figurename=FIGURE}
 
 \newcommand{\addFigure}[4][0.75] {  % Add single figure
 \begin{figure}[!ht]
@@ -149,30 +166,31 @@
     \centering
 
     \includegraphics[width=#1\textwidth]{images/#2}
-    \caption{\textcolor{colorFooter}{\uppercase{#3}}}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
 
 \end{figure}
 }
 
-\newcommand{\addFigureSet}[3] {  % Add 2x2 figure set
-\begin{figure}[!ht]
+\usepackage{stfloats}
+\newcommand{\addFigureSet}[5][0.45] {  % Add 2x2 figure set
+\begin{figure*}[#5]
     \vspace{0.45cm}
     \centering
 
-    \includegraphics[width=0.45\textwidth, cfbox=LightGray 1pt]{images/#1/visit_count}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=LightGray 1pt]{images/#1/timeline}
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/visit_count}\hfill
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/timeline}
 
     \smallskip
 
-    \includegraphics[width=0.45\textwidth, cfbox=LightGray 1pt]{images/#1/median_income}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=LightGray 1pt]{images/#1/income_band}
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/median_income}\hfill
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/income_band}
 
-    \caption{\textcolor{colorFooter}{\uppercase{#2}}}
-    \label{fig:#3}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \label{fig:#4}
 
-    \vspace{0.45cm}
-\end{figure}
+    \vspace{#1cm}
+\end{figure*}
 }
 
 \newcommand{\addFigureCompare}[2] {  % Add row of 4 figures
@@ -183,12 +201,12 @@
 
     \centering
 
-    \makebox[0.79\paperwidth][c]{\hspace{-3cm}\includegraphics[width=0.2\paperwidth, cfbox=LightGray 1pt]{images/139959/titled_map}\hfill
-    \includegraphics[width=0.2\paperwidth, cfbox=LightGray 1pt]{images/110635/titled_map}\hfill
-    \includegraphics[width=0.2\paperwidth, cfbox=LightGray 1pt]{images/215293/titled_map}\hfill
-    \includegraphics[width=0.2\paperwidth, cfbox=LightGray 1pt]{images/196097/titled_map}}
+    \makebox[0.79\paperwidth][c]{\hspace{-3cm}\includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/139959/titled_map}\hfill
+    \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/110635/titled_map}\hfill
+    \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/215293/titled_map}\hfill
+    \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/196097/titled_map}}
 
-    \caption{\textcolor{colorFooter}{\uppercase{#1}}}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#1}}}
     \label{fig:#2}
     \makebox[0.79\paperwidth][c]{\hdashrule{1.5\paperwidth}{1pt}{1pt}}
 
