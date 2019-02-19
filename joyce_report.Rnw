@@ -39,7 +39,7 @@ for (i in 1:nrow(univs)) {
         \hspace{-0.7cm}
         \makebox[0pt][l]{%
           \raisebox{-1.43\totalheight}[0pt][0pt]{%
-            \includegraphics[width=9in, trim={2cm 0 2cm 2cm}, clip]{./images/map_ua_color.pdf}}}%
+            \includegraphics[width=9in, trim={2cm 0 2cm 2cm}, clip]{./images/map_ua.pdf}}}%
 
         \makebox[0pt][l]{%
           \raisebox{-1.44\totalheight}[0pt][0pt]{%
