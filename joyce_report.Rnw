@@ -86,6 +86,56 @@ for (i in 1:nrow(univs)) {
 \parskip=14pt
 \linespread{1.3}
 
+\section*{Executive Summary\markboth{Executive Summary}{}}  % text inside \markboth{} is displayed in footer
+
+Despite a historical mission of social mobility for meritorious state residents, public research universities increasingly enroll an affluent student body that is unrepresentative of the socioeconomic and racial diversity of the states they serve.  Mainstream policy debates about the causes of access inequality focus on ``deficiencies'' of students and K-12 schools (e.g., the ``achievement gap,'' ``under-matching'').  Public universities positions themselves as remaining committed to access despite state funding cuts and despite student deficiencies, pointing to the adoption of access-oriented policies (e.g., need-based financial aid, outreach programs) as evidence of this commitment. Therefore, this discourse assumes that doubling the number of high-achieving, under-represented students who apply to a university will double their enrollment.  In turn, policy interventions to increase college access focus on changing student behavior rather than university behavior.
+
+An alternative explanation for access inequality is that university enrollment priorities of public research universities are biased against poor students and/or communities of color. Decades of research on organizational behavior finds that internal resource allocation is a reliable indicator of organizational priorities, while policy adoption is often a ceremonial effort to appease external stakeholders, suggesting a ``trust but verify'' approach to university rhetoric about access.  Scholarship on ``enrollment management'' shows that universities are very purposeful about which students they pursue and expend substantial resources crafting their class.  Therefore, knowing which student populations are targeted by university recruiting efforts can yield reliable insights about university enrollment priorities.
+
+%Decades of research on organizational behavior finds that policy adoption is often a ceremonial effort to appease external stakeholders, while internal resource allocation provides a reliable indicator of organizational priorities. These findings suggest a ``trust but verify'' approach to university rhetoric about access
+%often represents a ceremonial effort to appease external stakeholders rather than a substantive effort to solve the problem
+
+This report analyzes off-campus recruiting visits (e.g., visit to a local high school) by 15 public research universities as a means of gaining insight about university enrollment priorities. We collected data on recruiting visits by “scraping” data from university admissions websites (e.g., webpages advertising admissions representatives coming to a ``neighborhood near you'') and by issuing public records requests.
+
+\textbf{Findings}. We find a startling degree of socioeconomic and racial bias in university off-campus recruiting patterns.
+
+\textbf{Out-of-state recruiting visits}
+\begin{itemize}
+    \item Most public research universities prioritize recruiting out-of-state students rather than students from their home state.  X of 15 universities made more out-of-state visits than in-state visits and X of 15 universities made more than twice as many out-of-state visits than in-state visits.
+    \item Visits are concentrated in highly affluent communities in major metropolitan areas, ignoring rural communities
+    \item All universities were much more likely to visit public high schools in high-income communities than schools in low-income communities, even after controlling for factors associated with making a recruiting visit (e.g., enrollment size, academic achievement, school type)
+    %\item Visits to public high schools exhibit dramatic income bias, even after controlling for factors associated with making a recruiting visit (e.g., enrollment size, academic achievement, school type)
+    \item Most universities were significantly less likely to visit public high schools with a high percentage of Black, Latinx, and Native American enrollment, even after controlling for factors associated with making a recruiting visit
+    %\item For most universities, visits to public high schools exhibit significant racial bias, even after controlling for factors associated with making a recruiting visit
+    \item Most universities visit a disproportionate number of out-of-state private high schools
+\end{itemize}
+
+\textbf{In-state recruiting}
+\begin{itemize}
+    \item Even after considering state size and population, "coverage" of in-state public high schools varies dramatically across universities (e.g., University of Nebraska visited X\% of high schools while University of Alabama visited X\%), as does coverage of community colleges
+    \item For most universities, visits to public high schools exhibit significant income bias (albeit less than out-of-state visits), even after controlling for factors associated with making a recruiting visit
+    \item The presence of racial bias in visits to public high schools differed across universities, with some universities less likely to visit schools with a high share of Black/Latinx/Native students (e.g., University of Alabama) and other universities were more likely to visit schools with a high share of Black/Latinx/Native students (e.g., University of California-Irvine)
+\end{itemize}  
+
+\textbf{Overall patterns}
+\begin{itemize}
+    \item Most universities followed the pattern of limited in-state recruiting and expansive out-of-state recruiting in large metropolitan areas, but the ``regional'' (e.g., Northeast, Midwest, Southeast) focus of out-of-state recruiting differed across universities
+    \item Recruiting patterns are clearly tied to state funding. Universities with weak state funding (e.g., University of Alabama, University of South Carolina) focus recruiting efforts out-of-state, make fewer in-state visits, and exhibit socioeconomic and/or racial bias in in-state visits. By contrast, universities with strong state funding (e.g., North Carolina State University, University of California-Irvine) make fewer out-of-state visits, more in-state visits and in-state visits are less likely to exhibit socioeconomic or racial bias
+    \item However, universities with similar external environments (e.g., state funding, growth/decline in ``college age'') population, exhibit substantially different recruiting patterns with respect to in-state vs. out-of-state focus, income bias, and racial bias.  GIVE EXAMPLE? Therefore, university enrollment priorities are choices made by leadership rather than mre functions of environmental conditions.
+\end{itemize}  
+
+
+\textbf{Implications and recommendations}. In contrast to rhetoric from universities leaders, our findings suggest that the enrollment priorities of many public research universities are hostile to state residents, poor students, and communities of color.  These enrollment priorities are a function of a broken system of state higher education finance, which incentivizes many public universities to prioritize out-of-state students with mediocre academic achievement from rich, predominantly White communities. This is not a meritocracy.  We suggest recommendations to policymakers, university leaders, and access advocates to reverse this vicious cycle
+	\begin{itemize}
+		\item \textbf{State policymakers}. State budget cuts to public research universities rationalized on the grounds that universities can generate alternative revenue sources ignore the fact that universities make up for state budget cuts by prioritizing affluent students.  If state policymakers want flagship public universities to prioritize meritorious state residents, they must re-invest in public higher education by growing state appropriations and/or by increasing need-based grant aid, which will increase the purchasing power of poor students.
+		\item \textbf{University leaders}.  A growing body of research shows that generous need-based financial aid combined with aggressive outreach dramatically increases the number of high-achieving, low-income students who apply to and attend public research universities. Therefore, access inequality is a function of university will, rather than merely a function of student deficiencies. University leaders serious about access for under-represented studnets must put their money where there mouth is, rather than putting their money where the money is.
+		\item \textbf{Access advocates}.  Advocates for access -- those working inside and outside of universities -- can use our research to start a dialogue with university leaders about the disconnect between stated commitments and actual recruiting behavior. Armed with systematic data about university recruiting behavior, access advocates will no longer be deterred by lofty rhetoric or the adoption of opaque programs with unclear resources. Therefore, the data and findings from this report enable access advocates to hold universities accountable for their stated commitments to access and	provide a foundation for an authentic debate about univeristy priorities.
+
+	\end{itemize}
+
+
+
+
 \section*{Introduction\markboth{Introduction}{}}  % text inside \markboth{} is displayed in footer
 
 The University of Alabama-Tuscaloosa exemplifies that transformation from state flagship university to out-of-state flagship.  Resident freshmen increased from 2,028 in 2002-03 to 3,221 in 2008-09 but declined to 2,412 by 2016-17. By contrast, nonresident freshmen increased dramatically from 626 in 2002-03 to 1,895 in 2008-09 and to 5,147 by 2016-17.  This period was also witnessed the erosion of state appropriations, which had increased from  \$165 million in 2002-03 to \$227 million in 2007-08, but declined sharply to \$149 million by 2010-11 following the Great Recession, increasing only modestly to \$153 million by 2015-16 (2018 CPI).  By contrast, driving by nonresident enrollment growth, net tuition revenue increased dramatically, from \$102 million in 2002-03 to \$220 million by 2007-08 to \$492 million by 2015-16 [UPDATE NUMBERS/YEARS].
