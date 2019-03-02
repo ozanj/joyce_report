@@ -423,6 +423,29 @@ In addition to the off-campus recruiting project, we have initiated several new 
 
 \bibliography{spencer-bib}
 
+% Appendix
+
+\clearpage
+\onecolumn
+\titleformat*{\section}{\fontfamily{pag}\selectfont\color{LogoTurquoise1}\vspace{-\parskip}\bfseries\Large\uppercase}
+\section*{Appendix\markboth{Appendix}{}}
+
+Maybe table of contents here?
+
+\newpage
+\newgeometry{
+    top=0.75in,
+    bottom=1.25in,
+    inner=0.75in,
+    outer=0.75in,
+    headsep=1in,
+    headheight=0.5in,
+    footskip=0.5in
+}
+
+% Params: graph_type, caption, fig reference
+\addSmallMultiples{titled_map}{Map of visits.}{map}
+
 % Final Page ~~~~
 
 \clearpage

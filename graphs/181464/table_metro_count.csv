@@ -1,0 +1,97 @@
+cbsa_code,metro_name,state_code,total_count,pubHS_count,privHS_count,cc_count,other_count
+16980,"Chicago, Naperville, Elgin","IL, IN, WI",144,110,12,6,16
+19100,"Dallas, Fort Worth, Arlington",TX,126,94,20,1,11
+33460,"Minneapolis, St. Paul, Bloomington","MN, WI",123,99,21,0,3
+28140,Kansas City,"MO, KS",98,76,14,1,7
+36540,"Omaha, Council Bluffs","NE, IA",93,65,16,3,9
+19740,"Denver, Aurora, Lakewood",CO,76,67,5,1,3
+30700,Lincoln,NE,61,45,7,5,4
+24260,Grand Island,NE,42,30,6,4,2
+35740,Norfolk,NE,38,28,6,4,0
+48620,Wichita,KS,35,22,12,0,1
+43580,Sioux City,"IA, NE, SD",35,29,4,1,1
+28260,Kearney,NE,26,22,2,0,2
+33340,"Milwaukee, Waukesha, West Allis",WI,23,19,2,0,2
+43620,Sioux Falls,SD,21,17,1,0,3
+35820,North Platte,NE,21,17,2,2,0
+30420,Lexington,NE,21,20,0,0,1
+18100,Columbus,NE,20,14,4,0,2
+42420,Scottsbluff,NE,15,12,0,3,0
+22660,Fort Collins,CO,13,13,0,0,0
+19820,"Detroit, Warren, Dearborn",MI,12,7,3,0,2
+25580,Hastings,NE,12,10,2,0,0
+13100,Beatrice,NE,11,11,0,0,0
+23340,Fremont,NE,11,9,2,0,0
+42660,"Seattle, Tacoma, Bellevue",WA,10,0,0,3,7
+11540,Appleton,WI,9,9,0,0,0
+41140,St. Joseph,"MO, KS",8,5,2,0,1
+14500,Boulder,CO,8,8,0,0,0
+17820,Colorado Springs,CO,8,7,0,0,1
+19780,"Des Moines, West Des Moines",IA,7,4,2,0,1
+29940,Lawrence,KS,5,5,0,0,0
+24580,Green Bay,WI,5,5,0,0,0
+22020,Fargo,"ND, MN",5,3,1,0,1
+40340,Rochester,MN,5,3,1,1,0
+46820,Vermillion,SD,4,2,0,0,2
+16300,Cedar Rapids,IA,4,2,1,1,0
+11180,Ames,IA,3,3,0,0,0
+44020,Spirit Lake,IA,3,2,0,1,0
+26420,"Houston, The Woodlands, Sugar Land",TX,3,0,0,0,3
+29100,"La Crosse, Onalaska","WI, MN",3,1,1,0,1
+19340,"Davenport, Moline, Rock Island","IA, IL",3,3,0,0,0
+26980,Iowa City,IA,2,2,0,0,0
+31080,"Los Angeles, Long Beach, Anaheim",CA,2,0,0,0,2
+37800,Not available,Not available,2,1,1,0,0
+49460,Yankton,SD,2,1,0,0,1
+12380,Austin,MN,2,1,0,1,0
+24540,Greeley,CO,2,2,0,0,0
+21860,Not available,Not available,2,2,0,0,0
+32340,Maryville,MO,2,2,0,0,0
+14660,Brainerd,MN,2,0,0,1,1
+15100,Brookings,SD,2,1,0,0,1
+33580,Mitchell,SD,2,1,0,0,1
+39660,Rapid City,SD,2,1,0,0,1
+40420,Rockford,IL,2,1,0,1,0
+16140,Not available,Not available,2,1,1,0,0
+44740,Storm Lake,IA,1,1,0,0,0
+37900,Peoria,IL,1,0,0,0,1
+24340,"Grand Rapids, Wyoming",MI,1,0,0,0,1
+12420,"Austin, Round Rock",TX,1,0,0,0,1
+41740,"San Diego, Carlsbad",CA,1,0,0,0,1
+37100,"Oxnard, Thousand Oaks, Ventura",CA,1,0,0,0,1
+14340,Boone,IA,1,1,0,0,0
+43980,Spencer,IA,1,1,0,0,0
+31540,Madison,WI,1,0,1,0,0
+36780,"Oshkosh, Neenah",WI,1,1,0,0,0
+19380,Dayton,OH,1,1,0,0,0
+10660,Albert Lea,MN,1,1,0,0,0
+11460,Ann Arbor,MI,1,1,0,0,0
+22060,"Faribault, Northfield",MN,1,1,0,0,0
+49380,Worthington,MN,1,1,0,0,0
+47900,"Washington, Arlington, Alexandria","DC, VA, MD, WV",1,1,0,0,0
+20780,Edwards,CO,1,0,0,0,1
+38180,Pierre,SD,1,1,0,0,0
+48580,"Whitewater, Elkhorn",WI,1,1,0,0,0
+43940,Spearfish,SD,1,1,0,0,0
+26700,Huron,SD,1,0,0,0,1
+10100,Aberdeen,SD,1,0,0,0,1
+20740,Eau Claire,WI,1,0,0,0,1
+43100,Sheboygan,WI,1,0,0,0,1
+14460,"Boston, Cambridge, Newton","MA, NH",1,0,0,0,1
+47940,"Waterloo, Cedar Falls",IA,1,0,0,0,1
+40140,"Riverside, San Bernardino, Ontario",CA,1,0,0,0,1
+32260,Marshalltown,IA,1,0,0,1,0
+32380,Mason City,IA,1,1,0,0,0
+22700,Fort Dodge,IA,1,0,0,1,0
+24060,Glenwood Springs,CO,1,1,0,0,0
+47980,Watertown,SD,1,0,0,1,0
+13420,Bemidji,MN,1,0,0,0,1
+10820,Alexandria,MN,1,1,0,0,0
+48820,Willmar,MN,1,0,0,1,0
+41060,St. Cloud,MN,1,0,0,0,1
+15460,Burlington,"IA, IL",1,0,0,1,0
+45820,Topeka,KS,1,0,0,0,1
+22820,Fort Morgan,CO,1,1,0,0,0
+32140,Marshall,MN,1,0,0,0,1
+31860,"Mankato, North Mankato",MN,1,0,0,0,1
+41180,St. Louis,"MO, IL",1,0,0,0,1
