@@ -79,7 +79,15 @@ for (i in 1:nrow(univs)) {
 % Begin Template ~~~~
 
 \pagecolor{white}
-\restoregeometry
+\newgeometry{
+    top=1.75in,
+    bottom=1.25in,
+    inner=0.75in,
+    outer=0.75in,
+    headsep=1in,
+    headheight=0.5in,
+    footskip=0.5in
+}
 \setcounter{page}{1}
 
 \parskip=14pt
@@ -96,7 +104,9 @@ An alternative explanation for access inequality is that university enrollment p
 
 This report analyzes off-campus recruiting visits (e.g., visit to a local high school) by 15 public research universities as a means of gaining insight about university enrollment priorities. We collected data on recruiting visits by “scraping” data from university admissions websites (e.g., webpages advertising admissions representatives coming to a ``neighborhood near you'') and by issuing public records requests.
 
-\textbf{Findings}. We find a startling degree of socioeconomic and racial bias in university off-campus recruiting patterns.
+\begin{color-block}[Findings]
+
+We find a startling degree of socioeconomic and racial bias in university off-campus recruiting patterns.
 
 \textbf{Out-of-state recruiting visits}
 \begin{itemize}
@@ -123,6 +133,7 @@ This report analyzes off-campus recruiting visits (e.g., visit to a local high s
     \item However, universities with similar external environments (e.g., state funding, growth/decline in ``college age'') population, exhibit substantially different recruiting patterns with respect to in-state vs. out-of-state focus, income bias, and racial bias.  GIVE EXAMPLE? Therefore, university enrollment priorities are choices made by leadership rather than mre functions of environmental conditions.
 \end{itemize}  
 
+\end{color-block}
 
 \textbf{Implications and recommendations}. In contrast to rhetoric from universities leaders, our findings suggest that the enrollment priorities of many public research universities are hostile to state residents, poor students, and communities of color.  These enrollment priorities are a function of a broken system of state higher education finance, which incentivizes many public universities to prioritize out-of-state students with mediocre academic achievement from rich, predominantly White communities. This is not a meritocracy.  We suggest recommendations to policymakers, university leaders, and access advocates to reverse this vicious cycle
 	\begin{itemize}
@@ -133,6 +144,7 @@ This report analyzes off-campus recruiting visits (e.g., visit to a local high s
 	\end{itemize}
 
 \newpage
+\restoregeometry
 \twocolumn
 
 \section*{Introduction\markboth{Introduction}{}}  % text inside \markboth{} is displayed in footer
