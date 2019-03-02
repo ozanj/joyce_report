@@ -172,23 +172,28 @@
 }
 
 \usepackage{stfloats}
-\newcommand{\addFigureSet}[5][0.45] {  % Add 2x2 figure set
-\begin{figure*}[#5]
+\newcommand{\addFigureSet}[4] {  % Add 2x2 figure set
+\begin{figure*}[#4]
     \vspace{0.45cm}
     \centering
 
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/visit_count}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/timeline}
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{graphs/#1/visit_count}\hfill
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{graphs/#1/timeline}
 
     \smallskip
 
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/median_income}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/income_band}
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{graphs/#1/median_income}\hfill
+    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{graphs/#1/urban_rural}
 
-    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
-    \label{fig:#4}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}
+    \label{fig:#3}
 
-    \vspace{#1cm}
+    \ifnum\pdfstrcmp{#4}{b}=0
+      \vspace{-1cm}
+    \else
+      \vspace{0.45cm}
+    \fi
+
 \end{figure*}
 }
 
