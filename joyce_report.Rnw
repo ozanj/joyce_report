@@ -446,6 +446,9 @@ Maybe table of contents here?
 % Params: graph_type, caption, fig reference
 \addSmallMultiples{titled_map}{Map of visits.}{map}
 
+\newpage
+\input{tables/event_count.tex}
+
 % Final Page ~~~~
 
 \clearpage
