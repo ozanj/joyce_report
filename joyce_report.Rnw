@@ -449,11 +449,17 @@ Maybe table of contents here?
 \input{tables/desc_out.tex}
 
 \clearpage
+\input{tables/regression_out.tex}
+
+\clearpage
 % Params: graph_type, caption, fig reference
 \addSmallMultiples{titled_map}{Map of visits.}{map}
 
 \clearpage
 \input{tables/desc_in.tex}
+
+\clearpage
+\input{tables/regression_in.tex}
 
 
 % Final Page ~~~~
