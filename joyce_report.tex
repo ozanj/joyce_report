@@ -429,11 +429,48 @@ Maybe table of contents here?
 
 \input{tables/event_count.tex}
 
+\begin{landscape}
+  \fontsize{8pt}{10pt}\selectfont
+    \input{tables/desc_in_pub.tex}
+  
+  \newpage
+  \input{tables/desc_in_cc.tex}
+  
+  \newpage
+  \input{tables/desc_out_pub.tex}
+  
+  \newpage
+  \input{tables/desc_out_priv.tex}
+\end{landscape}
+
+\begingroup
+  \fontsize{8pt}{10pt}\selectfont
+  \input{tables/regression_in.tex}
+\endgroup
+
+\begin{landscape}
+  \fontsize{8pt}{8pt}\selectfont
+  \input{tables/regression_in.tex}
+\end{landscape}
+
+\begingroup
+  \fontsize{8pt}{10pt}\selectfont
+  \input{tables/regression_out.tex}
+\endgroup
+
+\begin{landscape}
+  \fontsize{8pt}{7.8pt}\selectfont
+  \input{tables/regression_out.tex}
+\end{landscape}
+
+\clearpage
+\input{tables/event_count_alt.tex}
+
 \clearpage
 \input{tables/desc_out.tex}
 
 \clearpage
-\input{tables/regression_out.tex}
+\input{tables/regression_out_alt.tex}
 
 \clearpage
 % Params: graph_type, caption, fig reference
@@ -443,7 +480,7 @@ Maybe table of contents here?
 \input{tables/desc_in.tex}
 
 \clearpage
-\input{tables/regression_in.tex}
+\input{tables/regression_in_alt.tex}
 
 
 % Final Page ~~~~
