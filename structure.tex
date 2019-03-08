@@ -158,7 +158,7 @@
 \DeclareCaptionFont{CaptionFont}{\roboto\selectfont}
 \DeclareCaptionFont{LightRed}{\color{LightRed}}
 
-\captionsetup{labelfont={CaptionFont, LightRed}, figurename=FIGURE}
+\captionsetup{labelfont={CaptionFont, LightRed}, figurename=FIGURE, tablename=TABLE}
 
 \newcommand{\addFigure}[4][0.75] {  % Add single figure
 \begin{figure}[!ht]
@@ -212,4 +212,36 @@
 
 \end{figure}
 \vspace{0.45cm}
+}
+
+
+% Tables ~~~~
+
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+
+\newcommand{\addTable}[4][p] {  % Add Table
+\begin{table*}[t] % t or b
+
+    \ifnum\pdfstrcmp{#1}{l}=0
+      \begin{sideways}
+    \fi
+
+    \centering
+
+    \begingroup
+      \fontsize{8pt}{10pt}\selectfont
+      \input{tables/#2.tex}
+    \endgroup
+
+    \ifnum\pdfstrcmp{#1}{l}=0
+      \end{sideways}
+    \fi
+
+    \vspace{0.2cm}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \label{tbl:#4}
+
+\end{table*}
 }
