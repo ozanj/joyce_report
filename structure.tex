@@ -224,13 +224,13 @@
 \usepackage{etoolbox}
 \AfterEndEnvironment{table-env}{\restoregeometry\twocolumn}
 
-\newenvironment{table-env}[2][x]{
+\newenvironment{table-env}[3][10]{
   \clearpage
   \newgeometry{top=0.5in, bottom=1in, inner=0.75in, outer=0.75in, footskip=0.25in}
   \begin{sidewaystable}
-  \fontsize{8pt}{10pt}\selectfont
-  \ifnum\pdfstrcmp{#1}{x}=-1
-    \rotatebox[origin=c]{270}{\begin{minipage}{\textwidth}\caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#1}}}\label{tbl:#2}\end{minipage}}
+  \fontsize{8pt}{#1pt}\selectfont
+  \ifnum\pdfstrcmp{#2}{x}=-1
+    \rotatebox[origin=c]{270}{\begin{minipage}{\textwidth}\caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}\label{tbl:#3}\end{minipage}}
   \fi
 }
 {
