@@ -193,6 +193,32 @@ Burd, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Campaign for Free College Tuition}%
+}{%
+{Campaign for Free College Tuition}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4425}
+\APACinsertmetastar {%
+RN4425}%
+\begin{APACrefauthors}%
+{Campaign for Free College Tuition}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Making public colleges tuition free} {Making public colleges
+  tuition free}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Campaign for Free College Tuition}.
+\newblock
+\begin{APACrefURL} \url{https://www.freecollegenow.org/briefing_book}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Campbell%
 }{%
 Campbell%
@@ -361,6 +387,33 @@ Davis, G\BPBI F.%
   (\BPG~478-502).
 \newblock
 \APACaddressPublisher{New York}{Russell Sage Foundation}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Delaney%
+\ \BBA {} Doyle%
+}{%
+Delaney%
+\ \BBA {} Doyle%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+RN2271}
+\APACinsertmetastar {%
+RN2271}%
+\begin{APACrefauthors}%
+Delaney, J\BPBI A.%
+\BCBT {}\ \BBA {} Doyle, W\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {State spending on higher education: testing the balance
+  wheel over time} {State spending on higher education: testing the balance
+  wheel over time}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Education Finance}{36}{4}{343-368}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -568,6 +621,56 @@ Fries-Britt, S\BPBI L.%
   Development}{42}{5}{420-429}.
 \newblock
 \begin{APACrefURL} \url{<Go to ISI>://WOS:000170733800002} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gecker%
+}{%
+Gecker%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4427}
+\APACinsertmetastar {%
+RN4427}%
+\begin{APACrefauthors}%
+Gecker, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{July 12}{}.
+\newblock
+\APACrefbtitle {UC schools admit record number of transfer students.} {Uc
+  schools admit record number of transfer students.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.apnews.com/9ee3584875514b8fabbd777d4aa88258}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{General Assembly of North Carolina}%
+}{%
+{General Assembly of North Carolina}%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+RN4424}
+\APACinsertmetastar {%
+RN4424}%
+\begin{APACrefauthors}%
+{General Assembly of North Carolina}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+\APACrefbtitle {UNC/Calculation of In-State Students} {Unc/calculation of
+  in-state students}\ (\BNUM\ House Bill 256 (Second Edition)).
+\newblock
+\begin{APACrefURL}
+  \url{https://www.ncleg.net/Sessions/2009/FiscalNotes/House/PDF/HFN0256v2.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1081,30 +1184,6 @@ Khan, S\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Kirp%
-}{%
-Kirp%
-}{%
-{\protect \APACyear {2003}}%
-}]{%
-RN1100}
-\APACinsertmetastar {%
-RN1100}%
-\begin{APACrefauthors}%
-Kirp, D\BPBI L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2003}.
-\newblock
-\APACrefbtitle {Shakespeare, Einstein, and the bottom line: the marketing of
-  higher education} {Shakespeare, einstein, and the bottom line: the marketing
-  of higher education}.
-\newblock
-\APACaddressPublisher{Cambridge, Mass.}{Harvard University Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Koshal%
 \ \BBA {} Koshal%
 }{%
@@ -1219,6 +1298,31 @@ McPherson, M\BPBI S.%
 \APACrefbtitle {The student aid game} {The student aid game}.
 \newblock
 \APACaddressPublisher{Princeton, NJ}{Princeton University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Means%
+}{%
+Means%
+}{%
+{\protect \APACyear {2016, August 31}}%
+}]{%
+RN4420}
+\APACinsertmetastar {%
+RN4420}%
+\begin{APACrefauthors}%
+Means, D\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016, August 31}{}{}.
+\newblock
+\APACrefbtitle {Rural location, race influence students’ access to college.}
+  {Rural location, race influence students’ access to college.}
+\newblock
+\begin{APACrefURL}
+  \url{http://getschooled.blog.myajc.com/2016/08/30/black-rural-and-impoverished-are-colleges-ignoring-these-students/}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1407,6 +1511,37 @@ Oldfield, K.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Page%
+\ \BBA {} Scott-Clayton%
+}{%
+Page%
+\ \BBA {} Scott-Clayton%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+RN4351}
+\APACinsertmetastar {%
+RN4351}%
+\begin{APACrefauthors}%
+Page, L\BPBI C.%
+\BCBT {}\ \BBA {} Scott-Clayton, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Improving college access in the United States: Barriers
+  and policy responses} {Improving college access in the united states:
+  Barriers and policy responses}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Economics of Education Review}{51}{}{4-22}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000377830600002} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.econedurev.2016.02.009} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Park%
 , Denson%
 \BCBL {}\ \BBA {} Bowman%
@@ -1439,6 +1574,31 @@ Park, J\BPBI J.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.3102/0002831212468290} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Paterson%
+}{%
+Paterson%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+RN4426}
+\APACinsertmetastar {%
+RN4426}%
+\begin{APACrefauthors}%
+Paterson, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Michigan joins free college push with latest proposal.}
+  {Michigan joins free college push with latest proposal.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.educationdive.com/news/michigan-joins-free-college-push-with-latest-proposal/550051/}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1867,35 +2027,6 @@ Winston, G\BPBI C.%
 \APACjournalVolNumPages{Review of Industrial Organization}{24}{}{331-354}.
 \newblock
 \begin{APACrefURL} \url{<Go to ISI>://000223206000002} \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Zhang%
-}{%
-Zhang%
-}{%
-{\protect \APACyear {2007}}%
-}]{%
-RN2535}
-\APACinsertmetastar {%
-RN2535}%
-\begin{APACrefauthors}%
-Zhang, L\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Nonresident enrollment demand in public higher
-  education: An analysis at national, state, and institutional levels}
-  {Nonresident enrollment demand in public higher education: An analysis at
-  national, state, and institutional levels}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Review of Higher Education}{31}{1}{1-25}.
-\newblock
-\begin{APACrefURL} \url{<Go to ISI>://WOS:000249750200001} \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1353/rhe.2007.0057} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
