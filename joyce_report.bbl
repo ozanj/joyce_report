@@ -79,6 +79,37 @@ Armstrong, E\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Boatman%
+\ \BBA {} Soliz%
+}{%
+Boatman%
+\ \BBA {} Soliz%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4430}
+\APACinsertmetastar {%
+RN4430}%
+\begin{APACrefauthors}%
+Boatman, A.%
+\BCBT {}\ \BBA {} Soliz, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Statewide transfer policies and community college
+  student success} {Statewide transfer policies and community college student
+  success}{\BBCQ}\ [Journal Article].
+\newblock
+\APACjournalVolNumPages{Education Finance and Policy}{13}{4}{449-483}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000448903100002} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1162/edfp_a_00233} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bosshardt%
 , Lichtenstein%
 , Palumbo%
@@ -439,6 +470,37 @@ DesJardins, S\BPBI L.%
 \APACjournalVolNumPages{Research in Higher Education}{42}{6}{653-678}.
 \newblock
 \begin{APACrefURL} \url{<Go to ISI>://000179719500002} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dillon%
+\ \BBA {} Smith%
+}{%
+Dillon%
+\ \BBA {} Smith%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+RN4429}
+\APACinsertmetastar {%
+RN4429}%
+\begin{APACrefauthors}%
+Dillon, E\BPBI W.%
+\BCBT {}\ \BBA {} Smith, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Determinants of the match between student ability and
+  college quality} {Determinants of the match between student ability and
+  college quality}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Labor Economics}{35}{1}{45-66}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000390415700002} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1086/687523} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1742,6 +1804,42 @@ Rudolph, F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Schudde%
+\ \BBA {} Grodsky%
+}{%
+Schudde%
+\ \BBA {} Grodsky%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4431}
+\APACinsertmetastar {%
+RN4431}%
+\begin{APACrefauthors}%
+Schudde, L.%
+\BCBT {}\ \BBA {} Grodsky, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The community college experience and educational
+  equality: Theory, research, and policy} {The community college experience and
+  educational equality: Theory, research, and policy}.{\BBCQ}
+\newblock
+\BIn{} B.~Schneider\ (\BED), \APACrefbtitle {Handbook of the Sociology of
+  Education in the 21st Century} {Handbook of the sociology of education in the
+  21st century}\ (\BPG~405-430).
+\newblock
+\APACaddressPublisher{Cham}{Springer International Publishing}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1007/978-3-319-76694-2_18}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-319-76694-2_18} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 J.~Smith%
 , Pender%
 \BCBL {}\ \BBA {} Howell%
@@ -1928,6 +2026,31 @@ Thornhill, T.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1177/2332649218792579} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+UCLA%
+}{%
+UCLA%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+RN4432}
+\APACinsertmetastar {%
+RN4432}%
+\begin{APACrefauthors}%
+UCLA.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {The UCLA Transfer Alliance Program} {The ucla transfer alliance
+  program}\ (\BVOL\ 2019)\ (\BNUM\ March 9).
+\newblock
+\begin{APACrefURL}
+  \url{http://www.admission.ucla.edu/Prospect/Adm_tr/ADM_CCO/tap.htm}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
