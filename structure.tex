@@ -74,8 +74,16 @@
 \titleformat*{\section}{\fontfamily{pag}\selectfont\color{LogoTurquoise1}\vspace{-\parskip}\bfseries\Large\uppercase}
 \titleformat*{\subsection}{\color{LogoTurquoise1}\vspace{-\parskip}\Large}
 
+\usepackage{etoolbox}
+\AfterEndEnvironment{table-env}{\restoregeometry\twocolumn}
+\AfterEndEnvironment{lscape-env}{\restoregeometry\twocolumn}
+
 
 % Headers + Footers ~~~~
+
+\usepackage{pdflscape}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -89,14 +97,16 @@
 \fancyfoot[RO]{\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage}
 \renewcommand{\headrulewidth}{0pt}
 
-\fancypagestyle{tablepage}{  % No Header, Regular Footer
+\fancypagestyle{lscape-style}{  % landscape header/footer
     \fancyhead{}
     \fancyfoot{}
-    \renewcommand\headrule{\hrulefill
-\raisebox{-2.1pt}[10pt][10pt]{\quad\decofourleft\decotwo\decofourright\quad}\hrulefill}
+    \fancyfoot[LE]{%
+    \tikz[remember picture,overlay]
+      \node[outer sep=1cm,above,yshift=0.75in,rotate=90] at (current page.315) {\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Recruiting the Out-of-State University}}};}
+    \fancyfoot[RO]{%
+    \tikz[remember picture,overlay]
+      \node[outer sep=1cm,above,rotate=90] at (current page.45) {\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage};}
 }
-
-\addtolength{\skip\footins}{10pt}
 
 
 % Links + Lists ~~~~
@@ -256,10 +266,6 @@
 
 \usepackage[figuresright]{rotating}
 \usepackage{multirow}
-\usepackage[table]{xcolor}
-
-\usepackage{etoolbox}
-\AfterEndEnvironment{table-env}{\restoregeometry\twocolumn}
 
 \newenvironment{table-env}[3][10]{
   \clearpage
@@ -273,6 +279,24 @@
 {
   \end{sidewaystable}
   \clearpage
+}
+
+\newenvironment{lscape-env}[3][10]{  % landscape environment
+    \clearpage
+    \newgeometry{top=0.5in, bottom=0.5in, inner=0in, outer=0in}
+    \thispagestyle{lscape-style}
+    \begin{landscape}
+    \begin{table*}[t]
+    \vspace{-0.5cm}
+    \ifnum\pdfstrcmp{#2}{x}=-1
+      \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}\label{tbl:#3}
+    \fi
+    \fontsize{8pt}{#1pt}\selectfont
+}
+{
+    \end{table*}
+    \end{landscape}
+    \clearpage
 }
 
 \newcommand{\addTable}[4][p] {  % Add Table
