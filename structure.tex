@@ -153,6 +153,10 @@
 
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage[labelformat=simple]{subcaption}
+
+\DeclareCaptionSubType*{figure}
+\renewcommand\thesubfigure{}
 
 \DeclareCaptionFont{CaptionFont}{\roboto\selectfont}
 \DeclareCaptionFont{LightRed}{\color{LightRed}}
@@ -160,7 +164,7 @@
 \captionsetup{labelfont={CaptionFont, LightRed}, figurename=FIGURE}
 
 % Params: width (default: 0.75\textwidth), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel})
-\newcommand{\addFigure}[4][0.2] {
+\newcommand{\addFigure}[4][0.2] {  % Add single figure
 \begin{figure}[!ht]
     \vspace{0.45cm}
     \centering
@@ -172,44 +176,41 @@
 \end{figure}
 }
 
+% Params: image filename, caption, fig reference, place at t (top) or b (bottom) of page
 \usepackage{stfloats}
-\newcommand{\addFigureSet}[5][0.45] {  % Add 2x2 figure set
-\begin{figure*}[#5]
+\newcommand{\addFigureSet}[4] {  % Add 2x2 figure set
+\begin{figure*}[#4]
     \vspace{0.45cm}
     \centering
 
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/visit_count}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/timeline}
+    \begin{subfigure}[b]{.45\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_1}
+      \caption{1}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{.45\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_2}
+      \caption{2}
+    \end{subfigure}
 
     \smallskip
 
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/median_income}\hfill
-    \includegraphics[width=0.45\textwidth, cfbox=Gray 0.4pt]{images/#2/income_band}
+    \begin{subfigure}[b]{.45\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_3}
+      \caption{3}
+    \end{subfigure}\hfill
+    \begin{subfigure}[b]{.45\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_4}
+      \caption{4}
+    \end{subfigure}
 
-    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
-    \label{fig:#4}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}
+    \label{fig:#3}
 
-    \vspace{#1cm}
+    \ifnum\pdfstrcmp{#4}{b}=0
+      \vspace{-1cm}
+    \else
+      \vspace{0.45cm}
+    \fi
+
 \end{figure*}
-}
-
-\newcommand{\addFigureCompare}[2] {  % Add row of 4 figures
-\begin{figure}[!h]
-    \vspace{0.45cm}
-    \hspace{-1.6in}
-    \color{Gray}\hdashrule{1.5\textwidth}{1pt}{1pt}\vspace{0.5cm}
-
-    \centering
-
-    \makebox[0.79\paperwidth][c]{\hspace{-3cm}\includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/139959/titled_map}\hfill
-    \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/110635/titled_map}\hfill
-    \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/215293/titled_map}\hfill
-    \includegraphics[width=0.2\paperwidth, cfbox=DarkGray 1pt]{images/196097/titled_map}}
-
-    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#1}}}
-    \label{fig:#2}
-    \makebox[0.79\paperwidth][c]{\hdashrule{1.5\paperwidth}{1pt}{1pt}}
-
-\end{figure}
-\vspace{0.45cm}
 }
