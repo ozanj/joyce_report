@@ -172,13 +172,13 @@
 
 \captionsetup{labelfont={CaptionFont, LightRed}, figurename=FIGURE, tablename=TABLE}
 
-% Params: width (default: 0.75\textwidth), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel})
-\newcommand{\addFigure}[4][0.2] {  % Add single figure
+% Params: border color (default: White), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel}), left, bottom, right, top crop
+\newcommand{\addFigure}[8][White] {  % Add single figure
 \begin{figure}[!ht]
-    \vspace{0.45cm}
+    \vspace{0.2cm}
     \centering
 
-    \includegraphics[width=0.45\textwidth, trim={0 0 0 #1cm}, clip]{images/#2}
+    \includegraphics[width=0.45\textwidth, cfbox=#1 0.4pt, trim={#5cm #6cm #7cm #8cm}, clip]{images/#2}
     \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
 
@@ -222,6 +222,31 @@
     \fi
 
 \end{figure*}
+}
+
+% Params: top or bottom of page (default: b), filename in the images/ folder, caption, fig reference x2
+\newcommand{\addTwoFigures}[7][b] {  % Add side-by-side figures
+
+\begin{figure*}[#1]
+
+    \begin{minipage}[c]{0.45\textwidth}
+        \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{images/#2}
+        \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+        \label{fig:#4}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{0.45\textwidth}
+        \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{images/#5}
+        \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#6}}}
+        \label{fig:#7}
+    \end{minipage}
+
+    \ifnum\pdfstrcmp{#1}{b}=0
+        \vspace{-1cm}
+    \fi
+
+\end{figure*}
+
 }
 
 
