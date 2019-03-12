@@ -185,31 +185,31 @@
 \end{figure}
 }
 
-% Params: image filename, caption, fig reference, place at t (top) or b (bottom) of page
+% Params: image filename, caption, fig reference, place at t (top) or b (bottom) of page, subcaptions
 \usepackage{stfloats}
-\newcommand{\addFigureSet}[4] {  % Add 2x2 figure set
+\newcommand{\addFigureSet}[8] {  % Add 2x2 figure set
 \begin{figure*}[#4]
     \vspace{0.45cm}
     \centering
 
     \begin{subfigure}[b]{.45\linewidth}
       \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_1}
-      \caption{1}
+      \caption{#5}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{.45\linewidth}
       \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_2}
-      \caption{2}
+      \caption{#6}
     \end{subfigure}
 
     \smallskip
 
     \begin{subfigure}[b]{.45\linewidth}
       \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_3}
-      \caption{3}
+      \caption{#7}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{.45\linewidth}
       \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_4}
-      \caption{4}
+      \caption{#8}
     \end{subfigure}
 
     \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}
@@ -230,7 +230,7 @@
 \usepackage[figuresright]{rotating}
 \usepackage{multirow}
 
-% Params: line spacing (default: 10pt), caption, tbl reference
+% Params: line spacing (default: 10pt), caption, tbl reference (or `x` if continued table)
 \newenvironment{lscape-env}[3][10]{  % landscape environment
     \clearpage
     \newgeometry{top=0.5in, bottom=0.5in, inner=0in, outer=0in}
@@ -238,6 +238,9 @@
     \begin{landscape}
     \begin{table*}[t]
     \vspace{-0.5cm}
+    \ifnum\pdfstrcmp{#3}{x}=0
+      \ContinuedFloat
+    \fi
     \ifnum\pdfstrcmp{#2}{x}=-1
       \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}\label{tbl:#3}
     \fi
