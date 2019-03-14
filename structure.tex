@@ -101,10 +101,10 @@
     \fancyfoot{}
     \fancyfoot[LE]{%
     \tikz[remember picture,overlay]
-      \node[outer sep=1cm,above,yshift=0.75in,rotate=90] at (current page.315) {\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Recruiting the Out-of-State University}}};}
+      \node[outer sep=1cm,above,yshift=0.85in,rotate=90] at (current page.315) {\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Recruiting the Out-of-State University}}};}
     \fancyfoot[RO]{%
     \tikz[remember picture,overlay]
-      \node[outer sep=1cm,above,rotate=90] at (current page.45) {\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage};}
+      \node[outer sep=1cm,above,yshift=0.25in,rotate=90] at (current page.45) {\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage};}
 }
 
 
@@ -161,6 +161,8 @@
 % Figures ~~~~
 
 \usepackage{graphicx}
+\usepackage{afterpage}
+
 \usepackage{caption}
 \usepackage[labelformat=simple]{subcaption}
 
@@ -188,6 +190,7 @@
 % Params: image filename, caption, fig reference, place at t (top) or b (bottom) of page, subcaptions
 \usepackage{stfloats}
 \newcommand{\addFigureSet}[8] {  % Add 2x2 figure set
+\afterpage{
 \begin{figure*}[#4]
     \vspace{0.45cm}
     \centering
@@ -223,6 +226,7 @@
 
 \end{figure*}
 }
+}
 
 % Params: top or bottom of page (default: b), filename in the images/ folder, caption, fig reference x2
 \newcommand{\addTwoFigures}[7][b] {  % Add side-by-side figures
@@ -251,6 +255,7 @@
 
 % Params: filename in the graphs/ folder, caption, fig reference
 \newcommand{\addSmallMultiples}[3] {  % Add 3x5 figure set
+\afterpage{
 \newgeometry{
     top=0.75in,
     bottom=1.25in,
@@ -300,6 +305,8 @@
 
 \restoregeometry
 \twocolumn
+\clearpage
+}
 }
 
 
@@ -307,28 +314,6 @@
 
 \usepackage[figuresright]{rotating}
 \usepackage{multirow}
-
-% Params: line spacing (default: 10pt), caption, tbl reference (or `x` if continued table)
-\newenvironment{lscape-env}[3][10]{  % landscape environment
-    \clearpage
-    \newgeometry{top=0.5in, bottom=0.5in, inner=0in, outer=0in}
-    \thispagestyle{lscape-style}
-    \begin{landscape}
-    \begin{table*}[t]
-    \vspace{-0.5cm}
-    \ifnum\pdfstrcmp{#3}{x}=0
-      \ContinuedFloat
-    \fi
-    \ifnum\pdfstrcmp{#2}{x}=-1
-      \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}\label{tbl:#3}
-    \fi
-    \fontsize{8pt}{#1pt}\selectfont
-}
-{
-    \end{table*}
-    \end{landscape}
-    \clearpage
-}
 
 % Params: top or bottom of page (default: b), filename in the tables/ folder, caption, tbl reference
 \newcommand{\addTable}[4][b] {  % Add Table
@@ -352,4 +337,39 @@
 
 \end{table*}
 
+}
+
+% Params: line spacing (default: 10pt), filename in the tables/ folder, caption, tbl reference (or `x` if continued table)
+\newcommand{\addLandscapeTable}[4][10] {  % Add Landscape Table
+\afterpage{
+\pagestyle{lscape-style}
+\newgeometry{top=0.5in, bottom=0.5in, inner=0in, outer=0in}
+
+\begin{table*}[!ht]
+
+\centering
+
+\rotatebox{90}{
+\begin{minipage}{\textheight}
+
+    \vspace{-0.5cm}
+
+    \ifnum\pdfstrcmp{#4}{x}=0
+      \ContinuedFloat
+    \fi
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \label{tbl:#4}
+
+    \begingroup
+      \fontsize{8pt}{#1pt}\selectfont
+      \input{tables/#2.tex}
+    \endgroup
+
+\end{minipage}}
+\end{table*}
+
+\restoregeometry
+\twocolumn
+\clearpage
+}
 }
