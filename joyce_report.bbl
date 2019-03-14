@@ -53,6 +53,36 @@ Archibald, R\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Arcidiacono%
+\ \BBA {} Lovenheim%
+}{%
+Arcidiacono%
+\ \BBA {} Lovenheim%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+RN4434}
+\APACinsertmetastar {%
+RN4434}%
+\begin{APACrefauthors}%
+Arcidiacono, P.%
+\BCBT {}\ \BBA {} Lovenheim, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Affirmative action and the quality-fit trade-off}
+  {Affirmative action and the quality-fit trade-off}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economic Literature}{54}{1}{3-51}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000371997500001} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/jel.54.1.3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Armstrong%
 \ \BBA {} Hamilton%
 }{%
@@ -170,6 +200,39 @@ Bowman, N\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Bulakowski%
+\ \BBA {} Townsend%
+}{%
+Bulakowski%
+\ \BBA {} Townsend%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+RN4440}
+\APACinsertmetastar {%
+RN4440}%
+\begin{APACrefauthors}%
+Bulakowski, C.%
+\BCBT {}\ \BBA {} Townsend, B\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Evaluation of a community college honors program:
+  Problems and possibilities} {Evaluation of a community college honors
+  program: Problems and possibilities}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Community College Journal of Research and
+  Practice}{19}{6}{485-499}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1080/1066892950190602}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1080/1066892950190602} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Burd%
 }{%
 Burd%
@@ -221,6 +284,36 @@ Burd, S.%
 \begin{APACrefURL}
   \url{https://www.newamerica.org/education-policy/reports/undermining-pell-iv/}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Byrne%
+}{%
+Byrne%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+RN4441}
+\APACinsertmetastar {%
+RN4441}%
+\begin{APACrefauthors}%
+Byrne, J\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Honors programs in community colleges: A review of
+  recent issues and literature} {Honors programs in community colleges: A
+  review of recent issues and literature}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Community College Review}{26}{2}{67-81}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.sagepub.com/doi/abs/10.1177/009155219802600205}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1177/009155219802600205} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -359,6 +452,67 @@ Clinedinst, M.%
   admission}\ \APACbVolEdTR{}{\BTR{}}.
 \newblock
 \APACaddressInstitution{}{National Association of College Admissions Officers}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cohen%
+, Brawer%
+\BCBL {}\ \BBA {} Kisker%
+}{%
+Cohen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+RN4444}
+\APACinsertmetastar {%
+RN4444}%
+\begin{APACrefauthors}%
+Cohen, A\BPBI M.%
+, Brawer, F\BPBI B.%
+\BCBL {}\ \BBA {} Kisker, C\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {The American community college} {The american community
+  college}\ (\PrintOrdinal{Sixth edition.}\ \BEd).
+\newblock
+\APACaddressPublisher{San Francisco}{Jossey-Bass}.
+\newblock
+\begin{APACrefDOI} \doi{40022881686} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cortes%
+\ \BBA {} Lincove%
+}{%
+Cortes%
+\ \BBA {} Lincove%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+RN4428}
+\APACinsertmetastar {%
+RN4428}%
+\begin{APACrefauthors}%
+Cortes, K\BPBI E.%
+\BCBT {}\ \BBA {} Lincove, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Match or mismatch? Automatic admissions and college
+  preferences of low- and high-income students} {Match or mismatch? automatic
+  admissions and college preferences of low- and high-income students}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Educational Evaluation and Policy
+  Analysis}{41}{1}{98-123}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000458186300006} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.3102/0162373718813360} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -653,6 +807,38 @@ Dynarski, S.%
 \begin{APACrefURL} \url{http://www.nber.org/papers/w25349} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.3386/w25349} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fletcher%
+\ \BBA {} Mayer%
+}{%
+Fletcher%
+\ \BBA {} Mayer%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+RN4435}
+\APACinsertmetastar {%
+RN4435}%
+\begin{APACrefauthors}%
+Fletcher, J\BPBI M.%
+\BCBT {}\ \BBA {} Mayer, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Tracing the effects of guaranteed admission through the
+  college process: Evidence from a policy discontinuity in the Texas 10\% Plan}
+  {Tracing the effects of guaranteed admission through the college process:
+  Evidence from a policy discontinuity in the texas 10\% plan}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Contemporary Economic Policy}{32}{1}{169-186}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000333968200013} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1111/coep.12011} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -982,6 +1168,34 @@ Hoxby, C\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Huelsman%
+}{%
+Huelsman%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4439}
+\APACinsertmetastar {%
+RN4439}%
+\begin{APACrefauthors}%
+Huelsman, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Social exclusion: The state of state U for black students}
+  {Social exclusion: The state of state u for black students}\ \APACbVolEdTR
+  {}{Report}.
+\newblock
+\APACaddressInstitution{}{Demos}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.demos.org/publication/social-exclusion-state-state-u-black-students}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hurtado%
 , Alvarez%
 , Guillermo-Wann%
@@ -1246,6 +1460,40 @@ Khan, S\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kisker%
+\ \BBA {} Outcalt%
+}{%
+Kisker%
+\ \BBA {} Outcalt%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+RN4443}
+\APACinsertmetastar {%
+RN4443}%
+\begin{APACrefauthors}%
+Kisker, C\BPBI B.%
+\BCBT {}\ \BBA {} Outcalt, C\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Community college honors and developmental faculty:
+  Characteristics, practices, and implications for access and educational
+  equity} {Community college honors and developmental faculty: Characteristics,
+  practices, and implications for access and educational equity}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Community College Review}{33}{2}{1-21}.
+\newblock
+\begin{APACrefURL}
+  \url{https://journals.sagepub.com/doi/abs/10.1177/009155210503300201}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1177/009155210503300201} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Koshal%
 \ \BBA {} Koshal%
 }{%
@@ -1270,6 +1518,30 @@ Koshal, R.%
   is the relationship}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Education Economics}{8}{1}{81-89}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Laanan%
+}{%
+Laanan%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+RN4445}
+\APACinsertmetastar {%
+RN4445}%
+\begin{APACrefauthors}%
+Laanan, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1998}.
+\unskip\
+\newblock
+\APACrefbtitle {Beyond transfer shock: A study of students' college experiences
+  and adjustment processes at UCLA} {Beyond transfer shock: A study of
+  students' college experiences and adjustment processes at ucla}\
+  \APACtypeAddressSchool {Unpublished doctoral dissertation}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1306,10 +1578,10 @@ Leeds, D\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Long%
+B\BPBI T.~Long%
 \ \BBA {} Kurlaender%
 }{%
-Long%
+B\BPBI T.~Long%
 \ \BBA {} Kurlaender%
 }{%
 {\protect \APACyear {2009}}%
@@ -1335,6 +1607,40 @@ Long, B\BPBI T.%
 \begin{APACrefURL} \url{<Go to ISI>://000263763100002} \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.3102/0162373708327756} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M\BPBI C.~Long%
+, Saenz%
+\BCBL {}\ \BBA {} Tienda%
+}{%
+M\BPBI C.~Long%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+RN4437}
+\APACinsertmetastar {%
+RN4437}%
+\begin{APACrefauthors}%
+Long, M\BPBI C.%
+, Saenz, V.%
+\BCBL {}\ \BBA {} Tienda, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Policy transparency and college enrollment: Did the
+  Texas Top Ten Percent law broaden access to the public flagships?} {Policy
+  transparency and college enrollment: Did the texas top ten percent law
+  broaden access to the public flagships?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Annals of the American Academy of Political and Social
+  Science}{627}{}{82-105}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000273150200005} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1177/0002716209348741} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1437,6 +1743,70 @@ Mountjoy, J.%
 \begin{APACrefURL}
   \url{https://f17b4d08-a-62cb3a1a-s-sites.googlegroups.com/site/jackmountjoyeconomics/Mountjoy_2018_Community_Colleges_and_Upward_Mobility.pdf?attachauth=ANoY7coUCUd25KX9jm6QeZEhbJH4a8MoE4UN2lBKA9Hvlisje80KTIkIDU27Wp1HzgOLq06CoEV9NQVBxUo6ffVThYkXAjOqi-moTbPAP3VTWTQvU5ctda-g3Igvf5Xu3gjrjZFPeZsd86k25roXMwPFWShpeV5Ealit_Rs6W_drWM8PNxnT-3gJjjYG5bH_sBiIbIWUc76h62Vuu_qYcqp7x7SWL8i1B3BFzSswbFd0Jmte3WEjakEt8lqSJPWwZlglmxjO6czfNqTUt3upXPifv1_ssSdPIA%3D%3D&attredirects=0}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nichols%
+\ \BBA {} Schak%
+}{%
+Nichols%
+\ \BBA {} Schak%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+RN4438}
+\APACinsertmetastar {%
+RN4438}%
+\begin{APACrefauthors}%
+Nichols, A.%
+\BCBT {}\ \BBA {} Schak, O\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Borken mirrors: Black student representation at public state
+  colleges and universities} {Borken mirrors: Black student representation at
+  public state colleges and universities}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{The Education Trust}.
+\newblock
+\begin{APACrefURL}
+  \url{https://edtrust.org/resource/broken-mirrors-black-representation/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Niu%
+\ \BBA {} Tienda%
+}{%
+Niu%
+\ \BBA {} Tienda%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+RN4436}
+\APACinsertmetastar {%
+RN4436}%
+\begin{APACrefauthors}%
+Niu, S\BPBI X.%
+\BCBT {}\ \BBA {} Tienda, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The impact of the Texas Top 10 Percent Law on college
+  enrollment: A regression discontinuity approach} {The impact of the texas top
+  10 percent law on college enrollment: A regression discontinuity
+  approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Policy Analysis and
+  Management}{29}{1}{84-110}.
+\newblock
+\begin{APACrefURL} \url{<Go to ISI>://WOS:000272634800005} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/pam.20480} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2073,6 +2443,32 @@ RN4035}%
 \APACrefbtitle {Open Records.} {Open records.}
 \newblock
 \begin{APACrefURL} [{2019-01-13}]\url{http://open.ua.edu/} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of California}%
+}{%
+{University of California}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+RN4433}
+\APACinsertmetastar {%
+RN4433}%
+\begin{APACrefauthors}%
+{University of California}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {UC Board of Regents approves policy on nonresident student
+  enrollment.} {Uc board of regents approves policy on nonresident student
+  enrollment.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.universityofcalifornia.edu/press-room/uc-board-regents-approves-policy-nonresident-student-enrollment}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
