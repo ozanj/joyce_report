@@ -8,19 +8,17 @@
 \SweaveOpts{concordance=TRUE}
 
 <<setup, echo=FALSE>>=
-univs <- read.csv('./data/graph_stats.csv')
-for (i in 1:nrow(univs)) {
-  for (j in tail(names(univs), -2)) {
-    var <- paste0(j, '_', univs[i, 'univ_id'])
-    val <- univs[i, j]
-    if (grepl('med_income', var)) {
-      val <- paste0('\\\\$', round(val / 1000), 'k')
-    } else if (grepl('income', var) | grepl('race', var)) {
-      val <- paste0(round(val, 1), '\\\\%')
-    } else {
-      val <- format(val, nsmall=2, big.mark=',')
+files = c('event_count')
+for (file in files) {
+  univs <- read.csv(paste0('./data/', file, '.csv'), colClasses='character')
+  for (i in 1:nrow(univs)) {
+    for (j in tail(names(univs), -2)) {
+      var <- paste0(j, '_', univs[i, 'univ_id'])
+      val <- univs[i, j]
+      print(val)
+      assign(var, val)
+      print(var)
     }
-    assign(var, val)
   }
 }
 @
@@ -154,7 +152,7 @@ Nonresident enrollment growth at the University of Alabama also coincided with d
 While most research on college access focuses on student behavior, the transformation of student composition at the University of Alabama did not result from sudden, unexpected shifts in student demand. Rather, the University developed arguably the most sophisticated and extensive approach to student recruiting in public higher education.  Utilizing the ``data science'' expertise of enrollment management consulting firms, the university identifies desirable ``prospects'' and plies these prospects with a targeted cocktail of emails, brochures, paid advertising (e.g., pay-per-click ads from Google), off-campus recruiting visits to ``feeder'' high schools, and a savvy social media campaign. 
 
 %This report focuses on off-campus recruiting visits (e.g., visits to local high schools, community colleges, hotel receptions). 
-Figure~\ref{fig:alabama} provides simple descriptive statistics about off-campus recruiting visits (e.g., visits to local high schools, community colleges, hotel receptions) by the University of Alabama in the 2017 calendar year.  Admissions representatives made \Sexpr{num_visits_all_100751} off-campus recruiting visits.  However, only \Sexpr{num_visits_in_100751} of these visits occurred in Alabama.  Further, the University visited only 32\% of Alabama public high schools. These in-state public high school visits were concentrated relatively, affluent, predominantly White communities, largely avoiding high schools in Alabama's ``Black Belt,'' which enroll the largest concentration of African American Students.  However, these in-state recruiting efforts were dwarfed by the \Sexpr{num_visits_out_100751} out-of-state recruiting visits, which spanned metropolitan areas across the U.S. The University made \Sexpr{num_pubHS_out_100751} visits to out-of-state public high schools. These visits focused on schools in affluent communities, with visited schools having a much higher percent of White students than non-visited schools.  Incredibly, the University made \Sexpr{num_privHS_out_100751} visits to out-of-state private high schools, more than double the total number of in-state recruiting visits.
+Figure~\ref{fig:alabama} provides simple descriptive statistics about off-campus recruiting visits (e.g., visits to local high schools, community colleges, hotel receptions) by the University of Alabama in the 2017 calendar year.  Admissions representatives made \Sexpr{all_100751} off-campus recruiting visits.  However, only \Sexpr{all_in_100751} of these visits occurred in Alabama.  Further, the University visited only 32\% of Alabama public high schools. These in-state public high school visits were concentrated relatively, affluent, predominantly White communities, largely avoiding high schools in Alabama's ``Black Belt,'' which enroll the largest concentration of African American Students.  However, these in-state recruiting efforts were dwarfed by the \Sexpr{all_out_100751} out-of-state recruiting visits, which spanned metropolitan areas across the U.S. The University made \Sexpr{pub_out_100751} visits to out-of-state public high schools. These visits focused on schools in affluent communities, with visited schools having a much higher percent of White students than non-visited schools.  Incredibly, the University made \Sexpr{priv_out_100751} visits to out-of-state private high schools, more than double the total number of in-state recruiting visits.
 %WHAT SHOULD SMALL MULTIPLE FIGURE INCLUDE
 	% TENTATIVE CHOICE OF SMALL MULTIPLES TO SHOW
 	  % timeline of events with different colored lines for event type [would work for flow of paragraph showing the mad rus of "travel season"]
@@ -284,7 +282,7 @@ Table~\ref{tbl:event_count} presents the number of total recruiting visits by ty
 We organize results around these initial findings. First, out-of-state analyses focus on the characteristics of public and private high schools because these events comprise the vast majority of out of state recruiting visits. Because public universities hold unique responsibilities to serving state residents and providing pathways for community college transfer students, we then assess each university's "coverage" of visiting in-state public high schools and in-state community colleges. Given our interest in understading the enrollment priorities of universities via recruiting, we focus on understanding the income, race, and achievement characteristics of schools and communities that recieve visits across out-of-state and in-state recruiting efforts.
 
 \subsection*{Out of State Recruiting}
-\textbf{\textit{Public high school visits.}} Table~\ref{tbl:event_count} above shows that most cases in the study made more out-of-state recruiting visits than visits within their respective states. Alabama showcased the upper extreme of this trend with 3,879 out-of-state visits, which made up more than 90\% of total recruiting visits by the university. While other universities made a relatively modest number of out-of-state visits in comparison to Alabama, these visits still made up large proportions of total visits by each university: Rutgers Arkansas (59\%), Stony Brook (60\%), Arkansas (78\%), Cincinnati (59\%), CU Boulder (74\%), Georgia (67\%), Kansas (74\%), UMass (69\%), Nebraska (62\%), Pittsburgh (74\%). However, three universities that made less out-of-state visits than in-state visits. UC Berkeley's 430 out of state visits made up less than half of all recruiting visits (47\%). NC State's 169 out of state visits made up only 26\% of total recruiting visits. Lastly, UC Irvines's 169 visits out of state visits made up only 18\% of totoal recryiting visits by the university.
+\textbf{\textit{Public high school visits.}} Table~\ref{tbl:event_count} above shows that most cases in the study made more out-of-state recruiting visits than visits within their respective states. Alabama showcased the upper extreme of this trend with \Sexpr{all_out_100751} out-of-state visits, which made up more than 90\% of total recruiting visits by the university. While other universities made a relatively modest number of out-of-state visits in comparison to Alabama, these visits still made up large proportions of total visits by each university: Rutgers (\Sexpr{pct_out_186380}), Stony Brook (\Sexpr{pct_out_196097}), Arkansas (\Sexpr{pct_out_106397}), Cincinnati (\Sexpr{pct_out_201885}), CU Boulder (\Sexpr{pct_out_126614}), Georgia (\Sexpr{pct_out_139959}), Kansas (\Sexpr{pct_out_155317}), UMass (\Sexpr{pct_out_166629}), Nebraska (\Sexpr{pct_out_181464}), Pittsburgh (\Sexpr{pct_out_215293}). However, three universities that made less out-of-state visits than in-state visits. UC Berkeley's \Sexpr{all_out_110635} out of state visits made up less than half of all recruiting visits (\Sexpr{pct_out_110635}). NC State's \Sexpr{all_out_199193} out of state visits made up only \Sexpr{pct_out_199193} of total recruiting visits. Lastly, UC Irvines's \Sexpr{all_out_110653} visits out of state visits made up only \Sexpr{pct_out_110653} of total recruiting visits by the university.
 
 Nearly all universities' out-of-state recruiting visits were located in populous metropolitan areas across the country. Almost all universities visited New York City, Los Angeles, Chicago, Dallas, Houston, Washington D.C., San Francisco, and Boston metropolitan areas. Other metropolitan areas less frequently visited across universities include Denver, Philadelphia, Baltimore, Miami, Jacksonville, Tampa, Orlando, and Atlanta.
 
