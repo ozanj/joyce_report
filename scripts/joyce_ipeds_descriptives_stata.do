@@ -131,3 +131,14 @@ list instname unitid endyear cohortsfaef  fgrnt_p ugftfreshtot ugftfreshblmf pug
 
 	
 
+*CHECKING APPENDIX TABLES
+
+sort unitid endyear
+list instname unitid endyear account staterev statea statecg stateopcg statenonopg tuition  ///
+	if inlist(unitid,196097, 186380, 215293, 201885, 181464, 139959, 218663, 100751, 199193, 110635, 110653, 126614, 155317, 106397, 166629)==1 & endyear>=2000, ///
+	noobs header(25) abb(12) str(40) sepby(unitid)
+	
+	
+tab endyear re_ef if inlist(unitid,196097, 186380, 215293, 201885, 181464, 139959, 218663, 100751, 199193, 110635, 110653, 126614, 155317, 106397, 166629)==1 & endyear>=2000
+
+
