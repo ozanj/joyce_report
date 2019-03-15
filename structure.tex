@@ -254,7 +254,7 @@
 }
 
 % Params: filename in the graphs/ folder, caption, fig reference
-\newcommand{\addSmallMultiples}[3] {  % Add 3x5 figure set
+\newcommand{\addSmallMultiples}[4][1.2] {  % Add 3x5 figure set
 \afterpage{
 \newgeometry{
     top=0.75in,
@@ -270,36 +270,36 @@
     \vspace{0.45cm}
     \centering
     
-    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}
-    \label{fig:#3}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \label{fig:#4}
 
-    \includegraphics[width=0.3\textwidth, page=9, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=2, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=1, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}
-
-    \smallskip
-
-    \includegraphics[width=0.3\textwidth, page=8, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=14, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=10, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}
+    \includegraphics[width=0.3\textwidth, page=9, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=2, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=1, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
 
     \smallskip
 
-    \includegraphics[width=0.3\textwidth, page=11, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=4, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=12, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}
+    \includegraphics[width=0.3\textwidth, page=8, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=14, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=10, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
 
     \smallskip
 
-    \includegraphics[width=0.3\textwidth, page=6, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=13, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=16, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}
+    \includegraphics[width=0.3\textwidth, page=11, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=4, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=12, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
 
     \smallskip
 
-    \includegraphics[width=0.3\textwidth, page=5, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=3, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}\hfill
-    \includegraphics[width=0.3\textwidth, page=7, cfbox=Gray 0.4pt, trim={1.2in 1.5in 1.5in 1.5in}, clip]{graphs/#1}
+    \includegraphics[width=0.3\textwidth, page=6, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=13, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=16, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
+
+    \smallskip
+
+    \includegraphics[width=0.3\textwidth, page=5, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=3, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=7, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
 
 \end{figure*}
 

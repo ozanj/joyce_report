@@ -554,13 +554,15 @@ This is the appendix.
     footskip=0.5in
 }
 
-\addSmallMultiples{revenue.pdf}{State Revenue and Tuition Revenue per FTE Student.}{revenue}
+\addSmallMultiples[1.5]{revenue.pdf}{State Revenue and Tuition Revenue per FTE Student.}{revenue}
 
-\addSmallMultiples{pct_pell.pdf}{Percent Out-of-State Freshmen and Percent Pell Recipient.}{pct_pell}
+\addSmallMultiples[1.5]{pct_pell.pdf}{Percent Out-of-State Freshmen and Percent Pell Recipient.}{pct_pell}
 
-\addSmallMultiples{race_black.pdf}{Percent Black College-Age Population and Freshment Enrollment.}{race_black}
+\addSmallMultiples[1.5]{race_black.pdf}{Percent Black College-Age Population and Freshment Enrollment.}{race_black}
 
-\addSmallMultiples{race_hispanic.pdf}{Percent Hispanic College-Age Population and Freshment Enrollment.}{race_hispanic}
+\addSmallMultiples[1.5]{race_hispanic.pdf}{Percent Hispanic College-Age Population and Freshment Enrollment.}{race_hispanic}
+
+\addSmallMultiples[1.5]{hs_grad.pdf}{Actual and Projected Number of In-State High School Graduates.}{hs_grad}
 
 % Final Page ~~~~
 
