@@ -1834,91 +1834,6 @@ Noel-Levitz.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-R.~Noel-Levitz%
-}{%
-R.~Noel-Levitz%
-}{%
-{\protect \APACyear {2016}}%
-}]{%
-RN4315}
-\APACinsertmetastar {%
-RN4315}%
-\begin{APACrefauthors}%
-Noel-Levitz, R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-\APACrefbtitle {2016 report: cost of recruiting an undergraduate student for
-  four-year and two-year institutions} {2016 report: cost of recruiting an
-  undergraduate student for four-year and two-year institutions}\
-  \APACbVolEdTR{}{\BTR{}}.
-\newblock
-\APACaddressInstitutionEqAuth{}{Ruffalo Noel-Levitz}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.ruffalonl.com/papers-research-higher-education-fundraising/campus-organizational-strategy/benchmark-reports-higher-education}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-R.~Noel-Levitz%
-}{%
-R.~Noel-Levitz%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-RN4314}
-\APACinsertmetastar {%
-RN4314}%
-\begin{APACrefauthors}%
-Noel-Levitz, R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-\APACrefbtitle {2017 marketing and student recruitment report of effective
-  practices} {2017 marketing and student recruitment report of effective
-  practices}\ \APACbVolEdTR{}{\BTR{}}.
-\newblock
-\APACaddressInstitutionEqAuth{}{Ruffalo Noel-Levitz}.
-\newblock
-\begin{APACrefURL}
-  \url{https://www.ruffalonl.com/papers-research-higher-education-fundraising/campus-organizational-strategy/benchmark-reports-higher-education}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-R.~Noel-Levitz%
-}{%
-R.~Noel-Levitz%
-}{%
-{\protect \APACyear {2018}}%
-}]{%
-RN4402}
-\APACinsertmetastar {%
-RN4402}%
-\begin{APACrefauthors}%
-Noel-Levitz, R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-\APACrefbtitle {2018 marketing and student recruitment report of effective
-  practices} {2018 marketing and student recruitment report of effective
-  practices}\ \APACbVolEdTR{}{\BTR{}}.
-\newblock
-\APACaddressInstitutionEqAuth{}{Ruffalo Noel-Levitz}.
-\newblock
-\begin{APACrefURL}
-  \url{http://learn.ruffalonl.com/rs/395-EOG-977/images/RNL_2018_Student_Recruitment_Marketing_Report_EM-19.pdf}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Oldfield%
 }{%
 Oldfield%
@@ -2171,6 +2086,91 @@ Rudolph, F.%
   college and university: A history}\ (\PrintOrdinal{1st}\ \BEd).
 \newblock
 \APACaddressPublisher{New York}{Alfred A. Knopf}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Ruffalo Noel-Levitz}%
+}{%
+{Ruffalo Noel-Levitz}%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+RN4315}
+\APACinsertmetastar {%
+RN4315}%
+\begin{APACrefauthors}%
+{Ruffalo Noel-Levitz}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {2016 report: cost of recruiting an undergraduate student for
+  four-year and two-year institutions} {2016 report: cost of recruiting an
+  undergraduate student for four-year and two-year institutions}\
+  \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Ruffalo Noel-Levitz}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.ruffalonl.com/papers-research-higher-education-fundraising/campus-organizational-strategy/benchmark-reports-higher-education}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Ruffalo Noel-Levitz}%
+}{%
+{Ruffalo Noel-Levitz}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+RN4314}
+\APACinsertmetastar {%
+RN4314}%
+\begin{APACrefauthors}%
+{Ruffalo Noel-Levitz}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {2017 marketing and student recruitment report of effective
+  practices} {2017 marketing and student recruitment report of effective
+  practices}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Ruffalo Noel-Levitz}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.ruffalonl.com/papers-research-higher-education-fundraising/campus-organizational-strategy/benchmark-reports-higher-education}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Ruffalo Noel-Levitz}%
+}{%
+{Ruffalo Noel-Levitz}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+RN4402}
+\APACinsertmetastar {%
+RN4402}%
+\begin{APACrefauthors}%
+{Ruffalo Noel-Levitz}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {2018 marketing and student recruitment report of effective
+  practices} {2018 marketing and student recruitment report of effective
+  practices}\ \APACbVolEdTR{}{\BTR{}}.
+\newblock
+\APACaddressInstitution{}{Ruffalo Noel-Levitz}.
+\newblock
+\begin{APACrefURL}
+  \url{http://learn.ruffalonl.com/rs/395-EOG-977/images/RNL_2018_Student_Recruitment_Marketing_Report_EM-19.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
