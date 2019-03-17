@@ -79,5 +79,6 @@ unique(grep('college\\s?board', data$payee, value = TRUE, ignore.case = TRUE))
 # Unsure if 'COLLEGEBOARD SEARCH' and 'COLLEGEBOARD*SEARCH' might be referring to: https://collegeboardsearch.collegeboard.org/pastudentsrch/support/licensing/college-board-search-services/student-search-service
 
 # 'COLLEGE BOARD' (2010 - 2018)
-data_collegeboard = data %>% filter(payee == 'COLLEGE BOARD')
+# data_collegeboard = data %>% filter(payee == 'COLLEGE BOARD')
+data_collegeboard = data %>% filter(payee %in% c('COLLEGE BOARD', 'COLLEGEBOARD SEARCH', 'COLLEGEBOARD*SEARCH'))
 sum(data_collegeboard[data_collegeboard$year %in% (2010:2018), ]$check_amount_adjusted)
