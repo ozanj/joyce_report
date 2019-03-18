@@ -178,8 +178,8 @@
 \captionsetup{labelfont={CaptionFont, LightRed}, figurename=FIGURE, tablename=TABLE}
 
 % Params: border color (default: White), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel}), left, bottom, right, top crop
-\newcommand{\addFigure}[8][White] {  % Add single figure
-\begin{figure}[!ht]
+\newcommand{\addFigure}[9][White] {  % Add single figure
+\begin{figure}[!h#9]
     \vspace{0.2cm}
     \centering
 
@@ -257,7 +257,7 @@
 }
 
 \usepackage{setspace}
-% Params: filename in the graphs/ folder, caption, fig reference
+% Params: filename in the graphs/ folder, caption, fig reference, footnotes
 \newcommand{\addSmallMultiples}[5][1.2] {  % Add 3x5 figure set
 \afterpage{
 \ifnum\pdfstrcmp{#1}{1.5}=0
@@ -366,8 +366,8 @@
 
 }
 
-% Params: line spacing (default: 10pt), filename in the tables/ folder, caption, tbl reference (or `x` if continued table)
-\newcommand{\addLandscapeTable}[4][10] {  % Add Landscape Table
+% Params: line spacing (default: 10pt), filename in the tables/ folder, caption, tbl reference (or `x` if continued table), footnotes
+\newcommand{\addLandscapeTable}[5][10] {  % Add Landscape Table
 \afterpage{
 \pagestyle{lscape-style}
 \newgeometry{top=0.5in, bottom=0.5in, inner=0in, outer=0in}
@@ -391,6 +391,17 @@
       \fontsize{8pt}{#1pt}\selectfont
       \input{tables/#2.tex}
     \endgroup
+    
+    \ifnum\pdfstrcmp{#1}{1.5}=0
+      \begin{flushleft}
+        \begin{footnotesize}
+          \begingroup\onehalfspacing
+            \color{DarkGray}
+            #5
+          \endgroup
+        \end{footnotesize}
+      \end{flushleft}
+    \fi
 
 \end{minipage}}
 \end{table*}
