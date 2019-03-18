@@ -190,6 +190,25 @@
 \end{figure}
 }
 
+% Params: placement (default: b), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel})
+\newcommand{\addFullFigure}[9][b] {  % Add single figure that spans 2 cols
+\afterpage{
+\begin{figure*}[!h#1]
+    \vspace{0.2cm}
+    \centering
+
+    \includegraphics[width=0.8\textwidth, cfbox=Gray 0.4pt]{images/maps/#2}
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \label{fig:#4}
+    
+    \ifnum\pdfstrcmp{#1}{b}=0
+      \vspace{-1cm}
+    \fi
+
+\end{figure*}
+}
+}
+
 % Params: image filename, caption, fig reference, place at t (top) or b (bottom) of page, subcaptions
 \usepackage{stfloats}
 \newcommand{\addFigureSet}[8] {  % Add 2x2 figure set
@@ -392,16 +411,14 @@
       \input{tables/#2.tex}
     \endgroup
     
-    \ifnum\pdfstrcmp{#1}{1.5}=0
-      \begin{flushleft}
-        \begin{footnotesize}
-          \begingroup\onehalfspacing
-            \color{DarkGray}
-            #5
-          \endgroup
-        \end{footnotesize}
-      \end{flushleft}
-    \fi
+    \begin{flushleft}
+      \begin{footnotesize}
+        \begingroup\onehalfspacing
+          \color{DarkGray}
+          #5
+        \endgroup
+      \end{footnotesize}
+    \end{flushleft}
 
 \end{minipage}}
 \end{table*}
