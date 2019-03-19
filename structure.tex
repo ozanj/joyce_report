@@ -428,3 +428,57 @@
 \clearpage
 }
 }
+
+% Appendix ~~~~
+
+\usepackage{xparse}
+\usepackage{xpatch}
+
+% Do not a driver counter, i.e. a resetting counter for those two counter fellows here:
+\newcounter{lofcntr}
+\newcounter{lotcntr}
+
+\NewDocumentCommand{\clearcontents}{}{%
+  \stepcounter{lofcntr}% We don't need labels here, I suppose?
+  \stepcounter{lotcntr}%
+  \setcounter{figure}{0}
+  \setcounter{table}{0}
+}
+
+\makeatletter
+\renewcommand\listoffigures{%
+  \@starttoc{lof}%
+}
+\makeatother
+
+\AtBeginDocument{%
+  \stepcounter{lofcntr}%
+  \stepcounter{lotcntr}%
+}
+
+\makeatletter
+% Store the definition of \ext@figure etc. first
+\let\latex@ext@figure\ext@figure
+\let\latex@ext@table\ext@table
+
+\AtBeginDocument{%
+\xpretocmd{\caption}{%
+  % Prepend the extension with the number of the current list of ...
+  \def\ext@figure{\number\value{lofcntr}\latex@ext@figure}
+  \def\ext@table{\number\value{lotcntr}\latex@ext@table}
+}{\typeout{Worked!}}{\typeout{Failed miserably!}}
+}
+
+\xpatchcmd{\listoffigures}{%
+  \@starttoc{lof}%
+}{%
+  \@starttoc{\number\value{lofcntr}lof}%
+}{\typeout{Patch success}}{\typeout{Patch failure}}
+
+\xpatchcmd{\listoftables}{%
+  \@starttoc{lot}%
+}{%
+  \@starttoc{\number\value{lotcntr}lot}%
+}{\typeout{Patch success}}{\typeout{Patch failure}}
+
+\makeatother

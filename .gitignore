@@ -6,6 +6,7 @@
 *.aux
 *.blg
 *.lof
+*.*lof
 *.log
 *.lot
 *.fls
