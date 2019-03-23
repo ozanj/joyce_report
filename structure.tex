@@ -91,6 +91,7 @@
 
 \fancyhead{} % clear all header fields
 \fancyfoot{} % clear all footer fields
+\fancyhead[L]{\roboto\selectfont\textcolor{LightRed}{\uppercase{Embargoed}}}
 \fancyhead[R]{\href{https://emraresearch.org}{emraresearch.org}}
 \fancyfoot[LE]{\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Recruiting the Out-of-State University}}}
 \fancyfoot[RO]{\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage}
@@ -99,6 +100,9 @@
 \fancypagestyle{lscape-style}{  % landscape header/footer
     \fancyhead{}
     \fancyfoot{}
+    % \fancyhead[L]{%
+    % \tikz[remember picture,overlay]
+    %   \node[outer sep=1cm,above,xshift=0in,yshift=0.15in,rotate=90] at (current page.225) {EMBARGOED;}
     \fancyhead[R]{%
     \tikz[remember picture,overlay]
       \node[outer sep=1cm,above,xshift=0.8in,yshift=0.15in,rotate=90] at (current page.135) {\href{https://emraresearch.org}{emraresearch.org}};}
