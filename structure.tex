@@ -101,7 +101,7 @@
     \fancyfoot{}
     \fancyhead[R]{%
     \tikz[remember picture,overlay]
-      \node[outer sep=1cm,above,xshift=0.8in,yshift=0.15in,rotate=90] at (current page.135) {\href{https://emraresearch.org}{emraresearch.org}};}
+      \node[outer sep=1cm,above,xshift=1in,yshift=0.15in,rotate=90] at (current page.135) {\href{https://emraresearch.org}{emraresearch.org}};}
     \fancyfoot[LE]{%
     \tikz[remember picture,overlay]
       \node[outer sep=1cm,above,yshift=0.85in,rotate=90] at (current page.315) {\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Recruiting the Out-of-State University}}};}
@@ -190,14 +190,14 @@
 \end{figure}
 }
 
-% Params: placement (default: b), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel})
-\newcommand{\addFullFigure}[9][b] {  % Add single figure that spans 2 cols
+% Params: placement (default: b), filename in the images/ folder, caption, fig reference (e.g., ~\ref{fig:funnel}), border color
+\newcommand{\addFullFigure}[5][b] {  % Add single figure that spans 2 cols
 \afterpage{
 \begin{figure*}[!h#1]
     \vspace{0.2cm}
     \centering
 
-    \includegraphics[width=0.8\textwidth, cfbox=Gray 0.4pt]{images/maps/#2}
+    \includegraphics[width=0.8\textwidth, cfbox=#5 0.4pt]{images/maps/#2}
     \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
     
