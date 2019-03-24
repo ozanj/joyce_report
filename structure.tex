@@ -209,38 +209,65 @@
 }
 }
 
-% Params: image filename, caption, fig reference, place at t (top) or b (bottom) of page, subcaptions
+% Params: (legend), image filename/fig reference, caption, crop, subcaptions, width
 \usepackage{stfloats}
-\newcommand{\addFigureSet}[8] {  % Add 2x2 figure set
+\newcommand{\addFigureSet}[9][x] {  % Add 2x2 figure set
 \afterpage{
-\begin{figure*}[#4]
-    \vspace{0.45cm}
+\ifnum\pdfstrcmp{#1}{x}=0
+  \begin{figure*}[b]
+\else
+  \begin{figure*}[t]
+\fi
+
+    \ifnum\pdfstrcmp{#1}{x}=0
+      \vspace{0.45cm}
+    \fi
+
     \centering
 
-    \begin{subfigure}[b]{.45\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_1}
+    \ifnum\pdfstrcmp{#1}{x}=-1
+      \hspace*{0.4cm}
+    \fi
+    \begin{subfigure}[b]{#9\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_1}
       \caption{#5}
     \end{subfigure}\hfill
-    \begin{subfigure}[b]{.45\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_2}
+    \begin{subfigure}[b]{#9\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_2}
       \caption{#6}
     \end{subfigure}
+    \ifnum\pdfstrcmp{#1}{x}=-1
+      \hspace*{0.4cm}
+    \fi
 
     \smallskip
 
-    \begin{subfigure}[b]{.45\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_3}
+    \ifnum\pdfstrcmp{#1}{x}=-1
+      \hspace*{0.4cm}
+    \fi
+    \begin{subfigure}[b]{#9\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_3}
       \caption{#7}
     \end{subfigure}\hfill
-    \begin{subfigure}[b]{.45\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#1_4}
+    \begin{subfigure}[b]{#9\linewidth}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_4}
       \caption{#8}
     \end{subfigure}
+    \ifnum\pdfstrcmp{#1}{x}=-1
+      \hspace*{0.4cm}
+    \fi
 
-    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#2}}}
-    \label{fig:#3}
+    \ifnum\pdfstrcmp{#1}{x}=-1
+      \begin{tikzpicture}[remember picture,overlay]
+           \node [outer sep=1cm,above,yshift=1.25in] at (0,0)
+             {\includegraphics[width=0.25\linewidth, cfbox=Gray 0.4pt]{images/maps/#1}};
+      \end{tikzpicture}
+    \fi
 
-    \ifnum\pdfstrcmp{#4}{b}=0
+    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+    \label{fig:#2}
+
+    \ifnum\pdfstrcmp{#1}{x}=0
       \vspace{-1cm}
     \else
       \vspace{0.45cm}
@@ -255,13 +282,13 @@
 
 \begin{figure*}[#1]
 
-    \begin{minipage}[c]{0.45\textwidth}
+    \begin{minipage}[c]{0.47\textwidth}
         \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{images/#2}
         \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
         \label{fig:#4}
     \end{minipage}
     \hfill
-    \begin{minipage}[c]{0.45\textwidth}
+    \begin{minipage}[c]{0.47\textwidth}
         \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{images/#5}
         \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#6}}}
         \label{fig:#7}
