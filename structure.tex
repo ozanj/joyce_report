@@ -16,6 +16,7 @@
 \definecolor{LightBlue}{RGB}{230, 247, 255}
 \definecolor{LightRed}{RGB}{231, 103, 97}
 \definecolor{DarkGray}{RGB}{71, 71, 71}
+\definecolor{JoyceBlue}{RGB}{51, 110, 184}
 
 \begin{comment}
 \newfontfamily\Avenir[
@@ -95,6 +96,12 @@
 \fancyfoot[LE]{\thepage \hspace{0.4cm} \roboto\selectfont\textcolor{LightRed}{\uppercase{Recruiting the Out-of-State University}}}
 \fancyfoot[RO]{\roboto\selectfont\textcolor{Gray}{\leftmark} \hspace{0.4cm} \thepage}
 \renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{intro-style}{
+    \fancyhead{}
+    \fancyfoot{}
+    \fancyhead[R]{\href{https://emraresearch.org}{emraresearch.org}}
+}
 
 \fancypagestyle{lscape-style}{  % landscape header/footer
     \fancyhead{}

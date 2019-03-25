@@ -45,7 +45,7 @@ for (i in 1:nrow(stats)) {
           \scalebox{-1}[1]{
             \includegraphics[width=9in]{./images/layer.png}}}}%
 
-        \hspace{-0.7cm}
+        \hspace{-0.72cm}
         \makebox[0pt][l]{%
           \raisebox{-1.43\totalheight}[0pt][0pt]{%
             \includegraphics[width=9in, trim={2cm 0 2cm 2cm}, clip]{./images/map_ua.pdf}}}%
@@ -70,11 +70,26 @@ for (i in 1:nrow(stats)) {
         \vspace{0.3cm}
         \hdashrule{0.8\textwidth}{1pt}{1pt} \\
 
-	\vspace{17.1cm}
-        \large Crystal Han, UCLA \\
-        Ozan Jaquette, UCLA \\
-        Karina Salazar, University of Arizona \\~\\
-        %\textit{\color{Gray}{March 2019}}
+      	\vspace{17cm}
+      	
+      	\large\roboto\selectfont\color{Gray}
+
+      	\hspace*{\fill}
+      	\begin{minipage}{.37\linewidth}
+        \begin{flushleft}                           
+          \hspace{0.2cm}\textbf{\color{JoyceBlue}{Crystal Han}}, UCLA \\
+          \hspace{0.2cm}\textbf{\color{JoyceBlue}{Ozan Jaquette}}, UCLA \\
+          \hspace{0.2cm}\textbf{\color{JoyceBlue}{Karina Salazar}}, University of Arizona
+        \end{flushleft} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}{.37\linewidth}
+        \begin{flushright}                                      
+        \vspace{0.6cm} Prepared for: \\
+        \vspace{0.1cm} \includegraphics[width=2.5in]{./images/joyce_logo.png}
+        \end{flushright}
+        \end{minipage}
+        \hspace*{\fill}
 
 \end{titlepage}
 
@@ -99,19 +114,21 @@ for (i in 1:nrow(stats)) {
 }
 \setlength{\headwidth}{\textwidth}
 
-\setcounter{page}{1}
 \parskip=14pt
 \linespread{1.3}
 
 \section*{Acknowledgments\markboth{Acknowledgments}{}}
+\thispagestyle{intro-style}
 
 We would like to gratefully acknowledge the \textbf{Joyce Foundation} for its support in this research investigating the off-campus recruiting patterns of public research universities. Knowing which student populations and communities are targeted by recruiting efforts can reveal insightful information about university enrollment priorities. The Joyce Foundation is a private, non-partisan foundation based in Chicago that supports policy research to advance racial equity and economic mobility for the next generation.
 
 \newpage
-
+\thispagestyle{intro-style}
 \section*{Authors\markboth{Authors}{}}
 
 \newpage
+% \pagenumbering{arabic}
+\setcounter{page}{1}
 
 \section*{Executive Summary\markboth{Executive Summary}{}}  % text inside \markboth{} is displayed in footer
 
@@ -122,9 +139,9 @@ An alternative explanation for access inequality is that the enrollment prioriti
 %Decades of research on organizational behavior finds that policy adoption is often a ceremonial effort to appease external stakeholders, while internal resource allocation provides a reliable indicator of organizational priorities. These findings suggest a ``trust but verify'' approach to university rhetoric about access
 %often represents a ceremonial effort to appease external stakeholders rather than a substantive effort to solve the problem
 
-This report analyzes off-campus recruiting visits (e.g., visit to a local high school) by 15 public research universities as a means of understanding university enrollment priorities. We collected data on recruiting visits by ``scraping'' data from university admissions websites (e.g., webpages advertising admissions representatives coming to a ``neighborhood near you'') and by issuing public records requests. 
+This report analyzes off-campus recruiting visits (e.g., visit to a local high school) by 15 public research universities as a means of understanding university enrollment priorities. We collected data on recruiting visits by ``scraping'' data from university admissions websites (e.g., webpages advertising admissions representatives coming to a ``neighborhood near you'') and by issuing public records requests.
 %Most universities exhibit systematic socioeconomic and racial inequities in off-campus recruiting patterns, but a small number of universities exhibit recruiting patterns broadly consistent with the historical mission of social mobility for meritorious state residents.
-%We find that most universities exhibit systematic socioeconomic and racial inequities in off-campus recruiting patterns, 
+%We find that most universities exhibit systematic socioeconomic and racial inequities in off-campus recruiting patterns,
 %We find a startling degree of socioeconomic and racial bias in university off-campus recruiting patterns.
 
 <<setup, echo=FALSE>>=
@@ -161,14 +178,14 @@ for (univ in univs) {
     \item ``Coverage'' of in-state public high schools and community colleges varied dramatically across universities, even after considering state size and population (e.g., University of Nebraska visited \Sexpr{in_pub_pct_hs_visit_181464} of high schools while University of Alabama visited \Sexpr{in_pub_pct_hs_visit_100751}).
     \item Most universities were more likely to visit in-state public high schools in high-income communities than schools in low-income communities, even after controlling for other factors. However, income bias for in-state visits was smaller than income bias for out-of-state visits.
     \item The presence of racial bias in in-state visits to public high schools varied across universities, with some universities less likely to visit schools with a high share of Black/Latinx/Native students and other universities more likely to visit schools with a high share of Black/Latinx/Native students.
-\end{itemize}  
+\end{itemize}
 
 \textbf{Overall patterns}
 \begin{itemize}
     \item \textbf{Recruiting patterns are clearly tied to state funding}. Universities with weak state funding (e.g., University of Alabama, University of South Carolina) tended to make more out-of-state visits, fewer in-state visits, and exhibit socioeconomic and/or racial bias in in-state visits. %Universities with strong state funding (e.g., North Carolina State University, University of California-Irvine) tended make fewer out-of-state visits, more in-state visits, and exhibit less socioeconomic and/or racial bias in in-state visits
-    \item However, universities facing similar state funding and demographic trends (e.g., UC Berkeley and UC Irvine) often exhibited substantially different recruiting patterns with respect to out-of-state focus, income bias, and racial bias. Therefore, \textbf{university enrollment priorities are choices made by leadership rather than mere functions of environmental conditions}. 
-    %\item Most universities followed the pattern of limited in-state recruiting and expansive out-of-state recruiting in large metropolitan areas, but the ``regional'' (e.g., Northeast, Midwest, Southeast) focus of out-of-state recruiting differed across universities    
-\end{itemize}  
+    \item However, universities facing similar state funding and demographic trends (e.g., UC Berkeley and UC Irvine) often exhibited substantially different recruiting patterns with respect to out-of-state focus, income bias, and racial bias. Therefore, \textbf{university enrollment priorities are choices made by leadership rather than mere functions of environmental conditions}.
+    %\item Most universities followed the pattern of limited in-state recruiting and expansive out-of-state recruiting in large metropolitan areas, but the ``regional'' (e.g., Northeast, Midwest, Southeast) focus of out-of-state recruiting differed across universities
+\end{itemize}
 
 \end{color-block}
 
@@ -645,7 +662,7 @@ We hope that our data on recruiting behavior is utilized by both internal and ex
 Finally, researchers create an empirical basis for local and national policy debates by collecting, analyzing, and disseminating data.  Our research on off-campus recruiting stands on the shoulders of giants, particularly groundbreaking scholarship sociologists \citep[e.g., ][]{RN3519,RN4407,RN4324}. These studies tend to be broad in scope (e.g., encompassing the recruiting, admissions, and yield process) and are based on qualitative, ethnographic, and archival data from one or two organizations. By contrast, our research collects quantitative data on one facet of university recruiting from a larger number of organizations. A limitation of our research is that we ignore many recruiting interventions utilized by universities because collecting systematic data about one recruiting intervention is so time-intensive. However, policy debates tend to be swayed more by quantitative data from many organizations than qualitative data from one organization. Therefore, we see great potential to inform policy debates by developing a set of successive studies, each collecting systematic, quantifiable data about a particular recruiting intervention. Over time, this research agenda will encompass the breadth of university recruiting behavior.
 
 We have initiated several new data collections to capture the different means universities utilize to identify and target prospects.  For example, we are using public records request to examine which student characteristics universities prioritize when purchasing the contact information of ``prospects'' from College Board and ACT.  Second, following \cite{RN4331} and \cite{RN4360}, we are developing experimental audit studies to examine how universities respond to ``inquiries'' from prospects with different characteristics. For each of these data collections, we intend to make the results publicly available so that stakeholders can use these results to push for change at their local university. We also plan to publicly release all data we collect so that researchers and non-profit organizations can conduct their own analyses.
-% Third, to what extent are university ``outreach'' and ``pipeline'' efforts marginal versus substantial in scale? 
+% Third, to what extent are university ``outreach'' and ``pipeline'' efforts marginal versus substantial in scale?
 
 Other important questions about university recruiting behavior require qualitative analyses. For example, how do universities decide which schools and communities to visit and what role do enrollment management consulting firms play in this process? What difficulties do universities face when attempting to visit schools with fewer resources to host admissions visits and how have military recruiters and for-profit colleges been able to overcome these difficulties? Which prospective students are targeted by social media efforts and paid advertising?
 
