@@ -209,7 +209,7 @@
 }
 }
 
-% Params: (legend), image filename/fig reference, caption, crop, subcaptions, width
+% Params: (legend), image filename/fig reference, legend position, crop, subcaptions, width
 \usepackage{stfloats}
 \newcommand{\addFigureSet}[9][x] {  % Add 2x2 figure set
 \afterpage{
@@ -229,11 +229,11 @@
       \hspace*{0.4cm}
     \fi
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_1}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_1}
       \caption{#5}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_2}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_2}
       \caption{#6}
     \end{subfigure}
     \ifnum\pdfstrcmp{#1}{x}=-1
@@ -246,11 +246,11 @@
       \hspace*{0.4cm}
     \fi
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_3}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_3}
       \caption{#7}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={0 #4cm 0 #4cm}, clip]{images/maps/#2_4}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_4}
       \caption{#8}
     \end{subfigure}
     \ifnum\pdfstrcmp{#1}{x}=-1
@@ -259,7 +259,7 @@
 
     \ifnum\pdfstrcmp{#1}{x}=-1
       \begin{tikzpicture}[remember picture,overlay]
-           \node [outer sep=1cm,above,yshift=1.25in] at (0,0)
+           \node [outer sep=1cm,above,yshift=#4in] at (0,0)  % 1.25
              {\includegraphics[width=0.25\linewidth, cfbox=Gray 0.4pt]{images/maps/#1}};
       \end{tikzpicture}
     \fi
