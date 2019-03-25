@@ -391,18 +391,25 @@
 % Params: top or bottom of page (default: b), filename in the tables/ folder, caption, tbl reference
 \newcommand{\addTable}[4][b] {  % Add Table
 
-\begin{table*}[#1]
+\begin{table*}[!h#1]
 
     \centering
+    
+    \ifnum\pdfstrcmp{#2}{data_appendix}=0
+      \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+      \label{tbl:#4}
+    \fi
 
     \begingroup
       \fontsize{8pt}{10pt}\selectfont
       \input{tables/#2.tex}
     \endgroup
 
-    \vspace{0.2cm}
-    \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
-    \label{tbl:#4}
+    \ifnum\pdfstrcmp{#2}{data_appendix}=1
+      \vspace{0.2cm}
+      \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
+      \label{tbl:#4}
+    \fi
 
     \ifnum\pdfstrcmp{#1}{b}=0
       \vspace{-1cm}
@@ -475,6 +482,12 @@
 \makeatletter
 \renewcommand\listoffigures{%
   \@starttoc{lof}%
+}
+\makeatother
+
+\makeatletter
+\renewcommand\listoftables{%
+  \@starttoc{lot}%
 }
 \makeatother
 
