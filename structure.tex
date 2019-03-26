@@ -20,7 +20,7 @@
 
 \begin{comment}
 \newfontfamily\Avenir[
-    Path= fonts/,
+    Path= assets/fonts/,
     Extension= .otf,
     UprightFont = *-45Book,
     ItalicFont = *-45BookOblique,
@@ -28,7 +28,7 @@
 ]{AvenirLTStd}
 
 \newfontfamily\TradeGothic[
-    Path = fonts/,
+    Path = assets/fonts/,
     Extension = .otf,
     UprightFont = *-No18,
     BoldFont = *-No20Bold,
@@ -190,7 +190,7 @@
     \vspace{0.2cm}
     \centering
 
-    \includegraphics[width=0.45\textwidth, cfbox=#1 0.4pt, trim={#5cm #6cm #7cm #8cm}, clip]{images/#2}
+    \includegraphics[width=0.45\textwidth, cfbox=#1 0.4pt, trim={#5cm #6cm #7cm #8cm}, clip]{assets/images/#2}
     \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
 
@@ -204,7 +204,7 @@
     \vspace{0.2cm}
     \centering
 
-    \includegraphics[width=0.8\textwidth, cfbox=#5 0.4pt]{images/maps/#2}
+    \includegraphics[width=0.8\textwidth, cfbox=#5 0.4pt]{assets/images/maps/#2}
     \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
     
@@ -236,11 +236,11 @@
       \hspace*{0.4cm}
     \fi
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_1}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{assets/images/maps/#2_1}
       \caption{#5}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_2}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{assets/images/maps/#2_2}
       \caption{#6}
     \end{subfigure}
     \ifnum\pdfstrcmp{#1}{x}=-1
@@ -253,11 +253,11 @@
       \hspace*{0.4cm}
     \fi
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_3}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{assets/images/maps/#2_3}
       \caption{#7}
     \end{subfigure}\hfill
     \begin{subfigure}[b]{#9\linewidth}
-      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{images/maps/#2_4}
+      \includegraphics[width=\linewidth, cfbox=Gray 0.4pt]{assets/images/maps/#2_4}
       \caption{#8}
     \end{subfigure}
     \ifnum\pdfstrcmp{#1}{x}=-1
@@ -267,7 +267,7 @@
     \ifnum\pdfstrcmp{#1}{x}=-1
       \begin{tikzpicture}[remember picture,overlay]
            \node [outer sep=1cm,above,yshift=#4in] at (0,0)  % 1.25
-             {\includegraphics[width=0.25\linewidth, cfbox=Gray 0.4pt]{images/maps/#1}};
+             {\includegraphics[width=0.25\linewidth, cfbox=Gray 0.4pt]{assets/images/maps/#1}};
       \end{tikzpicture}
     \fi
 
@@ -290,13 +290,13 @@
 \begin{figure*}[#1]
 
     \begin{minipage}[c]{0.47\textwidth}
-        \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{images/#2}
+        \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{assets/images/#2}
         \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
         \label{fig:#4}
     \end{minipage}
     \hfill
     \begin{minipage}[c]{0.47\textwidth}
-        \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{images/#5}
+        \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{assets/images/#5}
         \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#6}}}
         \label{fig:#7}
     \end{minipage}
@@ -342,33 +342,33 @@
     \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
     \label{fig:#4}
 
-    \includegraphics[width=0.3\textwidth, page=9, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=2, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=1, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
+    \includegraphics[width=0.3\textwidth, page=9, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=2, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=1, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}
 
     \smallskip
 
-    \includegraphics[width=0.3\textwidth, page=8, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=14, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=10, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
+    \includegraphics[width=0.3\textwidth, page=8, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=14, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=10, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}
 
     \smallskip
 
-    \includegraphics[width=0.3\textwidth, page=11, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=4, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=12, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
+    \includegraphics[width=0.3\textwidth, page=11, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=4, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=12, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}
 
     \smallskip
 
-    \includegraphics[width=0.3\textwidth, page=6, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=13, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=16, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
+    \includegraphics[width=0.3\textwidth, page=6, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=13, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=16, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}
 
     \smallskip
 
-    \includegraphics[width=0.3\textwidth, page=5, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=3, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}\hfill
-    \includegraphics[width=0.3\textwidth, page=7, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{graphs/#2}
+    \includegraphics[width=0.3\textwidth, page=5, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=3, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}\hfill
+    \includegraphics[width=0.3\textwidth, page=7, cfbox=Gray 0.4pt, trim={#1in 1.5in 1.5in 1.5in}, clip]{assets/graphs/#2}
 
     \ifnum\pdfstrcmp{#1}{1.5}=0
       \begin{flushleft}
@@ -409,7 +409,7 @@
 
     \begingroup
       \fontsize{8pt}{10pt}\selectfont
-      \input{tables/#2.tex}
+      \input{assets/tables/#2.tex}
     \endgroup
 
     \ifnum\pdfstrcmp{#2}{data_appendix}=1
@@ -449,7 +449,7 @@
 
     \begingroup
       \fontsize{#6pt}{#1pt}\selectfont
-      \input{tables/#2.tex}
+      \input{assets/tables/#2.tex}
     \endgroup
     
     \begin{flushleft}

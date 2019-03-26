@@ -15,7 +15,7 @@ files <- c('event_count', 'desc_out_pub_stats', 'desc_out_priv_stats', 'desc_in_
 for (file in files) {
   stats_type <- str_match(file, pattern = 'desc_(.+)_stats')[,2]
   prefix <- ifelse(is.na(stats_type), '', paste0(stats_type, '_'))
-  univs <- read.csv(paste0('./data/', file, '.csv'), colClasses='character')
+  univs <- read.csv(paste0('./assets/data/', file, '.csv'), colClasses='character')
 
   for (i in 1:nrow(univs)) {
     for (j in tail(names(univs), -2)) {
@@ -26,7 +26,7 @@ for (file in files) {
   }
 }
 
-stats <- read.csv('./data/metro_stats.csv', colClasses='character', header=FALSE)
+stats <- read.csv('./assets/data/metro_stats.csv', colClasses='character', header=FALSE)
 for (i in 1:nrow(stats)) {
   var <- stats[i, 1]
   val <- stats[i, 2]
@@ -104,16 +104,16 @@ for (univ in univs) {
         \makebox[0pt][l]{%
           \raisebox{-0.49\totalheight}[0pt][0pt]{%
           \scalebox{-1}[1]{
-            \includegraphics[width=9in]{./images/layer.png}}}}%
+            \includegraphics[width=9in]{./assets/images/layer.png}}}}%
 
         \hspace{-0.72cm}
         \makebox[0pt][l]{%
           \raisebox{-1.43\totalheight}[0pt][0pt]{%
-            \includegraphics[width=9in, trim={2cm 0 2cm 1.5cm}, clip]{./images/map_ua.pdf}}}%
+            \includegraphics[width=9in, trim={2cm 0 2cm 1.5cm}, clip]{./assets/images/map_ua.pdf}}}%
 
         \makebox[0pt][l]{%
           \raisebox{-1.44\totalheight}[0pt][0pt]{%
-            \includegraphics[width=9in]{./images/layer.png}}}%
+            \includegraphics[width=9in]{./assets/images/layer.png}}}%
 
         \centering\color{DarkGray}\fontsize{30}{60}
 
@@ -147,7 +147,7 @@ for (univ in univs) {
         \begin{minipage}{.37\linewidth}
         \begin{flushright}                                      
         \vspace{0.6cm} Prepared for: \\
-        \vspace{0.1cm} \includegraphics[width=2.5in]{./images/joyce_logo.png}
+        \vspace{0.1cm} \includegraphics[width=2.5in]{./assets/images/joyce_logo.png}
         \end{flushright}
         \end{minipage}
         \hspace*{\fill}
@@ -463,9 +463,9 @@ Table~\ref{tbl:regression_out} shows regression results of the relationship betw
 
 Using results for the University of Alabama as an example, we can interpret coefficients on the categorical measures of income by multiplying the coefficient on the specific category by 100 to indicate the percentage point change in the probability of receiving a visit for the specified category in comparison to the reference category. A school that has the value of the reference category for income (i.e., average median household income less than \$50,000) and all other variables has an overall \Sexpr{out_constant_100751} chance of receiving a visit by Alabama. By contrast, a school located in a community with a \$75,000-\$99,000 average median household income has an overall \Sexpr{round((as.double(out_constant_coeff_100751) + as.double(out_income_75_99_coeff_100751)) * 100, 0)}\% chance of receiving a visit (or \Sexpr{out_income_75_99_100751} more likely if we interpret the coefficient directly). This probability increases to \Sexpr{out_income_100_149_100751} (p<0.001) more likely for schools in areas with \$100,000-\$149,000 average median incomes, to \Sexpr{out_income_150_199_100751} (p<0.001) more likely for schools in areas with \$150,000-\$199,000 incomes, to finally \Sexpr{out_income_gt200_100751} (p<0.001) more likely to receive a visit for schools located in communities with more than \$200,000 average incomes. In other words, a school located in a community with an average median income of \$200,000 has an overall \Sexpr{round((as.double(out_constant_coeff_100751) + as.double(out_income_gt200_coeff_100751)) * 100, 0)}\% likelihood of receiving a visit by Alabama in comparison to the overall \Sexpr{out_constant_100751} likelihood for a school with an average median income less than \$50,000, all other variables held constant to reference values.
 
-\addLandscapeTable[8]{regression_out_1_landscape}{Regression: probability of out-of-state public high school receiving a visit.}{regression_out}{\textbf{Note}: *p<0.05; **p<0.01; ***p<0.001. Robust standard errors in parentheses. Coefficients and errors for math proficiency, school type, locale, and distance are not shown in the table. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education.}{8}
+\addLandscapeTable[8]{regression_out_1_landscape}{Regression: probability of out-of-state public high school receiving a visit.}{regression_out}{\textbf{Note}: *p<0.05; **p<0.01; ***p<0.001. Robust standard errors in parentheses. Coefficients and errors for math proficiency, school type, locale, and distance are not shown in the table. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education. Non-visited schools include only out-of-state schools in states that received at least one high school visit.}{8}
 
-\addLandscapeTable[8]{regression_out_2_landscape}{Regression: probability of out-of-state public high school receiving a visit. (Cont)}{x}{\textbf{Note}: *p<0.05; **p<0.01; ***p<0.001. Robust standard errors in parentheses. Coefficients and errors for math proficiency, school type, locale, and distance are not shown in the table. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education.}{8}
+\addLandscapeTable[8]{regression_out_2_landscape}{Regression: probability of out-of-state public high school receiving a visit. (Cont)}{x}{\textbf{Note}: *p<0.05; **p<0.01; ***p<0.001. Robust standard errors in parentheses. Coefficients and errors for math proficiency, school type, locale, and distance are not shown in the table. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education. Non-visited schools include only out-of-state schools in states that received at least one high school visit.}{8}
 
 Overall, the regression results from Table~\ref{tbl:regression_out} show that public high schools located in communities with higher average median incomes are much more likely to receive a visit than schools in low-income communities across recruiting by all universities. Generally, the magnitude of this relationship is larger for higher income bands than lower income bands. For example, schools in all income ranges greater than \$75,000 average median incomes are significantly more likely to receive a visit by the University of Pittsburgh than schools with less than \$50,000 average median incomes. However, this probability increases from only \Sexpr{out_income_75_99_215293} more likely to receive a visit for schools with \$75,000-\$99,000 average median household incomes to \Sexpr{out_income_gt200_215293} more likely to receive a visit for schools located in communities with more than \$200,000 average incomes.
 
@@ -715,7 +715,7 @@ Our hope is that a critical mass of scholars and policymakers become interested 
   \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
   \do\Y\do\Z}
 
-\bibliography{spencer-bib}
+\bibliography{assets/other/spencer-bib}
 
 % Appendix
 
