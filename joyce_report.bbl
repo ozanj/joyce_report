@@ -109,6 +109,33 @@ Armstrong, E\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Biden%
+}{%
+Biden%
+}{%
+{\protect \APACyear {2008}}%
+}]{%
+noauthor_bidens_2008}
+\APACinsertmetastar {%
+noauthor_bidens_2008}%
+\begin{APACrefauthors}%
+Biden, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2008}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Biden's Remarks on McCain's Policies} {Biden's remarks
+  on mccain's policies}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The New York Times}{}{}{}.
+\newblock
+\begin{APACrefURL}
+  [{2019-03-25}]\url{https://www.nytimes.com/2008/09/15/us/politics/15text-biden.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Boatman%
 \ \BBA {} Soliz%
 }{%
