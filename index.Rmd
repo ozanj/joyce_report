@@ -1,0 +1,87 @@
+---
+title: 'Recruiting the Out-of-State University'
+subtitle: 'Off-Campus Recruiting by Public Research Universities'
+author: Ozan Jaquette
+# lib_cdn: 'https://cdn.rawgit.com/ramnathv/slidifyLibraries/master/inst/libraries'
+mode: selfcontained
+ext_widgets : {rCharts: [libraries/leaflet]}
+framework: revealjs
+revealjs:
+  theme: custom
+  transition: slide
+  center: 'false'
+bibliography: ./assets/other/spencer-bib.bib
+csl: ./assets/other/apa.csl
+
+--- #title
+
+```{r, include=FALSE}
+library(slidify)
+library(slidifyLibraries)
+# slidify('index.Rmd')
+# https://ozanj.github.io/joyce_report/
+
+library(servr)
+# Start server: servr::httd()
+# Check if server(s) running: daemon_list()
+# Stop server(s): daemon_stop(which = daemon_list())
+
+library(knitcitations)
+cleanbib()
+bib <- read.bibtex('./assets/other/spencer-bib.bib')
+
+# Function for parenthetical citation needing `e.g.,` or have no year (ie. forthcoming)
+# b: citation(s)
+# eg: T/F - whether or not to include `e.g.,` in citation
+cite <- function(b, eg = TRUE) {
+  c <- ifelse(eg, '(e.g., ', '(')
+  for (i in seq_along(b)) {
+    if (i != 1) {
+      c <- paste0(c, '; ')
+    }
+    a <- paste(b[[i]]$author$family, collapse = ', ')
+    y <- ifelse(is.null(b[[i]]$year), 'forthcoming', b[[i]]$year)
+    entry <- paste(a, y, sep = ', ')
+    c <- paste0(c, entry)
+    record_as_cited(b[[i]])
+  }
+  paste0(c, ')')
+}
+```
+
+# Recruiting the Out-of-State University
+## Off-Campus Recruiting by Public Research Universities
+
+<img id='ua_map' src='assets/images/map_ua.png' alt='University of Alabama' />
+
+<p class='author'>Crystal Han<span class='affiliation'>, UCLA</span></p>
+
+<p class='author'>Ozan Jaquette<span class='affiliation'>, UCLA</span></p>
+
+<p class='author'>Karina Salazar<span class='affiliation'>, University of Arizona</span></p>
+
+<p id='joyce_text'>Prepared for:</p>
+<img id='joyce_logo' src='assets/images/joyce_logo.png' alt='The Joyce Foundation' />
+
+<a id='link_report' href='https://emraresearch.org/sites/default/files/2019-03/joyce_report.pdf' target='_blank'>Joyce Foundation Report</a>
+
+--- 
+
+# Level 1 Heading
+## Level 2 Heading
+
+This is some text. And a citation. `r citet(bib['RN4017'])`
+
+- This is a list
+    - A sublist
+        - A sub-sublist
+
+
+--- #references
+
+# References
+## &nbsp;
+
+```{r results='asis', echo=FALSE}
+knitcitations::bibliography('html')
+````

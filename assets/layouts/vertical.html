@@ -1,0 +1,30 @@
+<section>
+   <section class='slide vertical-top {{slide.class}}' data-state='slide-horizontal'>
+     <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
+    {{{slide.header}}}
+    <hr />
+    {{{slide.content}}}
+    <aside class='notes'>
+      {{{ slide.pnotes }}}
+    </aside>
+   </section>
+   {{# slide.blocks }}
+   <section class='slide vertical {{class}}' id='{{id}}' data-state='slide-vertical'>
+     <span class='univ-name'></span>
+    {{{ header }}}
+    {{{ content }}}
+    <div class="modal">
+      <span class="close">&times;</span>
+      <h3></h3>
+      <img />
+      <p></p>
+    </div>
+    <a class='btn' href='#/12'>Select another university</a>
+    <a class='btn btn-toc' href='#/12/1'>Table of contents</a>
+    <a class='btn btn-right'>Back to comparison</a>
+    <aside class='notes'>
+      {{{ pnotes.html }}}
+    </aside>
+   </section>
+   {{/ slide.blocks }}
+</section>
