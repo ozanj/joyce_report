@@ -1,0 +1,65 @@
+cbsa_code,metro_name,state_code,total_count,pubHS_count,privHS_count,cc_count,other_count
+31080,"Los Angeles, Long Beach, Anaheim",CA,354,155,14,142,43
+40140,"Riverside, San Bernardino, Ontario",CA,139,49,0,78,12
+40900,"Sacramento, Roseville, Arden-Arcade",CA,71,45,4,12,10
+41860,"San Francisco, Oakland, Hayward",CA,49,15,1,27,6
+41740,"San Diego, Carlsbad",CA,32,12,0,14,6
+46520,Urban Honolulu,HI,21,10,7,0,4
+42660,"Seattle, Tacoma, Bellevue",WA,21,8,1,4,8
+20940,El Centro,CA,21,19,0,1,1
+29820,"Las Vegas, Henderson, Paradise",NV,21,14,4,0,3
+41940,"San Jose, Sunnyvale, Santa Clara",CA,20,8,0,10,2
+12540,Bakersfield,CA,15,5,0,9,1
+38900,"Portland, Vancouver, Hillsboro","OR, WA",11,9,1,0,1
+44700,"Stockton, Lodi",CA,10,6,0,2,2
+37100,"Oxnard, Thousand Oaks, Ventura",CA,10,4,0,5,1
+38060,"Phoenix, Mesa, Scottsdale",AZ,10,6,1,0,3
+42200,"Santa Maria, Santa Barbara",CA,10,5,0,3,2
+16980,"Chicago, Naperville, Elgin","IL, IN, WI",10,7,2,0,1
+19740,"Denver, Aurora, Lakewood",CO,9,6,1,0,2
+12060,"Atlanta, Sandy Springs, Roswell",GA,7,2,1,0,4
+35620,"New York, Newark, Jersey City","NY, NJ, PA",6,1,2,0,3
+25900,Hilo,HI,6,1,2,0,3
+33100,"Miami, Fort Lauderdale, West Palm Beach",FL,6,3,2,0,1
+23420,Fresno,CA,5,1,0,1,3
+42220,Santa Rosa,CA,5,2,0,2,1
+32900,Merced,CA,5,0,0,2,3
+47900,"Washington, Arlington, Alexandria","DC, VA, MD, WV",5,2,0,0,3
+14460,"Boston, Cambridge, Newton","MA, NH",4,0,1,0,3
+41500,Salinas,CA,4,1,0,3,0
+10740,Albuquerque,NM,3,0,2,0,1
+46060,Tucson,AZ,3,1,2,0,0
+41620,Salt Lake City,UT,3,1,2,0,0
+42020,"San Luis Obispo, Paso Robles, Arroyo Grande",CA,2,0,0,2,0
+46380,Ukiah,CA,2,0,0,2,0
+33700,Modesto,CA,2,0,0,2,0
+49700,Yuba City,CA,2,1,0,1,0
+28180,Kapaa,HI,2,0,2,0,0
+46700,"Vallejo, Fairfield",CA,2,1,1,0,0
+27980,"Kahului, Wailuku, Lahaina",HI,2,2,0,0,0
+47300,"Visalia, Porterville",CA,2,0,0,0,2
+25540,"Hartford, West Hartford, East Hartford",CT,2,0,1,0,1
+14500,Boulder,CO,2,2,0,0,0
+42140,Santa Fe,NM,1,0,1,0,0
+26420,"Houston, The Woodlands, Sugar Land",TX,1,0,0,0,1
+17820,Colorado Springs,CO,1,1,0,0,0
+34900,Napa,CA,1,0,0,1,0
+33460,"Minneapolis, St. Paul, Bloomington","MN, WI",1,0,0,0,1
+19100,"Dallas, Fort Worth, Arlington",TX,1,0,0,0,1
+15380,"Buffalo, Cheektowaga, Niagara Falls",NY,1,0,0,0,1
+33340,"Milwaukee, Waukesha, West Allis",WI,1,0,0,0,1
+38300,Pittsburgh,PA,1,0,0,0,1
+41180,St. Louis,"MO, IL",1,0,1,0,0
+12420,"Austin, Round Rock",TX,1,0,0,0,1
+19820,"Detroit, Warren, Dearborn",MI,1,0,1,0,0
+49340,Worcester,"MA, CT",1,0,1,0,0
+37980,"Philadelphia, Camden, Wilmington","PA, NJ, DE, MD",1,0,0,0,1
+12580,"Baltimore, Columbia, Towson",MD,1,0,0,0,1
+26860,Indiana,PA,1,0,1,0,0
+42100,"Santa Cruz, Watsonville",CA,1,0,0,1,0
+31060,Los Alamos,NM,1,1,0,0,0
+39820,Redding,CA,1,0,0,1,0
+39140,Prescott,AZ,1,0,1,0,0
+25260,"Hanford, Corcoran",CA,1,1,0,0,0
+36740,"Orlando, Kissimmee, Sanford",FL,1,0,0,0,1
+17020,Chico,CA,1,0,0,1,0

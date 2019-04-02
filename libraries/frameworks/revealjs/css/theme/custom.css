@@ -58,6 +58,10 @@ body {
   color: #333;
 }
 
+.reveal p.normal {
+  font-weight: 400;
+}
+
 /* Lists */
 
 #univ_options {
@@ -157,21 +161,12 @@ body {
   text-decoration: none;
 }
 
-.reveal .btn-right {
-  float: right;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border: #444 1.5px dashed;
-  color: #444;
-}
-
 /* Text */
 
 .reveal span.univ-name {
+  font-family: 'Roboto Condensed';
   float: right;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: -1px;
+  font-size: 20px;
   margin: 10px 0;
   color: #444;
 }

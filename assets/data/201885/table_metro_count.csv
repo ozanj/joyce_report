@@ -1,0 +1,99 @@
+cbsa_code,metro_name,state_code,total_count,pubHS_count,privHS_count,cc_count,other_count
+17140,Cincinnati,"OH, KY, IN",164,111,36,1,16
+12060,"Atlanta, Sandy Springs, Roswell",GA,122,73,39,1,9
+16980,"Chicago, Naperville, Elgin","IL, IN, WI",120,88,17,8,7
+17460,"Cleveland, Elyria",OH,99,65,19,9,6
+18140,Columbus,OH,90,74,10,0,6
+47900,"Washington, Arlington, Alexandria","DC, VA, MD, WV",87,67,14,0,6
+19100,"Dallas, Fort Worth, Arlington",TX,75,35,29,1,10
+26900,"Indianapolis, Carmel, Anderson",IN,54,37,12,1,4
+35620,"New York, Newark, Jersey City","NY, NJ, PA",44,36,4,1,3
+19380,Dayton,OH,44,37,4,2,1
+19820,"Detroit, Warren, Dearborn",MI,37,23,10,0,4
+31140,Louisville/Jefferson County,"KY, IN",36,20,12,0,4
+45780,Toledo,OH,28,17,5,3,3
+38300,Pittsburgh,PA,28,17,5,2,4
+10420,Akron,OH,24,16,5,0,3
+23060,Fort Wayne,IN,19,11,6,0,2
+26420,"Houston, The Woodlands, Sugar Land",TX,17,4,6,0,7
+34980,"Nashville-Davidson, Murfreesboro, Franklin",TN,13,0,11,0,2
+12580,"Baltimore, Columbia, Towson",MD,13,3,7,3,0
+41940,"San Jose, Sunnyvale, Santa Clara",CA,11,8,3,0,0
+30460,"Lexington, Fayette",KY,11,6,3,0,2
+15940,"Canton, Massillon",OH,11,7,2,0,2
+30620,Lima,OH,10,8,2,0,0
+24340,"Grand Rapids, Wyoming",MI,9,6,1,0,2
+44220,Springfield,OH,9,7,1,1,0
+49660,"Youngstown, Warren, Boardman","OH, PA",8,6,1,0,1
+31080,"Los Angeles, Long Beach, Anaheim",CA,8,3,4,0,1
+43380,Sidney,OH,7,6,1,0,0
+42660,"Seattle, Tacoma, Bellevue",WA,7,0,0,3,4
+22300,Findlay,OH,6,6,0,0,0
+33340,"Milwaukee, Waukesha, West Allis",WI,6,4,0,0,2
+41860,"San Francisco, Oakland, Hayward",CA,6,5,0,1,0
+13340,Bellefontaine,OH,5,5,0,0,0
+11460,Ann Arbor,MI,5,4,1,0,0
+49780,Zanesville,OH,5,4,0,1,0
+16380,Celina,OH,5,5,0,0,0
+31900,Mansfield,OH,5,4,0,0,1
+47540,Wapakoneta,OH,5,5,0,0,0
+24820,Greenville,OH,4,4,0,0,0
+45660,Tiffin,OH,4,3,0,0,1
+41780,Sandusky,OH,4,3,0,1,0
+31930,Marietta,OH,4,2,0,1,1
+48940,Wilmington,OH,3,3,0,0,0
+37100,"Oxnard, Thousand Oaks, Ventura",CA,3,3,0,0,0
+19580,Defiance,OH,3,2,0,0,1
+32020,Marion,OH,3,2,0,1,0
+33100,"Miami, Fort Lauderdale, West Palm Beach",FL,3,0,0,0,3
+17060,Chillicothe,OH,3,2,0,0,1
+35940,Norwalk,OH,3,2,1,0,0
+49300,Wooster,OH,3,3,0,0,0
+11740,Ashland,OH,2,2,0,0,0
+36740,"Orlando, Kissimmee, Sanford",FL,2,0,0,0,2
+11780,Ashtabula,OH,2,1,0,0,1
+31500,Madison,IN,2,0,1,0,1
+34540,Mount Vernon,OH,2,1,0,0,1
+39540,Racine,WI,2,0,2,0,0
+45940,Trenton,NJ,2,1,1,0,0
+24860,"Greenville, Anderson, Mauldin",SC,2,0,2,0,0
+27600,Jefferson,GA,2,2,0,0,0
+23380,Fremont,OH,2,1,0,1,0
+38580,Point Pleasant,"WV, OH",2,1,0,0,1
+46500,Urbana,OH,2,2,0,0,0
+45300,"Tampa, St. Petersburg, Clearwater",FL,2,0,0,2,0
+39020,Portsmouth,OH,2,1,0,0,1
+47920,Washington Court House,OH,2,2,0,0,0
+35300,"New Haven, Milford",CT,1,0,1,0,0
+36980,Owensboro,KY,1,0,0,0,1
+15740,Cambridge,OH,1,1,0,0,0
+35220,New Castle,IN,1,1,0,0,0
+38900,"Portland, Vancouver, Hillsboro","OR, WA",1,0,0,1,0
+40420,Rockford,IL,1,0,0,1,0
+21660,Eugene,OR,1,0,0,1,0
+24700,Greensburg,IN,1,1,0,0,0
+23180,Frankfort,KY,1,1,0,0,0
+26580,"Huntington, Ashland","WV, KY, OH",1,1,0,0,0
+10540,Albany,OR,1,0,0,1,0
+19220,Danville,KY,1,0,0,0,1
+41400,Salem,OH,1,1,0,0,0
+40660,Rome,GA,1,0,1,0,0
+14460,"Boston, Cambridge, Newton","MA, NH",1,0,0,0,1
+15340,Bucyrus,OH,1,1,0,0,0
+27160,Jackson,OH,1,1,0,0,0
+35420,"New Philadelphia, Dover",OH,1,1,0,0,0
+41180,St. Louis,"MO, IL",1,0,0,1,0
+34620,Muncie,IN,1,1,0,0,0
+18740,Coshocton,OH,1,0,0,0,1
+11900,Athens,OH,1,0,0,1,0
+23580,Gainesville,GA,1,0,0,1,0
+40060,Richmond,VA,1,0,1,0,0
+14010,Bloomington,IL,1,0,0,0,1
+12420,"Austin, Round Rock",TX,1,0,0,0,1
+18020,Columbus,IN,1,1,0,0,0
+39980,Richmond,IN,1,0,0,0,1
+48260,"Weirton, Steubenville","WV, OH",1,0,0,1,0
+37980,"Philadelphia, Camden, Wilmington","PA, NJ, DE, MD",1,0,0,1,0
+46780,Van Wert,OH,1,1,0,0,0
+35860,North Vernon,IN,1,1,0,0,0
+14020,Bloomington,IN,1,1,0,0,0
