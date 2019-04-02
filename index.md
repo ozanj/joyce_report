@@ -33,16 +33,15 @@ csl: ./assets/other/apa.csl
 
 <a id='link_report' href='https://emraresearch.org/sites/default/files/2019-03/joyce_report.pdf' target='_blank'>Joyce Foundation Report</a>
 
---- 
+---
 
-# Level 1 Heading
-## Level 2 Heading
+# Analysis Sample
+## Median Characteristics of Study Sample versus Population of Public Institutions
 
-This is some text. And a citation. The White House (2014)
-
-- This is a list
-    - A sublist
-        - A sub-sublist
+<div class="table-wrapper">
+<table>         <thead>             <th style="width:40%"></th>             <th style="width:30%"><span class="bold">Sample</span> (N = 15)</th>             <th style="width:30%"><span class="bold">Population</span> (N = 80)</th>         </thead>         <tbody>     <tr><td class="bold">Academic Profile</td><td class="blank"></td><td class="blank"></td></tr> <tr><td class="indent">US News & World Report Ranking</td><td>92</td><td>94</td></tr> <tr><td class="indent">25th Percentile SAT/ACT Composite Score</td><td>1,126</td><td>1,085</td></tr> <tr><td class="indent">75th Percentile SAT/ACT Composite Score</td><td>1,334</td><td>1,300</td></tr> <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr> <tr><td class="bold">Enrollment</td><td class="blank"></td><td class="blank"></td></tr> <tr><td class="indent">Total Enrolled Freshmen</td><td>5,433</td><td>4,957</td></tr> <tr><td class="indent">Percent Out-of-State Freshmen</td><td>26.9%</td><td>25.4%</td></tr> <tr><td class="indent">Percent Pell Recipients</td><td>20.3%</td><td>24.0%</td></tr> <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr> <tr><td class="bold">Tuition and Fees</td><td class="blank"></td><td class="blank"></td></tr> <tr><td class="indent">In-State Tuition + Fees</td><td>$11,706</td><td>$11,026</td></tr> <tr><td class="indent">Out-of-State Tuition + Fees</td><td>$30,414</td><td>$29,441</td></tr> <tr><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr> <tr><td class="bold">Revenues</td><td class="blank"></td><td class="blank"></td></tr> <tr><td class="indent">Total Net Tuition Revenue</td><td>$463,142,400</td><td>$379,065,984</td></tr> <tr><td class="indent">Percent of Total Revenue from Tuition</td><td>25.5%</td><td>26.3%</td></tr> <tr><td class="indent">Total State Appropriations</td><td>$286,740,832</td><td>$267,926,000</td></tr> <tr><td class="indent">Appropriation per Student</td><td>$9,548</td><td>$7,903</td></tr> <tr><td class="indent">Percent of Total Revenue from State Appropriations</td><td>19.5%</td><td>16.7%</td></tr> <tr><td class="indent">Total State Revenue</td><td>$295,350,848</td><td>$290,634,448</td></tr> <tr><td class="indent">Revenue per Student</td><td>$11,347</td><td>$8,970</td></tr> <tr><td class="indent">Percent of Total Revenue from State (All Sources)</td><td>21.1%</td><td>19.4%</td></tr>          </tbody>     </table>
+<p class="footnote"><strong>Note</strong>: Author calculations based on 2016-2017 IPEDS. Population of universities includes universities categorized as Highest Research Activity by 2015 Carnegie Classification. The University of Alabama is the only institution in the study sample that is not classified as Highest Research Activity.</p>
+</div>
 
 --- &vertical
 

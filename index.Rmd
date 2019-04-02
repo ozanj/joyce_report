@@ -67,16 +67,17 @@ verticalSlide <- 2
 
 <a id='link_report' href='https://emraresearch.org/sites/default/files/2019-03/joyce_report.pdf' target='_blank'>Joyce Foundation Report</a>
 
---- 
+---
 
-# Level 1 Heading
-## Level 2 Heading
+# Analysis Sample
+## Median Characteristics of Study Sample versus Population of Public Institutions
 
-This is some text. And a citation. `r citet(bib['RN4017'])`
-
-- This is a list
-    - A sublist
-        - A sub-sublist
+<div class="table-wrapper">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/univ_characteristics.html"),collapse=" "))
+```
+<p class="footnote"><strong>Note</strong>: Author calculations based on 2016-2017 IPEDS. Population of universities includes universities categorized as Highest Research Activity by 2015 Carnegie Classification. The University of Alabama is the only institution in the study sample that is not classified as Highest Research Activity.</p>
+</div>
 
 --- &vertical
 
