@@ -98,7 +98,6 @@ $(function() {
     $('.modal').fadeOut();
     $('.graphs-set img').removeClass('disabled');
     $('table tr').removeClass('active-row');
-    $('table tr').removeClass('active-row-2');
     $('table td').removeClass('active-col');
     $('table th').removeClass('active-col');
   });
@@ -253,69 +252,41 @@ $(function() {
     });
   }
 
-  var headingShown = true;
+  $('.scroll-wrapper td:nth-of-type(1):not(.blank)').click(function() {
+    $('.scroll-wrapper tr').removeClass('active-row');
+    $(this).parent().addClass('active-row');
 
-  $('.desc-table').scroll(function() {
-    var $cc = $(this).find('#h2');
-    if ($cc.length) {
-      var window_offset = $cc.offset().top - $(this).scrollTop();
-      if (window_offset < -360 && headingShown) {
-        $(this).find('#h1').fadeOut(200);
-        headingShown = false;
-      } else if (window_offset > -330 && !headingShown) {
-        $(this).find('#h1').fadeIn(200);
-        headingShown = true;
-      }
-    }
+    $('.scroll-wrapper td').removeClass('active-col');
+    $('.scroll-wrapper th').removeClass('active-col');
   });
 
-  $('.desc-table td').click(function () {
-    if ($(this).text().trim() !== '' && !$(this).parent().find('strong').length) {
-      $('.comparison-wrapper table tr').removeClass('active-row');
-      $(this).parent().addClass('active-row');
-    }
+  $('.scroll-wrapper td:nth-of-type(1) ~ td:not(.blank)').click(function() {
+    $('.scroll-wrapper tr').removeClass('active-row');
+    $(this).parent().addClass('active-row');
+
+    var t = parseInt($(this).index()) + 1;
+    $('.scroll-wrapper td').removeClass('active-col');
+    $('.scroll-wrapper th').removeClass('active-col');
+    $(this).closest('table').find('td:nth-child(' + t + ')').addClass('active-col');
+    $(this).closest('table').find('thead tr:last-child th:nth-child(' + t + ')').addClass('active-col');
   });
 
-  $('.reg-wrapper table tr').click(function () {
-    if ($(this).text().trim() !== '' && !$(this).find('strong').length) {
-      $('.comparison-wrapper table tr').removeClass('active-row');
-      $(this).addClass('active-row');
-    }
+  $('.scroll-wrapper tr:last-child th:nth-of-type(1) ~ th:not(.blank)').click(function() {
+    $('.scroll-wrapper tr').removeClass('active-row');
+
+    var t = parseInt($(this).index()) + 1;
+    $('.scroll-wrapper td').removeClass('active-col');
+    $('.scroll-wrapper th').removeClass('active-col');
+    $(this).closest('table').find('td:nth-child(' + t + ')').addClass('active-col');
+    $(this).closest('table').find('thead tr:last-child th:nth-child(' + t + ')').addClass('active-col');
   });
 
-  $('.comparison-wrapper table td').click(function() {
-    if ($(this).text().trim() !== '' && parseInt($(this).index()) !== 0) {
-      var t = parseInt($(this).index()) + 1;
-      $('.comparison-wrapper table td').removeClass('active-col');
-      $('.comparison-wrapper table thead tr:last-child th').removeClass('active-col');
-      $(this).closest('table').find('td:nth-child(' + t + ')').addClass('active-col');
-      $(this).closest('table').find('thead tr:last-child th:nth-child(' + t + ')').addClass('active-col');
+  $('.scroll-wrapper .blank').click(function() {
+    if (!$(this).hasClass('active-col') && !$(this).parent().hasClass('active-row')) {
+      $('.scroll-wrapper tr').removeClass('active-row');
+      $('.scroll-wrapper td').removeClass('active-col');
+      $('.scroll-wrapper th').removeClass('active-col');
     }
   });
-
-  $('.reg-wrapper table td').click(function() {
-    if ($(this).parent().text().trim() !== '' && !$(this).parent().find('strong').length) {
-      $('.reg-wrapper table tr').removeClass('active-row-2');
-      var t = parseInt($(this).index()) + 1,
-          row = $(this).parent();
-      var $prevCell = row.prev().find('td:nth-child(' + t + ')');
-      if ($prevCell.length && $prevCell.parent().text().trim() != '' && !$prevCell.parent().find('strong').length) {
-        row.prev().addClass('active-row-2');
-      }
-      var $nextCell = row.next().find('td:nth-child(' + t + ')');
-      if ($nextCell.length && $nextCell.parent().text().trim() != '' && !$nextCell.parent().find('strong').length) {
-        row.next().addClass('active-row-2');
-      }
-    }
-  });
-
-  //$('td').hover(function() {
-  //  var t = parseInt($(this).index()) + 1;
-  //  $('td:nth-child(' + t + ')').addClass('highlighted');
-  //},
-  //function() {
-  //  var t = parseInt($(this).index()) + 1;
-  //  $('td:nth-child(' + t + ')').removeClass('highlighted');
-  //});
 
 });

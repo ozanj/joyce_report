@@ -181,19 +181,6 @@
   display: none;
 }
 
-.table .modal h3,
-.table .modal p {
-  display: inherit;
-}
-
-.table .modal h3 {
-  padding: 0 100px;
-}
-
-.table .modal img {
-  width: 800px;
-}
-
 .modal .close {
   float: right;
   margin-top: -5px;
@@ -206,6 +193,31 @@
 }
 
 /* Metro Tables */
+
+#table-metro-count {
+  font-size: 18px;
+  text-align: right;
+  line-height: 1em;
+}
+
+#table-metro-count tbody {
+  font-size: 17px;
+}
+
+#table-metro-count thead td {
+  text-decoration: underline;
+  padding-bottom: 20px;
+  vertical-align: middle;
+  border-bottom: none;
+}
+
+#table-metro-count tr td:nth-of-type(2) {
+  text-align: left;
+}
+
+#table-metro-count td {
+  padding: 6px 0;
+}
 
 #table-metro-count td:nth-of-type(4) {
   width: 12%;
@@ -239,205 +251,83 @@
   text-decoration-color: #8030d1;
 }
 
-/* Comparison Tables */
+/* Scroll Tables */
 
-.comparison-wrapper {
+.scroll-wrapper {
   max-width: 1000px;
   max-height: 500px;
   overflow: scroll;
   position: relative;
 }
 
-.comparison-wrapper table {
-  position: relative;
-  border-spacing: 0;
-  font-family: 'Times New Roman', Times, serif;
+.scroll-wrapper-x {
+  overflow-y: hidden;
 }
 
-.comparison-wrapper table th {
-  border-top: none !important;
+.scroll-wrapper .desc-table td.col-width {
+  padding: 0 25px;
 }
 
-.comparison-wrapper table td {
-  font-size: 15px;
-  padding: 6px;
-  background-color: whitesmoke;
-}
-
-.comparison-wrapper table tr.active-row td,
-.comparison-wrapper table .active-col,
-.reg-wrapper tr.active-row-2 td {
-  background-color: palegoldenrod;
-}
-
-/* Descriptive Tables */
-
-.desc-table thead th {
-  font-size: 15px;
-  background-color: whitesmoke;
-  vertical-align: middle;
-  padding: 1px;
-}
-
-.desc-table thead tr:first-child th {
-  border-top: none !important;
-}
-
-.desc-table thead tr:nth-child(2) th {
-  padding: 0 5px;
-}
-
-.desc-table tr:nth-child(1) th {
+.scroll-wrapper tr:nth-child(1) th {
   position: sticky;
   top: 0;
   white-space: nowrap;
 }
 
-.desc-table tr:nth-child(2) th {
+.scroll-wrapper .desc-table tr:nth-child(2) th {
   position: sticky;
-  top: 20.58px;
-  border-bottom: 1px solid #444 !important;
+  top: 20.5px;
 }
 
-.desc-table tr td:nth-child(1) {
+.scroll-wrapper tr td:nth-child(1) {
   position: sticky;
   left: 0;
   border-right: 1px solid #444;
   white-space: nowrap;
 }
 
-.desc-table tr th:first-child {
+.scroll-wrapper tr th:nth-of-type(1) {
   left: 0;
   z-index: 1;
   border-right: 1px solid #444;
 }
 
-.desc-table .header {
-  position: sticky;
-  top: 30px;
-  z-index: 2;
-  background-color: transparent;
-}
-
-.desc-table tbody tr:last-child td {
-  border-bottom: none !important;
-}
-
-.desc-table #hs {
-  -webkit-transform: translatez(0) !important;
-  -moz-transform: translatez(0);
-  -ms-transform: translatez(0);
-  -o-transform: translatez(0);
-  transform: translatez(0);
-}
-
-/* Count Tables */
-
-.count-table thead tr:nth-child(2) th {
-  padding: 3px 0;
-}
-
-.count-table table tr:nth-of-type(8) td {
-  padding: 6px 25px;
-}
-
-.count-table table tr td:first-child {
-  padding-left: 20px;
-}
-
-.count-table table tr.header td:first-child {
-  padding-left: 6px;
-}
-
-.count-table .header {
-  font-weight: 900;
-}
-
-.count-table .row-break td {
-  padding: 0;
-}
-
-.count-table tr:nth-child(2) th {
-  top: 0;
-}
-
-/* Regression Tables */
-
-.reg-wrapper tr td {
-  padding: 2px 6px;
-}
-
-.reveal .reg-wrapper table tr td:nth-of-type(2) {
-  text-align: center;
-}
-
-.reg-wrapper tr:nth-child(4) td {
-  position: sticky;
-  top: 0;
-  vertical-align: middle;
-  border-bottom: 1px solid #444;
-  font-weight: 900;
-  text-align: center;
-}
-
-.reg-wrapper tr:nth-last-child(4) td {
+.scroll-wrapper .regr-table tr:nth-last-child(1) td {
   position: sticky;
   bottom: 0;
 }
 
-.reg-wrapper tr:nth-last-child(5) td {
+.scroll-wrapper .regr-table tr:nth-last-child(2) td {
   position: sticky;
-  bottom: 28.6px;
+  bottom: 22.2px;
   border-top: 1px solid #444;
 }
 
-.reg-wrapper tr:nth-child(6) td:first-child {
-  white-space: nowrap;
-}
-
-.reg-wrapper tr td:nth-child(1):not([colspan]) {
-  position: sticky;
-  left: 0;
-  border-right: 1px solid #444;
-}
-
-.reg-wrapper tr td[style='text-align:left']:nth-child(1) {
-  padding-left: 20px;
-  padding-right: 35px;
-  white-space: nowrap;
-}
-
-.reg-wrapper tr:nth-last-child(-n+12) td:first-child {
-  padding: 6px;
-}
-
-.reg-wrapper tr:nth-child(4) td:first-child,
-.reg-wrapper tr:nth-last-child(4) td:first-child,
-.reg-wrapper tr:nth-last-child(5) td:first-child {
+.scroll-wrapper .regr-table tr:nth-last-child(2) td:first-child,
+.scroll-wrapper .regr-table tr:nth-last-child(1) td:first-child {
   left: 0;
   z-index: 1;
 }
 
-.reg-wrapper caption,
-.reg-wrapper tbody tr:nth-child(-n+3),
-.reg-wrapper tbody tr:nth-child(5),
-.reg-wrapper tbody tr:nth-last-child(-n+3),
-.reg-wrapper tbody tr:nth-last-child(6) {
-  display: none;
+.scroll-wrapper .regr-table td:nth-of-type(1) ~ td {
+  padding: 4px 20px;
+  line-height: 1.2em;
 }
 
-.reg-wrapper tr td:empty:not([style]) {
-  padding: 8px;
+.scroll-wrapper table tr.active-row td,
+.scroll-wrapper table .active-col {
+  background-color: palegoldenrod;
 }
 
 .reveal p.footnote {
-  display: inline-block;
-  width: 800px;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.5;
-  vertical-align: top;
   padding: 5px;
   font-weight: 300;
+}
+
+.reveal p.footnote strong {
+  font-weight: 600;
 }
 
 /* References */

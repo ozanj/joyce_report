@@ -108,29 +108,40 @@ body {
 }
 
 .reveal table {
-  font-size: 18px;
   width: 100%;
-  text-align: right;
-  line-height: 1em;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 13px;
+  border-spacing: 0;
 }
 
-.reveal table tbody {
-  font-size: 17px;
+.reveal th, .reveal td {
+  background-color: rgb(247, 254, 255);
 }
 
-.reveal table thead td {
-  text-decoration: underline;
-  padding-bottom: 20px;
-  vertical-align: middle;
-}
-
-.reveal table tr td:nth-of-type(1),
-.reveal table tr td:nth-of-type(2) {
+.reveal table tr td:nth-of-type(1) {
   text-align: left;
+  padding-right: 8px;
 }
 
-.reveal td {
-  padding: 6px 0;
+.reveal table thead tr:last-child th {
+  border-bottom: 1px solid #444;
+}
+
+.reveal table .bold {
+  font-weight: 700;
+}
+
+/* .reveal table .blank {
+  pointer-events: none;
+} */
+
+.reveal table .indent {
+  padding-left: 6px;
+}
+
+.reveal table td:empty:after{
+  content: "\00a0";
 }
 
 /* Links */

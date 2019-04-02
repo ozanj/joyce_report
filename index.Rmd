@@ -296,6 +296,102 @@ for (i in 1:nrow(univs)) {
   </div>
 </div>
 
+---
+
+# Cross-university results
+## Number of events by type and in-state, out-of-state
+
+<div class="table-wrapper">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/event_count.html"),collapse=" "))
+```
+</div>
+
+---
+
+# Cross-university results, out-of-state
+## Descriptive statistics for public high school visits
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/desc_out_pub.html"),collapse=" "))
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education. Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
+</div>
+
+---
+
+# Cross-university results, out-of-state
+## Probability of out-of-state public high school receiving a visit
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/regression_out.html"),collapse=" "))
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: &ast;p<0.05; &ast;&ast;p<0.01; &ast;&ast;&ast;p<0.001. Robust standard errors in parentheses. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education. Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
+</div>
+
+---
+
+# Cross-university results, out-of-state
+## Descriptive statistics for private high school visits
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper scroll-wrapper-x">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/desc_out_priv.html"),collapse=" "))
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, an alternative school, an early childhood center, or an independent school. Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
+</div>
+
+---
+
+# Cross-university results, in-state
+## Descriptive statistics for public high school visits
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/desc_in_pub.html"),collapse=" "))
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal
+Department of Education.</p>
+</div>
+
+---
+
+# Cross-university results, in-state
+## Probability of in-state public high school receiving a visit
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/regression_in.html"),collapse=" "))
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: &ast;p<0.05; &ast;&ast;p<0.01; &ast;&ast;&ast;p<0.001; Robust standard errors in parentheses. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education.</p>
+</div>
+
+---
+
+# Cross-university results, in-state
+## Descriptive statistics for community college visits
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper scroll-wrapper-x">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/desc_in_cc.html"),collapse=" "))
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: We define community college as any public, 2-year or public, less-than 2-year institution, which could be a campus of a Title IV institution.</p>
+</div>
+
 --- #references
 
 # References
