@@ -251,6 +251,10 @@
   text-decoration-color: #8030d1;
 }
 
+#table-metro-count tbody tr:last-child td {
+  border-bottom: none;
+}
+
 /* Scroll Tables */
 
 .scroll-wrapper {
@@ -266,6 +270,10 @@
 
 .scroll-wrapper .desc-table td.col-width {
   padding: 0 25px;
+}
+
+.scroll-wrapper .appendix-table td.col-width {
+  padding: 0 40px;
 }
 
 .scroll-wrapper tr:nth-child(1) th {

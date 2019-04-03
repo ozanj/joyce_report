@@ -16,7 +16,7 @@ body {
 }
 
 .reveal strong {
-  font-weight: 700;
+  font-weight: 600;
   color: #111;
 }
 
@@ -54,12 +54,8 @@ body {
 }
 
 .reveal p {
-  font-weight: 600;
-  color: #333;
-}
-
-.reveal p.normal {
   font-weight: 400;
+  color: #333;
 }
 
 /* Lists */

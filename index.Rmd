@@ -48,7 +48,7 @@ cite <- function(b, eg = TRUE) {
   paste0(c, ')')
 }
 
-verticalSlide <- 2
+verticalSlide <- 6
 ```
 
 # Recruiting the Out-of-State University
@@ -69,6 +69,36 @@ verticalSlide <- 2
 
 ---
 
+# Executive Summary
+## Out-of-State Recruiting
+
+* **Most public research universities prioritize recruiting out-of-state students rather than students from their home state.** 12 of 15 universities made more out-of-state visits than in-state visits and 7 of 15 universities made more than twice as many out-of-state visits than in-state visits.
+* Out-of-state visits are concentrated in affluent communities within major metropolitan areas, ignoring rural communities.
+* All universities were much more likely to visit out-of-state public high schools in high-income communities than schools in low-income communities, even after controlling for factors related to recruiting visits such as enrollment size and student achievement.
+* Most universities were significantly less likely to visit out-of-state public high schools with a high percentage of Black, Latinx, and Native American students, even after controlling for other factors.
+* Most universities visit a disproportionate number of out-of-state private schools.
+
+---
+
+# Executive Summary
+## In-State Recruiting
+
+* "Coverage" of in-state public high schools and community colleges varied dramatically across universities, even after considering state size and population (e.g., University of Nebraska visited 88% of high schools while University of Alabama visited 33%).
+* Most universities were more likely to visit in-state public high schools in high-income communities than schools in low-income communities, even after controlling for other factors. However, income bias for in-state visits was smaller than income bias for out-of-state visits.
+* The presence of racial bias in in-state visits to public high schools varied across universities, with some universities less likely to visit schools with a high share of Black/Latinx/Native students and other universities more likely to visit schools with a high share of Black/Latinx/Native students.
+
+---
+
+# Executive Summary
+## Overall Patterns
+
+* **Recruiting patterns are tied to state funding.** Universities with the weakest
+state funding (e.g., University of Alabama, University of South Carolina) heavily
+focused recruiting efforts to out-of-state schools and communities. These universities made the largest number of out-of-state visits and these visits made up the largest proportions of total recruiting visits for each university. Universities with stronger state funding (e.g., NC State, Nebraska) tended to have better coverage of in-state public high schools and/or more equitable coverage of in-state public high schools. The only three universities that made more in-state visits than out-of-state visits – NC State, UC Irvine, UC Berkeley – were in states with strong nonresident enrollment caps.
+* However, universities facing similar state funding and demographic trends (e.g., UC Berkeley and UC Irvine) often exhibited substantially different recruiting patterns with respect to out-of-state focus, income bias, and racial bias. **Therefore, university enrollment priorities are choices made by leadership rather than mere functions of environmental conditions.**
+
+---
+
 # Analysis Sample
 ## Median Characteristics of Study Sample versus Population of Public Institutions
 
@@ -79,12 +109,19 @@ cat(paste0(readLines("assets/tables/univ_characteristics.html"),collapse=" "))
 <p class="footnote"><strong>Note</strong>: Author calculations based on 2016-2017 IPEDS. Population of universities includes universities categorized as Highest Research Activity by 2015 Carnegie Classification. The University of Alabama is the only institution in the study sample that is not classified as Highest Research Activity.</p>
 </div>
 
+---
+
+# State and Institutional Context
+## State and Tuition Revenue per FTE Student for Sample Institutions in 2016-17
+
+<img src='./assets/images/scatterplot_revenue_fte.png' style="width:60%;border:1px solid #666"></img>
+
 --- &vertical
 
 # Within-case results
 ## Click on a university see within-case results
 
-<p class='normal'><span style='font-weight:700'>N</span> refers to total number of off-campus recruiting visits</p>
+**N** refers to total number of off-campus recruiting visits
 
 <!--
 select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name, muc.metro1, msa1.cbsa_title as metro1_name, muc.metro2, msa2.cbsa_title as metro2_name, muc.metro3, msa3.cbsa_title as metro3_name, (
@@ -310,6 +347,24 @@ cat(paste0(readLines("assets/tables/event_count.html"),collapse=" "))
 
 ---
 
+# Cross-university results
+## National Overview of Recruiting
+
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_map.png" />'))
+  if (i %% 5 == 0 && i < nrow(univs)) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+</div>
+
+---
+
 # Cross-university results, out-of-state
 ## Descriptive statistics for public high school visits
 
@@ -352,6 +407,25 @@ cat(paste0(readLines("assets/tables/desc_out_priv.html"),collapse=" "))
 
 ---
 
+# Cross-university results
+## Actual versus Proportional Visits to Out-of-State High Schools
+
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_visit_proportion.png" />'))
+  if (i %% 5 == 0 && i < nrow(univs)) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school (public HS), early childhood center (private HS), or independent school; is an open status school and reports enrollment to the Federal Department of Education (public HS). Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
+</div>
+
+---
+
 # Cross-university results, in-state
 ## Descriptive statistics for public high school visits
 
@@ -361,8 +435,7 @@ cat(paste0(readLines("assets/tables/desc_out_priv.html"),collapse=" "))
 cat(paste0(readLines("assets/tables/desc_in_pub.html"),collapse=" "))
 ```
   </div>
-  <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal
-Department of Education.</p>
+  <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education.</p>
 </div>
 
 ---
@@ -393,6 +466,115 @@ cat(paste0(readLines("assets/tables/desc_in_cc.html"),collapse=" "))
   <p class="footnote"><strong>Note</strong>: We define community college as any public, 2-year or public, less-than 2-year institution, which could be a campus of a Title IV institution.</p>
 </div>
 
+---
+
+# Appendix
+## Summary of Data Collection Sources and Quality Checks Performed
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper scroll-wrapper-x">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/data_appendix.html"),collapse=" "))
+```
+  </div>
+</div>
+
+---
+
+# Appendix
+## State Revenue and Tuition Revenue per FTE Student, 2003-04 to 2016-17
+
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_revenue.png" />'))
+  if (i %% 5 == 0 && i < nrow(univs)) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: FTE student count is based on reported full-time equivalent undergraduate enrollment; State revenue is the sum of state appropriations, operating grants and contracts, and non-operating grants; Tuition revenue is defined as revenue from tuition and fees after deducting discounts and allowances.</p>
+</div>
+
+---
+
+# Appendix
+## Percent Out-of-State Freshmen and Federal Grant Recipient, 2003-04 to 2016-17
+
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_pct_pell.png" />'))
+  if (i %% 5 == 0 && i < nrow(univs)) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Percent out-of-state freshmen is calculated for first-time degree-seeking undergraduate students based on state of residence at time of admission; Percent federal grant recipient is defined as percent of full-time, first-time degree-seeking undergraduates in full-year cohort who are awarded federal grant aids. 2007-08 federal grant recipient data for Rutgers University-New Brunswick is omitted due to concerns for data accuracy.</p>
+</div>
+
+---
+
+# Appendix
+## Percent Black 18-yo in State and Freshmen Enrollment, 2010-11 to 2016-17
+
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_race_black.png" />'))
+  if (i %% 5 == 0 && i < nrow(univs)) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Freshmen enrollment is defined as full-time and part-time first-time students. NIH race categories are defined by origin (Hispanic, Non-Hispanic) and race (White, Black, American Indian/Alaska Native, Asian/Pacific Islander), while IPEDS categories include White, Black, Hispanic, Asian, Native Hawaiian/Pacific Islander, American Indian/Alaska, two or more races, unknown races, and nonresident alien; We count all race categories in the total when calculating the percentage for each data source.</p>
+</div>
+
+---
+
+# Appendix
+## Percent Latinx 18-yo in State and Freshmen Enrollment, 2010-11 to 2016-17
+
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_race_hispanic.png" />'))
+  if (i %% 5 == 0 && i < nrow(univs)) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Freshmen enrollment is defined as full-time and part-time first-time students. NIH race categories are defined by origin (Hispanic, Non-Hispanic) and race (White, Black, American Indian/Alaska Native, Asian/Pacific Islander), while IPEDS categories include White, Black, Hispanic, Asian, Native Hawaiian/Pacific Islander, American Indian/Alaska, two or more races, unknown races, and nonresident alien; We count all race categories in the total when calculating the percentage for each data source. We use Latinx as a gender-inclusive alternative to Latino or Latina. We also use Latinx in place of Hispanic within secondary data sources.</p>
+</div>
+
+---
+
+# Appendix
+## Number of High School Graduates in State, 2000-01 to 2019-20
+
+<div class="graphs-set graphs-set-all">
+  <div class="graphs-row">
+```{r, echo=FALSE, results='asis'}
+for (i in 1:nrow(univs)) {
+  cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_hs_grad.png" />'))
+  if (i %% 5 == 0 && i < nrow(univs)) {
+    cat('</div><div class="graphs-row">')
+  }
+}
+```
+  </div>
+  <p class="footnote"><strong>Note</strong>:  High school graduates may include graduates from any point of each acacdemic year, from fall through the summer. Private high school data is only available on a biennial basis; Projected data for private high schools start from 2015-16 on and are produced based on data up to the 2010-11 academic year.</p>
+</div>
+
+<!--
 --- #references
 
 # References
@@ -401,3 +583,4 @@ cat(paste0(readLines("assets/tables/desc_in_cc.html"),collapse=" "))
 ```{r results='asis', echo=FALSE}
 knitcitations::bibliography('html')
 ````
+-->
