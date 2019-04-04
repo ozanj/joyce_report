@@ -48,7 +48,7 @@ cite <- function(b, eg = TRUE) {
   paste0(c, ')')
 }
 
-verticalSlide <- 6
+verticalSlide <- 7
 ```
 
 # Recruiting the Out-of-State University
@@ -115,6 +115,19 @@ cat(paste0(readLines("assets/tables/univ_characteristics.html"),collapse=" "))
 ## State and Tuition Revenue per FTE Student for Sample Institutions in 2016-17
 
 <img src='./assets/images/scatterplot_revenue_fte.png' style="width:60%;border:1px solid #666"></img>
+
+---
+
+# Data and Methods
+## Summary of Data Collection Sources and Quality Checks Performed
+
+<div class="table-wrapper">
+  <div class="scroll-wrapper scroll-wrapper-x">
+```{r, echo=FALSE, results='asis', warning=FALSE}
+cat(paste0(readLines("assets/tables/data_appendix.html"),collapse=" "))
+```
+  </div>
+</div>
 
 --- &vertical
 
@@ -464,19 +477,6 @@ cat(paste0(readLines("assets/tables/desc_in_cc.html"),collapse=" "))
 ```
   </div>
   <p class="footnote"><strong>Note</strong>: We define community college as any public, 2-year or public, less-than 2-year institution, which could be a campus of a Title IV institution.</p>
-</div>
-
----
-
-# Appendix
-## Summary of Data Collection Sources and Quality Checks Performed
-
-<div class="table-wrapper">
-  <div class="scroll-wrapper scroll-wrapper-x">
-```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/data_appendix.html"),collapse=" "))
-```
-  </div>
 </div>
 
 ---
