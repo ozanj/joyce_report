@@ -33,35 +33,7 @@ csl: ./assets/other/apa.csl
 
 <a id='link_report' href='https://emraresearch.org/sites/default/files/2019-03/joyce_report.pdf' target='_blank'>Joyce Foundation Report</a>
 
----
-
-# Executive Summary
-## Out-of-State Recruiting
-
-* **Most public research universities prioritize recruiting out-of-state students rather than students from their home state.** 12 of 15 universities made more out-of-state visits than in-state visits and 7 of 15 universities made more than twice as many out-of-state visits than in-state visits.
-* Out-of-state visits are concentrated in affluent communities within major metropolitan areas, ignoring rural communities.
-* All universities were much more likely to visit out-of-state public high schools in high-income communities than schools in low-income communities, even after controlling for factors related to recruiting visits such as enrollment size and student achievement.
-* Most universities were significantly less likely to visit out-of-state public high schools with a high percentage of Black, Latinx, and Native American students, even after controlling for other factors.
-* Most universities visit a disproportionate number of out-of-state private schools.
-
----
-
-# Executive Summary
-## In-State Recruiting
-
-* "Coverage" of in-state public high schools and community colleges varied dramatically across universities, even after considering state size and population (e.g., University of Nebraska visited 88% of high schools while University of Alabama visited 33%).
-* Most universities were more likely to visit in-state public high schools in high-income communities than schools in low-income communities, even after controlling for other factors. However, income bias for in-state visits was smaller than income bias for out-of-state visits.
-* The presence of racial bias in in-state visits to public high schools varied across universities, with some universities less likely to visit schools with a high share of Black/Latinx/Native students and other universities more likely to visit schools with a high share of Black/Latinx/Native students.
-
----
-
-# Executive Summary
-## Overall Patterns
-
-* **Recruiting patterns are tied to state funding.** Universities with the weakest
-state funding (e.g., University of Alabama, University of South Carolina) heavily
-focused recruiting efforts to out-of-state schools and communities. These universities made the largest number of out-of-state visits and these visits made up the largest proportions of total recruiting visits for each university. Universities with stronger state funding (e.g., NC State, Nebraska) tended to have better coverage of in-state public high schools and/or more equitable coverage of in-state public high schools. The only three universities that made more in-state visits than out-of-state visits – NC State, UC Irvine, UC Berkeley – were in states with strong nonresident enrollment caps.
-* However, universities facing similar state funding and demographic trends (e.g., UC Berkeley and UC Irvine) often exhibited substantially different recruiting patterns with respect to out-of-state focus, income bias, and racial bias. **Therefore, university enrollment priorities are choices made by leadership rather than mere functions of environmental conditions.**
+<p class='note'>* These slides only contain interactive results to supplement the report. For full report, please see above link.</p>
 
 ---
 
@@ -141,23 +113,23 @@ order by 2;
 
 <div class="graphs-set">
   <ul>
-    <li><a href="#/7/2">National Overview</a></li>
+    <li><a href="#/4/2">National Overview</a></li>
     <li>In-State Results
       <ul>
-        <li><a href="#/7/3">State (Map)</a></li>
-        <li><a href="#/7/4">State (Figures)</a></li>
-        <li><a href="#/7/5">Metro (Map)</a></li>
-        <li><a href="#/7/6">Metro (Figures)</a></li>
+        <li><a href="#/4/3">State (Map)</a></li>
+        <li><a href="#/4/4">State (Figures)</a></li>
+        <li><a href="#/4/5">Metro (Map)</a></li>
+        <li><a href="#/4/6">Metro (Figures)</a></li>
       </ul>
     </li>
     <li>Out-of-State Results
       <ul>
-        <li><a href="#/7/7">Top Visited Metro Areas</a></li>
-        <li><a href="#/7/8">Out-of-State (Figures)</a></li>
-        <li><a href="#/7/9">Metro 1 (Map)</a></li>
-        <li><a href="#/7/10">Metro 1 (Figures)</a></li>
-        <li><a href="#/7/11">Metro 2 (Map)</a></li>
-        <li><a href="#/7/12">Metro 2 (Figures)</a></li>
+        <li><a href="#/4/7">Top Visited Metro Areas</a></li>
+        <li><a href="#/4/8">Out-of-State (Figures)</a></li>
+        <li><a href="#/4/9">Metro 1 (Map)</a></li>
+        <li><a href="#/4/10">Metro 1 (Figures)</a></li>
+        <li><a href="#/4/11">Metro 2 (Map)</a></li>
+        <li><a href="#/4/12">Metro 2 (Figures)</a></li>
       </ul>
     </li>
   </ul>

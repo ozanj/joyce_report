@@ -22,7 +22,7 @@
 .reveal #title .logo {
   float: none;
   position: absolute;
-  transform: translate(-50%, 580px);
+  transform: translate(-50%, 565px);
   z-index: 5;
 }
 
@@ -30,7 +30,7 @@
   font-family: 'Roboto Condensed';
   font-size: 18px;
   font-weight: 300;
-  top: 237px;
+  top: 222px;
 }
 
 .reveal #title h1 {
@@ -62,23 +62,30 @@
   font-weight: 700;
   color: rgb(51, 110, 184);
   font-size: 14px;
-  transform: translate(100px, 480px);
+  transform: translate(100px, 465px);
 }
 
-.reveal #title .affiliation, .reveal #title #joyce_text {
+.reveal #title .affiliation, 
+.reveal #title #joyce_text,
+.reveal #title .note {
   color: gray;
   font-weight: 300;
 }
 
 .reveal #joyce_logo {
   width: 20%;
-  transform: translate(100%, 238px);
+  transform: translate(100%, 223px);
 }
 
 .reveal #title #joyce_text {
   font-size: 14px;
-  transform: translate(-100px, 440px);
+  transform: translate(-100px, 425px);
   text-align: right;
+}
+
+.reveal #title .note {
+  transform: translateY(440px);
+  font-size: 12px;
 }
 
 /* Deep-Dive Slides */
