@@ -291,18 +291,22 @@
 
     \begin{minipage}[c]{0.47\textwidth}
         \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{assets/images/#2}
+        \vspace{-0.3cm}
         \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#3}}}
         \label{fig:#4}
     \end{minipage}
     \hfill
     \begin{minipage}[c]{0.47\textwidth}
         \includegraphics[width=\linewidth, cfbox=Gray 0.4pt, trim={1.6in 1.5in 1.5in 2in}, clip]{assets/images/#5}
+        \vspace{-0.3cm}
         \caption{\roboto\selectfont\textcolor{Gray}{\uppercase{#6}}}
         \label{fig:#7}
     \end{minipage}
 
     \ifnum\pdfstrcmp{#1}{b}=0
         \vspace{-1cm}
+    \else
+        \vspace{-0.2cm}
     \fi
 
 \end{figure*}

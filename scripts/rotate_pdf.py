@@ -2,7 +2,7 @@ import PyPDF2
 
 
 # run `python ./scripts/rotate_pdf.py` from `joyce_report` directory
-landscape_pages = [22, 23, 26, 27, 31, 32, 35, 36, 37, 38, 43, 44, 62]  # pg # + 3
+landscape_pages = [22, 23, 26, 27, 31, 32, 35, 36, 38, 39, 43, 44, 62]  # pg # + 3
 
 with open('./joyce_report.pdf', 'rb') as pdf_in:
   pdf_reader = PyPDF2.PdfFileReader(pdf_in)
