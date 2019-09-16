@@ -10,27 +10,22 @@ $(function() {
     $('.reveal section.stack').unwrap();
 
   }
+  
+  var verticalSlide = 4;
+  var univSelected = false;
 
   // Keyboard Controls
-  
-  function handleRight() {
-    Reveal.getState().indexh === verticalSlide - 1 ? Reveal.slide(verticalSlide, 0) : Reveal.right();
-  }
-  
-  function handleLeft() {
-    Reveal.getState().indexh === verticalSlide + 1 ? Reveal.slide(verticalSlide, 0) : Reveal.left();
-  }
 
   var horizontalKeyboard = {
-    78: handleRight,  // n
-    34: handleRight,  // page down
-    72: handleLeft,  // h
-    37: handleLeft,  // left
-    76: handleRight,  // l
-    39: handleRight,  // right
-    32: handleRight,  // space
-    80: handleLeft,  // p
-    33: handleLeft,  // page up
+    78: 'right',  // n
+    34: 'right',  // page down
+    72: 'left',  // h
+    37: 'left',  // left
+    76: 'right',  // l
+    39: 'right',  // right
+    32: 'right',  // space
+    80: 'left',  // p
+    33: 'left',  // page up
   };
 
   var horizontalKeyboardDownDisabled = $.extend(true, {}, horizontalKeyboard, {40: null});
@@ -50,51 +45,59 @@ $(function() {
   };
 
   function handleVertical() {
-    if ($('iframe[src]').length) {  // univ selected
-      Reveal.configure({
-        keyboard: verticalKeyboard
-      });
-      $('.reveal .controls .navigate-down').css('display', 'inline-block');
-    } else {
-      Reveal.configure({
-        keyboard: horizontalKeyboardDownDisabled
-      });
-      $('.slide-horizontal .reveal .controls .navigate-down').css('display', 'none');
+    console.log('verticalKeyboard');
+    Reveal.configure({
+      keyboard: verticalKeyboard
+    });
+    $('.reveal .controls .navigate-down').css('display', 'inline-block');
+  }
+  
+  function handleHorizontal() {
+    console.log('horizontalKeyboardDownEnabled');
+    Reveal.configure({
+      keyboard: horizontalKeyboardDownEnabled
+    });
+    $('.reveal .controls .navigate-down').css('display', 'inline-block');
+  }
+  
+  function handleHorizontalConditional() {
+    console.log('horizontalKeyboardDownDisabled');
+    Reveal.configure({
+      keyboard: horizontalKeyboardDownDisabled
+    });
+    $('.reveal .controls .navigate-down').css('display', 'none');
+  }
+
+  // Updating Navigation
+  
+  if (!univSelected && Reveal.getState().indexh === verticalSlide) {  // no univ selected
+    if (Reveal.getState().indexv > 0) {
       Reveal.slide(verticalSlide, 0);
     }
+    handleHorizontalConditional();
+  } else if (Reveal.getState().indexv > 0) {  // regular vertical slide
+    handleVertical();
+  } else {  // regular horizontal slide
+    handleHorizontal();
   }
-
-  function handleHorizontal() {
-    if ($('iframe[src]').length) {  // univ selected
-      Reveal.configure({
-        keyboard: horizontalKeyboardDownEnabled
-      });
-      $('.reveal .controls .navigate-down').css('display', 'inline-block');
-    } else {
-      Reveal.configure({
-        keyboard: horizontalKeyboardDownDisabled
-      });
-      $('.slide-horizontal .reveal .controls .navigate-down').css('display', 'none');
-    }
-  }
-
-  Reveal.addEventListener('ready', function(e) {
-    if ($(e.currentSlide).hasClass('vertical')) {
-      handleVertical();
-    } else { // horizontal slide
-      handleHorizontal();
-    }
-  });
 
   Reveal.addEventListener('slide-vertical', function() {
     handleVertical();
-  }, false );
+  }, false);
 
   Reveal.addEventListener('slide-horizontal', function() {
     handleHorizontal();
-  }, false );
+  }, false);
   
-  Reveal.addEventListener( 'slidechanged', function() {
+  Reveal.addEventListener('slide-horizontal-conditional', function() {
+    if (!univSelected) {
+      handleHorizontalConditional();
+    } else {
+      handleHorizontal();
+    }
+  }, false);
+  
+  Reveal.addEventListener('slidechanged', function() {
     $('.modal').fadeOut();
     $('.graphs-set img').removeClass('disabled');
     $('table tr').removeClass('active-row');
@@ -105,6 +108,8 @@ $(function() {
   // Univ Selection
 
   $('#univ_options a').on('click', function() {
+    univSelected = true;
+    
     var univ_id = $(this).data('univ-id');
 
     loadFigures(univ_id, $(this));
@@ -121,8 +126,8 @@ $(function() {
         metro2 = sel.data('metro2-name'),
         metro3 = sel.data('metro3-name');
 
-    $('.vertical iframe').attr('src', '');
-    $('.vertical img').attr('src', '');
+    $('.univ-result iframe').attr('src', '');
+    $('.univ-result img').attr('src', '');
     setUnivID(univ_id, univ_name, state, metro1, metro2, metro3);
 
     $('#table-metro-count').empty();

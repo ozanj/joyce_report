@@ -62,6 +62,7 @@ verticalSlide <- 4
 
 <p class='author'>Karina Salazar<span class='affiliation'>, University of Arizona</span></p>
 
+<p id='joyce_date'>March <span class='affiliation'>2019</span></p>
 <p id='joyce_text'>Prepared for:</p>
 <img id='joyce_logo' src='assets/images/joyce_logo.png' alt='The Joyce Foundation' />
 
@@ -325,9 +326,12 @@ for (i in 1:nrow(univs)) {
 ## Number of events by type and in-state, out-of-state
 
 <div class="table-wrapper">
+  <div class="scroll-wrapper scroll-wrapper-x scroll-wrapper-y">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/event_count.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/event_count.html"), collapse=" "))
 ```
+  </div>
+  <p class="footnote"><strong>Note</strong>: Totals for schools include multiple visits to unique schools.</p>
 </div>
 
 ---

@@ -1,5 +1,5 @@
 <section>
-   <section class='slide vertical-top {{slide.class}}' data-state='slide-horizontal'>
+   <section class='slide vertical-top {{slide.class}}' data-state='slide-horizontal-conditional'>
      <a class='logo' href='https://emraresearch.org' target='_blank'>emraresearch.org</a>
     {{{slide.header}}}
     <hr />
@@ -9,7 +9,7 @@
     </aside>
    </section>
    {{# slide.blocks }}
-   <section class='slide vertical {{class}}' id='{{id}}' data-state='slide-vertical'>
+   <section class='slide vertical univ-result {{class}}' id='{{id}}' data-state='slide-vertical'>
      <span class='univ-name'></span>
     {{{ header }}}
     {{{ content }}}

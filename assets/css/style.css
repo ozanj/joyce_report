@@ -30,7 +30,7 @@
   font-family: 'Roboto Condensed';
   font-size: 18px;
   font-weight: 300;
-  top: 222px;
+  top: 200px;
 }
 
 .reveal #title h1 {
@@ -57,7 +57,8 @@
   line-height: 1.3em;
 }
 
-.reveal #title .author {
+.reveal #title .author,
+.reveal #title #joyce_date {
   text-align: left;
   font-weight: 700;
   color: rgb(51, 110, 184);
@@ -74,17 +75,22 @@
 
 .reveal #joyce_logo {
   width: 20%;
-  transform: translate(100%, 223px);
+  transform: translate(100%, 208px);
 }
 
 .reveal #title #joyce_text {
   font-size: 14px;
-  transform: translate(-100px, 425px);
+  transform: translate(-100px, 411px);
+  text-align: right;
+}
+
+.reveal #title #joyce_date {
+  transform: translate(-100px, 412px);
   text-align: right;
 }
 
 .reveal #title .note {
-  transform: translateY(440px);
+  transform: translateY(430px);
   font-size: 12px;
 }
 
@@ -159,7 +165,6 @@
   background-color: white;
   border: solid 1px gray;
   transform: translate(-50%, -50%);
-  transition: all .2s;
 }
 
 .modal h3 {
@@ -275,6 +280,10 @@
   overflow-y: hidden;
 }
 
+.scroll-wrapper-y {
+  overflow-x: hidden;
+}
+
 .scroll-wrapper .desc-table td.col-width {
   padding: 0 25px;
 }
@@ -307,24 +316,24 @@
   border-right: 1px solid #444;
 }
 
-.scroll-wrapper .regr-table tr:nth-last-child(1) td {
+.scroll-wrapper .regression-table tr:nth-last-child(1) td {
   position: sticky;
   bottom: 0;
 }
 
-.scroll-wrapper .regr-table tr:nth-last-child(2) td {
+.scroll-wrapper .regression-table tr:nth-last-child(2) td {
   position: sticky;
   bottom: 22.2px;
   border-top: 1px solid #444;
 }
 
-.scroll-wrapper .regr-table tr:nth-last-child(2) td:first-child,
-.scroll-wrapper .regr-table tr:nth-last-child(1) td:first-child {
+.scroll-wrapper .regression-table tr:nth-last-child(2) td:first-child,
+.scroll-wrapper .regression-table tr:nth-last-child(1) td:first-child {
   left: 0;
   z-index: 1;
 }
 
-.scroll-wrapper .regr-table td:nth-of-type(1) ~ td {
+.scroll-wrapper .regression-table td:nth-of-type(1) ~ td {
   padding: 4px 20px;
   line-height: 1.2em;
 }
@@ -337,7 +346,7 @@
 .reveal p.footnote {
   font-size: 11px;
   line-height: 1.5;
-  padding: 5px;
+  padding: 5px 0;
   font-weight: 300;
 }
 
@@ -366,7 +375,6 @@
 
 /* Arrow Controls */
 
-.slide-horizontal .reveal .controls .navigate-down,
 .slide-vertical .reveal .controls .navigate-left,
 .slide-vertical .reveal .controls .navigate-right {
   display: none;
