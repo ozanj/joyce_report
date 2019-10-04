@@ -77,7 +77,7 @@ verticalSlide <- 4
 
 <div class="table-wrapper">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/univ_characteristics.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/univ_characteristics.html"), collapse=" "))
 ```
 <p class="footnote"><strong>Note</strong>: Author calculations based on 2016-2017 IPEDS. Population of universities includes universities categorized as Highest Research Activity by 2015 Carnegie Classification. The University of Alabama is the only institution in the study sample that is not classified as Highest Research Activity.</p>
 </div>
@@ -97,7 +97,7 @@ cat(paste0(readLines("assets/tables/univ_characteristics.html"),collapse=" "))
 <div class="table-wrapper">
   <div class="scroll-wrapper scroll-wrapper-x">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/data_appendix.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/data_appendix.html"), collapse=" "))
 ```
   </div>
 </div>
@@ -120,7 +120,7 @@ select mu.univ_id, muc.univ_name, muc.univ_abbrev, mu.state_code, sd.state_name,
   left join meta_high_school_public mpub on mpub.ncessch = lm.location_id
   left join meta_high_school_private mpri on mpri.ncessch = lm.location_id
   left join meta_university imu on imu.univ_id = lm2.location_id
-  where pvu.univ_id = if(mu.univ_id not in ('196097', '186380', '201885', '139959', '110653', '166629', '126614', '155317'), mu.univ_id, concat(mu.univ_id, '_req'))
+  where pvu.univ_id = if(mu.univ_id not in ('196097', '186380', '201885', '139959', '110635', '110653', '110671', '110680', '166629', '126614', '155317', '218663'), mu.univ_id, concat(mu.univ_id, '_req'))
   and event_country = 'US'
   and event_date between '2017-01-01' and '2017-12-31'
   and uc.univ_canonical_pid is null
@@ -137,7 +137,7 @@ left join meta_univ_classification muc on muc.univ_id = mu.univ_id
 left join msa_metadata msa1 on msa1.cbsa_code = muc.metro1
 left join msa_metadata msa2 on msa2.cbsa_code = muc.metro2
 left join msa_metadata msa3 on msa3.cbsa_code = muc.metro3
-where mu.univ_id in ('100751', '106397', '110635', '110653', '126614', '139959', '155317', '166629', '181464', '186380', '196097', '199193', '201885', '215293', '218663')
+where mu.univ_id in ('100751', '106397', '110635', '110653', '110671', '110680', '126614', '139959', '155317', '166629', '181464', '186380', '196097', '199193', '201885', '215293', '218663')
 order by 2;
 -->
 
@@ -360,7 +360,7 @@ for (i in 1:nrow(univs)) {
 <div class="table-wrapper">
   <div class="scroll-wrapper">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/desc_out_pub.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/desc_pub_out.html"), collapse=" "))
 ```
   </div>
   <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education. Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
@@ -374,7 +374,7 @@ cat(paste0(readLines("assets/tables/desc_out_pub.html"),collapse=" "))
 <div class="table-wrapper">
   <div class="scroll-wrapper">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/regression_out.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/regression_out.html"), collapse=" "))
 ```
   </div>
   <p class="footnote"><strong>Note</strong>: &ast;p<0.05; &ast;&ast;p<0.01; &ast;&ast;&ast;p<0.001. Robust standard errors in parentheses. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education. Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
@@ -388,7 +388,7 @@ cat(paste0(readLines("assets/tables/regression_out.html"),collapse=" "))
 <div class="table-wrapper">
   <div class="scroll-wrapper scroll-wrapper-x">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/desc_out_priv.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/desc_priv_out.html"), collapse=" "))
 ```
   </div>
   <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, an alternative school, an early childhood center, or an independent school. Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
@@ -421,7 +421,7 @@ for (i in 1:nrow(univs)) {
 <div class="table-wrapper">
   <div class="scroll-wrapper">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/desc_in_pub.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/desc_pub_in.html"), collapse=" "))
 ```
   </div>
   <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education.</p>
@@ -435,7 +435,7 @@ cat(paste0(readLines("assets/tables/desc_in_pub.html"),collapse=" "))
 <div class="table-wrapper">
   <div class="scroll-wrapper">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/regression_in.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/regression_in.html"), collapse=" "))
 ```
   </div>
   <p class="footnote"><strong>Note</strong>: &ast;p<0.05; &ast;&ast;p<0.01; &ast;&ast;&ast;p<0.001; Robust standard errors in parentheses. Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school, or independent school; is an open status school and reports enrollment to the Federal Department of Education.</p>
@@ -449,7 +449,7 @@ cat(paste0(readLines("assets/tables/regression_in.html"),collapse=" "))
 <div class="table-wrapper">
   <div class="scroll-wrapper scroll-wrapper-x">
 ```{r, echo=FALSE, results='asis', warning=FALSE}
-cat(paste0(readLines("assets/tables/desc_in_cc.html"),collapse=" "))
+cat(paste0(readLines("assets/tables/desc_cc_in.html"), collapse=" "))
 ```
   </div>
   <p class="footnote"><strong>Note</strong>: We define community college as any public, 2-year or public, less-than 2-year institution, which could be a campus of a Title IV institution.</p>
