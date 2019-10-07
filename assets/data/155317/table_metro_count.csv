@@ -1,86 +1,92 @@
 cbsa_code,metro_name,state_code,total_count,pubHS_count,privHS_count,cc_count,other_count
-16980,"Chicago, Naperville, Elgin","IL, IN, WI",142,109,23,6,4
-28140,Kansas City,"MO, KS",98,61,10,17,10
-41180,St. Louis,"MO, IL",97,51,33,5,8
-33460,"Minneapolis, St. Paul, Bloomington","MN, WI",88,66,21,0,1
-48620,Wichita,KS,62,50,8,2,2
-19100,"Dallas, Fort Worth, Arlington",TX,60,36,22,0,2
-19740,"Denver, Aurora, Lakewood",CO,51,45,4,0,2
-36540,"Omaha, Council Bluffs","NE, IA",36,24,9,0,3
-31080,"Los Angeles, Long Beach, Anaheim",CA,30,21,6,1,2
-45820,Topeka,KS,22,21,1,0,0
-26420,"Houston, The Woodlands, Sugar Land",TX,19,12,4,0,3
-40900,"Sacramento, Roseville, Arden-Arcade",CA,14,9,4,0,1
-46140,Tulsa,OK,12,4,6,0,2
-30700,Lincoln,NE,12,6,3,2,1
-12420,"Austin, Round Rock",TX,12,10,1,0,1
-41860,"San Francisco, Oakland, Hayward",CA,11,5,2,0,4
+16980,"Chicago, Naperville, Elgin","IL, IN, WI",173,123,29,7,14
+28140,Kansas City,"MO, KS",169,95,10,24,40
+41180,St. Louis,"MO, IL",109,59,37,5,8
+33460,"Minneapolis, St. Paul, Bloomington","MN, WI",98,72,23,0,3
+19740,"Denver, Aurora, Lakewood",CO,91,66,8,1,16
+19100,"Dallas, Fort Worth, Arlington",TX,79,48,26,0,5
+48620,Wichita,KS,79,59,7,2,11
+36540,"Omaha, Council Bluffs","NE, IA",54,37,13,0,4
+31080,"Los Angeles, Long Beach, Anaheim",CA,50,28,17,1,4
+45820,Topeka,KS,34,29,2,0,3
+26420,"Houston, The Woodlands, Sugar Land",TX,20,11,4,0,5
+41740,"San Diego, Carlsbad",CA,20,8,7,1,4
+41860,"San Francisco, Oakland, Hayward",CA,20,13,2,0,5
+12420,"Austin, Round Rock",TX,18,13,3,0,2
+30700,Lincoln,NE,16,9,4,2,1
+23780,Garden City,KS,15,13,0,1,1
+40900,"Sacramento, Roseville, Arden-Arcade",CA,15,10,4,0,1
+46140,Tulsa,OK,14,4,7,0,3
+26740,Hutchinson,KS,12,7,2,1,2
+31740,Manhattan,KS,12,7,0,0,5
+41460,Salina,KS,12,7,2,0,3
+14500,Boulder,CO,11,9,0,0,2
+44180,Springfield,MO,11,7,2,0,2
 36420,Oklahoma City,OK,10,2,6,0,2
-26740,Hutchinson,KS,9,6,2,1,0
-29940,Lawrence,KS,8,4,1,0,3
-41460,Salina,KS,8,6,2,0,0
-31740,Manhattan,KS,7,5,0,0,2
-41700,"San Antonio, New Braunfels",TX,7,3,0,0,4
+17820,Colorado Springs,CO,10,9,0,0,1
+29940,Lawrence,KS,9,5,1,0,3
+21380,Emporia,KS,8,7,0,0,1
+25700,Hays,KS,8,4,2,0,2
+22660,Fort Collins,CO,8,6,0,0,2
+38260,Pittsburg,KS,8,4,1,0,3
+30580,Liberal,KS,7,3,0,3,1
+37100,"Oxnard, Thousand Oaks, Ventura",CA,6,3,1,0,2
 37660,Parsons,KS,6,5,0,1,0
-14500,Boulder,CO,6,6,0,0,0
-23780,Garden City,KS,6,5,0,1,0
-38260,Pittsburg,KS,6,5,1,0,0
-44180,Springfield,MO,5,3,1,0,1
-11680,"Arkansas City, Winfield",KS,5,5,0,0,0
-38060,"Phoenix, Mesa, Scottsdale",AZ,5,3,1,0,1
-17820,Colorado Springs,CO,5,5,0,0,0
-21380,Emporia,KS,4,4,0,0,0
+41140,St. Joseph,"MO, KS",6,3,1,1,1
+41700,"San Antonio, New Braunfels",TX,6,2,0,0,4
+11680,"Arkansas City, Winfield",KS,6,5,0,1,0
+36840,Ottawa,KS,6,5,0,0,1
+41940,"San Jose, Sunnyvale, Santa Clara",CA,6,2,3,1,0
+32700,McPherson,KS,6,5,1,0,0
+38060,"Phoenix, Mesa, Scottsdale",AZ,6,3,2,0,1
+47900,"Washington, Arlington, Alexandria","DC, VA, MD, WV",5,3,0,0,2
+33340,"Milwaukee, Waukesha, West Allis",WI,5,3,0,0,2
+24460,Great Bend,KS,5,4,0,1,0
+19980,Dodge City,KS,5,5,0,0,0
+17460,"Cleveland, Elyria",OH,5,3,1,0,1
 17700,Coffeyville,KS,4,3,0,1,0
 27920,Junction City,KS,4,3,0,0,1
-47900,"Washington, Arlington, Alexandria","DC, VA, MD, WV",4,3,0,0,1
-41740,"San Diego, Carlsbad",CA,4,2,1,1,0
 32820,Memphis,"TN, MS, AR",4,4,0,0,0
-25700,Hays,KS,4,3,1,0,0
-30580,Liberal,KS,4,1,0,3,0
-37100,"Oxnard, Thousand Oaks, Ventura",CA,4,2,1,0,1
+40140,"Riverside, San Bernardino, Ontario",CA,4,1,0,0,3
 16300,Cedar Rapids,IA,4,2,1,1,0
-12060,"Atlanta, Sandy Springs, Roswell",GA,4,1,0,0,3
-22660,Fort Collins,CO,4,4,0,0,0
-40140,"Riverside, San Bernardino, Ontario",CA,3,1,0,0,2
-41940,"San Jose, Sunnyvale, Santa Clara",CA,3,1,1,1,0
-24460,Great Bend,KS,3,2,0,1,0
-33340,"Milwaukee, Waukesha, West Allis",WI,3,2,0,0,1
 26980,Iowa City,IA,3,2,0,0,1
 19780,"Des Moines, West Des Moines",IA,3,2,1,0,0
-36840,Ottawa,KS,3,3,0,0,0
-17460,"Cleveland, Elyria",OH,3,2,1,0,0
-32700,McPherson,KS,3,3,0,0,0
+11860,Atchison,KS,3,2,1,0,0
 24260,Grand Island,NE,2,1,0,0,1
-28260,Kearney,NE,2,1,1,0,0
-19980,Dodge City,KS,2,2,0,0,0
+42220,Santa Rosa,CA,2,1,0,0,1
+22220,"Fayetteville, Springdale, Rogers","AR, MO",2,1,0,0,1
 14010,Bloomington,IL,2,1,0,0,1
-41140,St. Joseph,"MO, KS",2,1,0,1,0
-22220,"Fayetteville, Springdale, Rogers","AR, MO",2,1,0,1,0
 35620,"New York, Newark, Jersey City","NY, NJ, PA",2,1,0,0,1
-11860,Atchison,KS,2,1,1,0,0
-27620,Jefferson City,MO,2,1,1,0,0
+36780,"Oshkosh, Neenah",WI,2,0,0,0,2
 24580,Green Bay,WI,2,0,0,0,2
-47300,"Visalia, Porterville",CA,1,0,0,0,1
+27620,Jefferson City,MO,2,1,1,0,0
+12060,"Atlanta, Sandy Springs, Roswell",GA,1,0,0,0,1
+42660,"Seattle, Tacoma, Bellevue",WA,1,0,0,0,1
+14460,"Boston, Cambridge, Newton","MA, NH",1,0,0,0,1
+38300,Pittsburgh,PA,1,0,0,0,1
 16060,"Carbondale, Marion",IL,1,0,0,0,1
 19820,"Detroit, Warren, Dearborn",MI,1,0,0,0,1
-42220,Santa Rosa,CA,1,0,0,0,1
-38300,Pittsburgh,PA,1,0,0,0,1
-46340,Tyler,TX,1,0,0,0,1
-32340,Maryville,MO,1,0,0,0,1
-37980,"Philadelphia, Camden, Wilmington","PA, NJ, DE, MD",1,0,0,0,1
-48580,"Whitewater, Elkhorn",WI,1,1,0,0,0
-20740,Eau Claire,WI,1,0,0,0,1
-22540,Fond du Lac,WI,1,0,0,0,1
-17140,Cincinnati,"OH, KY, IN",1,0,0,0,1
-23580,Gainesville,GA,1,0,0,1,0
+28260,Kearney,NE,1,1,0,0,0
+43580,Sioux City,"IA, NE, SD",1,0,0,0,1
+34900,Napa,CA,1,0,1,0,0
+47300,"Visalia, Porterville",CA,1,0,0,0,1
 16580,"Champaign, Urbana",IL,1,1,0,0,0
 39500,Quincy,"IL, MO",1,0,1,0,0
 37900,Peoria,IL,1,1,0,0,0
 44100,Springfield,IL,1,0,1,0,0
-44620,Stevens Point,WI,1,0,0,0,1
-22780,Fort Leonard Wood,MO,1,1,0,0,0
+48580,"Whitewater, Elkhorn",WI,1,1,0,0,0
+24060,Glenwood Springs,CO,1,1,0,0,0
 14700,Branson,MO,1,1,0,0,0
+44620,Stevens Point,WI,1,0,0,0,1
+27900,Joplin,MO,1,0,0,0,1
+29100,"La Crosse, Onalaska","WI, MN",1,0,0,0,1
+20740,Eau Claire,WI,1,0,0,0,1
+22540,Fond du Lac,WI,1,0,0,0,1
 16020,Cape Girardeau,"MO, IL",1,0,0,0,1
-36780,"Oshkosh, Neenah",WI,1,0,0,0,1
+40420,Rockford,IL,1,1,0,0,0
 43100,Sheboygan,WI,1,0,0,0,1
+26900,"Indianapolis, Carmel, Anderson",IN,1,0,0,0,1
+24540,Greeley,CO,1,1,0,0,0
+17140,Cincinnati,"OH, KY, IN",1,0,0,0,1
 40340,Rochester,MN,1,0,0,1,0
+37980,"Philadelphia, Camden, Wilmington","PA, NJ, DE, MD",1,0,0,0,1

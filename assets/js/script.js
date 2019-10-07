@@ -183,7 +183,7 @@ $(function() {
 
     $('#graph-outofstate-1').attr('src', `assets/data/${univ_id}/median_income.png`);
     $('#graph-outofstate-2').attr('src', `assets/data/${univ_id}/race_pub_out.png`);
-    $('#graph-outofstate-3').attr('src', `assets/data/${univ_id}/distribution_size_pub_priv_out.png`);
+    $('#graph-outofstate-3').attr('src', `assets/data/${univ_id}/size_out.png`);
     $('#graph-outofstate-4').attr('src', `assets/data/${univ_id}/race_priv_out.png`);
 
     $('#map-state-in').prev().html(state);

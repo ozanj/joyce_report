@@ -1,5 +1,5 @@
 cbsa_code,metro_name,state_code,total_count,pubHS_count,privHS_count,cc_count,other_count
-35620,"New York, Newark, Jersey City","NY, NJ, PA",688,490,101,49,48
+35620,"New York, Newark, Jersey City","NY, NJ, PA",684,486,101,49,48
 37980,"Philadelphia, Camden, Wilmington","PA, NJ, DE, MD",223,124,45,43,11
 47900,"Washington, Arlington, Alexandria","DC, VA, MD, WV",95,61,20,1,13
 16980,"Chicago, Naperville, Elgin","IL, IN, WI",90,56,14,5,15
@@ -31,14 +31,14 @@ cbsa_code,metro_name,state_code,total_count,pubHS_count,privHS_count,cc_count,ot
 47220,"Vineland, Bridgeton",NJ,6,5,0,1,0
 15380,"Buffalo, Cheektowaga, Niagara Falls",NY,5,4,0,0,1
 31700,"Manchester, Nashua",NH,4,4,0,0,0
-35300,"New Haven, Milford",CT,4,4,0,0,0
 26420,"Houston, The Woodlands, Sugar Land",TX,4,3,0,0,1
 12420,"Austin, Round Rock",TX,4,4,0,0,0
-34900,Napa,CA,4,1,2,0,1
 20100,Dover,DE,3,3,0,0,0
 41500,Salinas,CA,3,1,2,0,0
+35300,"New Haven, Milford",CT,3,3,0,0,0
 36140,Ocean City,NJ,3,3,0,0,0
 37100,"Oxnard, Thousand Oaks, Ventura",CA,3,3,0,0,0
+34900,Napa,CA,3,0,2,0,1
 24340,"Grand Rapids, Wyoming",MI,2,0,0,0,2
 45860,Torrington,CT,2,0,2,0,0
 38860,"Portland, South Portland",ME,1,0,0,0,1

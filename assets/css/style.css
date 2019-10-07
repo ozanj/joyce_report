@@ -116,6 +116,12 @@
   height: 500px;
 }
 
+.graphs-set-all {
+  height: 480px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 .graphs-row {
   display: flex;
   align-items: center;

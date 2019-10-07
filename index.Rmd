@@ -342,6 +342,7 @@ cat(paste0(readLines("assets/tables/event_count.html"), collapse=" "))
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
 ```{r, echo=FALSE, results='asis'}
+univs <- read.csv('./assets/data/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_map.png" />'))
   if (i %% 5 == 0 && i < nrow(univs)) {
@@ -402,6 +403,7 @@ cat(paste0(readLines("assets/tables/desc_priv_out.html"), collapse=" "))
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
 ```{r, echo=FALSE, results='asis'}
+univs <- read.csv('./assets/data/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_visit_proportion.png" />'))
   if (i %% 5 == 0 && i < nrow(univs)) {
@@ -410,8 +412,8 @@ for (i in 1:nrow(univs)) {
 }
 ```
   </div>
-  <p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school (public HS), early childhood center (private HS), or independent school; is an open status school and reports enrollment to the Federal Department of Education (public HS). Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
 </div>
+<p class="footnote"><strong>Note</strong>: Schools that satisfied the following criteria were included in the sample: offers grades 9-12 and enrolls at least ten students in each grade; located in the 50 U.S. states, the District of Columbia, or land regulated by the Bureau of Indian Affairs; is not a special education school, alternative school, virtual school (public HS), early childhood center (private HS), or independent school; is an open status school and reports enrollment to the Federal Department of Education (public HS). Non-visited schools include only out-of-state schools in states that received at least one high school visit.</p>
 
 ---
 
@@ -463,6 +465,7 @@ cat(paste0(readLines("assets/tables/desc_cc_in.html"), collapse=" "))
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
 ```{r, echo=FALSE, results='asis'}
+univs <- read.csv('./assets/data/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_revenue.png" />'))
   if (i %% 5 == 0 && i < nrow(univs)) {
@@ -471,8 +474,8 @@ for (i in 1:nrow(univs)) {
 }
 ```
   </div>
-  <p class="footnote"><strong>Note</strong>: FTE student count is based on reported full-time equivalent undergraduate enrollment; State revenue is the sum of state appropriations, operating grants and contracts, and non-operating grants; Tuition revenue is defined as revenue from tuition and fees after deducting discounts and allowances.</p>
 </div>
+<p class="footnote"><strong>Note</strong>: FTE student count is based on reported full-time equivalent undergraduate enrollment; State revenue is the sum of state appropriations, operating grants and contracts, and non-operating grants; Tuition revenue is defined as revenue from tuition and fees after deducting discounts and allowances.</p>
 
 ---
 
@@ -482,6 +485,7 @@ for (i in 1:nrow(univs)) {
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
 ```{r, echo=FALSE, results='asis'}
+univs <- read.csv('./assets/data/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_pct_pell.png" />'))
   if (i %% 5 == 0 && i < nrow(univs)) {
@@ -490,8 +494,8 @@ for (i in 1:nrow(univs)) {
 }
 ```
   </div>
-  <p class="footnote"><strong>Note</strong>: Percent out-of-state freshmen is calculated for first-time degree-seeking undergraduate students based on state of residence at time of admission; Percent federal grant recipient is defined as percent of full-time, first-time degree-seeking undergraduates in full-year cohort who are awarded federal grant aids. 2007-08 federal grant recipient data for Rutgers University-New Brunswick is omitted due to concerns for data accuracy.</p>
 </div>
+<p class="footnote"><strong>Note</strong>: Percent out-of-state freshmen is calculated for first-time degree-seeking undergraduate students based on state of residence at time of admission; Percent federal grant recipient is defined as percent of full-time, first-time degree-seeking undergraduates in full-year cohort who are awarded federal grant aids. 2007-08 federal grant recipient data for Rutgers University-New Brunswick is omitted due to concerns for data accuracy.</p>
 
 ---
 
@@ -501,6 +505,7 @@ for (i in 1:nrow(univs)) {
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
 ```{r, echo=FALSE, results='asis'}
+univs <- read.csv('./assets/data/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_race_black.png" />'))
   if (i %% 5 == 0 && i < nrow(univs)) {
@@ -509,8 +514,8 @@ for (i in 1:nrow(univs)) {
 }
 ```
   </div>
-  <p class="footnote"><strong>Note</strong>: Freshmen enrollment is defined as full-time and part-time first-time students. NIH race categories are defined by origin (Hispanic, Non-Hispanic) and race (White, Black, American Indian/Alaska Native, Asian/Pacific Islander), while IPEDS categories include White, Black, Hispanic, Asian, Native Hawaiian/Pacific Islander, American Indian/Alaska, two or more races, unknown races, and nonresident alien; We count all race categories in the total when calculating the percentage for each data source.</p>
 </div>
+<p class="footnote"><strong>Note</strong>: Freshmen enrollment is defined as full-time and part-time first-time students. NIH race categories are defined by origin (Hispanic, Non-Hispanic) and race (White, Black, American Indian/Alaska Native, Asian/Pacific Islander), while IPEDS categories include White, Black, Hispanic, Asian, Native Hawaiian/Pacific Islander, American Indian/Alaska, two or more races, unknown races, and nonresident alien; We count all race categories in the total when calculating the percentage for each data source.</p>
 
 ---
 
@@ -520,6 +525,7 @@ for (i in 1:nrow(univs)) {
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
 ```{r, echo=FALSE, results='asis'}
+univs <- read.csv('./assets/data/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_race_hispanic.png" />'))
   if (i %% 5 == 0 && i < nrow(univs)) {
@@ -528,8 +534,8 @@ for (i in 1:nrow(univs)) {
 }
 ```
   </div>
-  <p class="footnote"><strong>Note</strong>: Freshmen enrollment is defined as full-time and part-time first-time students. NIH race categories are defined by origin (Hispanic, Non-Hispanic) and race (White, Black, American Indian/Alaska Native, Asian/Pacific Islander), while IPEDS categories include White, Black, Hispanic, Asian, Native Hawaiian/Pacific Islander, American Indian/Alaska, two or more races, unknown races, and nonresident alien; We count all race categories in the total when calculating the percentage for each data source. We use Latinx as a gender-inclusive alternative to Latino or Latina. We also use Latinx in place of Hispanic within secondary data sources.</p>
 </div>
+<p class="footnote"><strong>Note</strong>: Freshmen enrollment is defined as full-time and part-time first-time students. NIH race categories are defined by origin (Hispanic, Non-Hispanic) and race (White, Black, American Indian/Alaska Native, Asian/Pacific Islander), while IPEDS categories include White, Black, Hispanic, Asian, Native Hawaiian/Pacific Islander, American Indian/Alaska, two or more races, unknown races, and nonresident alien; We count all race categories in the total when calculating the percentage for each data source. We use Latinx as a gender-inclusive alternative to Latino or Latina. We also use Latinx in place of Hispanic within secondary data sources.</p>
 
 ---
 
@@ -539,6 +545,7 @@ for (i in 1:nrow(univs)) {
 <div class="graphs-set graphs-set-all">
   <div class="graphs-row">
 ```{r, echo=FALSE, results='asis'}
+univs <- read.csv('./assets/data/univ_sample.csv', na.strings=c('','NA'))
 for (i in 1:nrow(univs)) {
   cat(paste0('<img src="assets/data/', univs[i, 'univ_id'], '/titled_multi_year_hs_grad.png" />'))
   if (i %% 5 == 0 && i < nrow(univs)) {
@@ -547,8 +554,8 @@ for (i in 1:nrow(univs)) {
 }
 ```
   </div>
-  <p class="footnote"><strong>Note</strong>:  High school graduates may include graduates from any point of each acacdemic year, from fall through the summer. Private high school data is only available on a biennial basis; Projected data for private high schools start from 2015-16 on and are produced based on data up to the 2010-11 academic year.</p>
 </div>
+<p class="footnote"><strong>Note</strong>:  High school graduates may include graduates from any point of each acacdemic year, from fall through the summer. Private high school data is only available on a biennial basis; Projected data for private high schools start from 2015-16 on and are produced based on data up to the 2010-11 academic year.</p>
 
 <!--
 --- #references
